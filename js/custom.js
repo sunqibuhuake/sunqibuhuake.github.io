@@ -32,6 +32,7 @@ $(document).ready(function(){
 
     }).trigger('scroll');
     $('#show_iframe').load(function(){
+        $('.guide').css("visibility","visible");
         $('.guide').animo({animation:'fadeInDown',duration:2})
     })
 })

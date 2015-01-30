@@ -394,6 +394,7 @@ body {
   min-height: 600px;
 }
 .guide {
+  visibility: hidden;
   background-color: rgba(255,255,255,0);
   width: 15%;
   height: 60%;
