@@ -373,6 +373,32 @@ body {
 .widget dt {
   font-weight: bold;
 }
+#show {
+  height: 100%;
+  width: 100%;
+}
+#show iframe {
+  height: 100%;
+  width: 100%;
+}
+.fuck {
+  width: 100%;
+  min-height: 600px;
+}
+.guide {
+  position: absolute;
+  z-index: 999;
+  background-color: rgba(255,255,255,0.2);
+  width: 20%;
+  height: 50px;
+  bottom: 0;
+  color: #fff;
+  margin-left: aoto;
+  margin-right: aoto;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+}
 #header {
   height: 0px;
   position: relative;
@@ -1479,7 +1505,4 @@ pre .javascript .function {
   margin-left: 5px;
   word-wrap: normal;
   float: right;
-}
-#fuck {
-  margin: 0;
 }

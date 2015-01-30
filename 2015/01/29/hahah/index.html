@@ -19,7 +19,6 @@
   
     <link rel="icon" href="/favicon.png">
   
-  <!--<link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">-->
   <link rel="stylesheet" href="/css/style.css" type="text/css">
 
   
@@ -72,7 +71,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">2</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Three-js/">Three.js</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -113,7 +112,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Games/">Games</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PS3/">PS3</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Games/">Games</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PS3/">PS3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Three-js/">Three.js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -122,7 +121,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Games/" style="font-size: NaNpx;">Games</a><a href="/tags/PS3/" style="font-size: NaNpx;">PS3</a>
+      <a href="/tags/Games/" style="font-size: NaNpx;">Games</a><a href="/tags/PS3/" style="font-size: NaNpx;">PS3</a><a href="/tags/Three-js/" style="font-size: NaNpx;">Three.js</a><a href="/tags/javascript/" style="font-size: NaNpx;">javascript</a>
     </div>
   </div>
 
@@ -136,7 +135,7 @@
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+    <a class="article-category-link" href="/categories/Three-js/">Three.js</a>
   </div>
 
   </div>
@@ -153,18 +152,30 @@
 
       </header>
     
-    <div class="article-entry" id="fuck" itemprop="articleBody">
+    <div class="article-entry" itemprop="articleBody">
       
         <h1 id="this_is_a_simple_demo">this is a simple demo</h1>
 <a id="more"></a>
-<iframe class="fuck" src="/THREE/demo/sanjiao.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+<iframe name="fuck" class="fuck" id="fuck" src="/THREE/demo/sanjiao.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+
+<p>当鼠标经过时会有简单的交互效果<br><a id="pause" onclick="pause()">点我让动画暂停/继续</a></p>
+<p><script><br>  var Paction=true;<br>  function pause(){<br>    Paction=!Paction;</p>
+<pre><code><span class="built_in">window</span>.frames[<span class="string">'fuck'</span>].action=Paction;
+<span class="built_in">console</span>.log(<span class="built_in">window</span>.frames[<span class="string">'fuck'</span>].action);
+</code></pre><p>  }<br></script></p>
+<h5 id="暂停后会发现浏览器会释放很多系统资源哦~">暂停后会发现浏览器会释放很多系统资源哦~</h5>
+<p>一个简单的小技巧就能做到酱紫的效果</p>
+<figure class="highlight [javascript]"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> action=<span class="literal">true</span>;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">animate</span><span class="params">()</span> </span>{</div><div class="line">    requestAnimationFrame( animate );</div><div class="line">    <span class="keyword">if</span>(action){</div><div class="line">        mesh.rotation.x += <span class="number">0.005</span>;</div><div class="line">        mesh.rotation.y +=  <span class="number">0.01</span>;</div><div class="line">        render();</div><div class="line">    }</div><div class="line">}</div></pre></td></tr></table></figure>
+
+<p>这样只要把action在true和false间切换，就能实现动画的暂停。</p>
+
       
     </div>
     <footer class="article-footer">
       <a data-url="http://yoursite.com/2015/01/29/hahah/" data-id="4xmj4rh98tiroqyt" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Games/">Games</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PS3/">PS3</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Three-js/">Three.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 
     </footer>
   </div>
