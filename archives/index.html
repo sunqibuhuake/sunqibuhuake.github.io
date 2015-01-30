@@ -21,6 +21,7 @@
   
   <link rel="stylesheet" href="/css/style.css" type="text/css">
 
+  <link href="//libs.baidu.com/fontawesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
   
 
 </head>
@@ -80,7 +81,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">January 2015</a><span class="archive-list-count">4</span></li></ul>
     </div>
   </div>
 
@@ -92,11 +93,15 @@
       <ul>
         
           <li>
-            <a href="/2015/01/29/hahah/">绚丽三角形</a>
+            <a href="/2015/01/30/主题修改/">(no title)</a>
           </li>
         
           <li>
             <a href="/2015/01/29/mayfirst/">绚丽三角形</a>
+          </li>
+        
+          <li>
+            <a href="/2015/01/29/hahah/">绚丽三角形</a>
           </li>
         
           <li>
@@ -130,47 +135,46 @@
         
         <section id="main">
   
-    <article id="post-hahah" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-主题修改" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/01/29/hahah/" class="article-date">
-  <time datetime="2015-01-29T05:08:31.000Z" itemprop="datePublished">Jan 29 2015</time>
+    <a href="/2015/01/30/主题修改/" class="article-date">
+  <time datetime="2015-01-30T11:23:53.000Z" itemprop="datePublished">Jan 30 2015</time>
 </a>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Three-js/">Three.js</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/29/hahah/">绚丽三角形</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="this_is_a_simple_demo">this is a simple demo</h1>
+        <p>title: 主题修改<br>date: 2015-01-30 19:15:32<br>category:乱七八杂</p>
+<h2 id="tags:hexo">tags:hexo</h2>
+<p>添加“多说”评论与“页面导航”<br>在多说 进行注册，我用的是我的QQ号，获取通用代码。</p>
+<p>将通用代码粘贴到 themes\light\layout_partial\comment.ejs 里边，<br>其中var duoshuoQuery = {short_name:”<strong>**</strong>“}里的<strong>**</strong>是我的账号。</p>
+<!--more-->
+<p>如下：</p>
+<figure class="highlight [javascript][comment.ejs]"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="vbscript">&lt;% <span class="keyword">if</span> (page.comments){ %&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="title">nav</span> <span class="attribute">id</span>=<span class="value">"pagination"</span> &gt;</span></div><div class="line">    <span class="vbscript">&lt;% <span class="keyword">if</span> (page.prev) { %&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"&lt;%- config.root %&gt;&lt;%- page.prev.path %&gt;"</span> <span class="attribute">class</span>=<span class="value">"alignleft prev"</span> &gt;</span><span class="vbscript">&lt;%= __(<span class="comment">'prev') %&gt;</span></span><span class="tag">&lt;/<span class="title">a</span>&gt;</span></div><div class="line">    <span class="vbscript">&lt;% } %&gt;</span></div><div class="line">    <span class="vbscript">&lt;% <span class="keyword">if</span> (page.<span class="keyword">next</span>) { %&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"&lt;%- config.root %&gt;&lt;%- page.next.path %&gt;"</span> <span class="attribute">class</span>=<span class="value">"alignright next"</span> &gt;</span><span class="vbscript">&lt;%= __(<span class="comment">'next') %&gt;</span></span><span class="tag">&lt;/<span class="title">a</span>&gt;</span></div><div class="line">    <span class="vbscript">&lt;% } %&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"clearfix"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">nav</span>&gt;</span></div><div class="line"></div><div class="line"><span class="comment">&lt;!-- 多说评论框 start --&gt;</span></div><div class="line"> <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ds-thread"</span> <span class="attribute">data-thread-key</span>=<span class="value">"&lt;%- config.root %&gt;&lt;%- item.path%&gt;"</span> <span class="attribute">data-title</span>=<span class="value">"&lt;%- item.title %&gt;"</span> <span class="attribute">data-url</span>=<span class="value">"&lt;%- item.permalink %&gt;"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 多说评论框 end --&gt;</span></div><div class="line"><span class="comment">&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line"><span class="keyword">var</span> duoshuoQuery = {short_name:<span class="string">"szcx"</span>};</div><div class="line">  (<span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">    <span class="keyword">var</span> ds = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</div><div class="line">    ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</div><div class="line">    ds.src = (<span class="built_in">document</span>.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</div><div class="line">    ds.charset = <span class="string">'UTF-8'</span>;</div><div class="line">    (<span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>]</div><div class="line">     || <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</div><div class="line">  })();</div><div class="line">  <span class="tag">&lt;/<span class="title">script</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 多说公共JS代码 end --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">section</span> <span class="attribute">id</span>=<span class="value">"comment"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">section</span>&gt;</span></div><div class="line"><span class="vbscript">&lt;% } %&gt;</span></div></pre></td></tr></table></figure>
 
+<p>添加小图标</p>
+<p>添加新浪微博widget(微博秀)<br>去新浪微博开放平台设置和生成微博秀代码。<br>在themes/theme_name/layout/_widget中新建名为weibo.ejs的文件，将刚才的代码直接保存到这里。<br>在themes/light/_config.yml中，添加如下：<br>  widgets:  #站点右边栏，暂时默认，后面介绍修改和添加</p>
+<ul>
+<li>search<ul>
+<li>category</li>
+<li>tagcloud  #标签云</li>
+<li>intro</li>
+<li>weibo    #新浪微博秀</li>
+<li>blogroll    #友情链接<br>主页文章显示摘要<br>编辑md文件的时候，在要作为摘要的文字后面添加
         
           <p class="article-more-link">
-            <a href="/2015/01/29/hahah/#more">Read More</a>
+            <a href="/2015/01/30/主题修改/#more">Read More</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/01/29/hahah/" data-id="4xmj4rh98tiroqyt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/01/30/主题修改/" data-id="1nx13duvydtsy80h" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Three-js/">Three.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
-
     </footer>
   </div>
   
@@ -216,10 +220,58 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/01/29/mayfirst/" data-id="31nx4xszo52dvav2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/01/29/mayfirst/" data-id="w04emap7hfl701ve" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Games/">Games</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PS3/">PS3</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hahah" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/01/29/hahah/" class="article-date">
+  <time datetime="2015-01-29T05:08:31.000Z" itemprop="datePublished">Jan 29 2015</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Three-js/">Three.js</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/29/hahah/">绚丽三角形</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="this_is_a_simple_demo">this is a simple demo</h1>
+
+        
+          <p class="article-more-link">
+            <a href="/2015/01/29/hahah/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/01/29/hahah/" data-id="k9218zsmuqclzxoz" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Three-js/">Three.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
 
     </footer>
   </div>
@@ -272,7 +324,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/01/29/hello-world/" data-id="l0fb5u3m0k584pg3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/01/29/hello-world/" data-id="1xhur4bhhp8og1po" class="article-share-link">Share</a>
       
       
     </footer>
@@ -300,6 +352,9 @@
 
 <script src="/js/jquery.min.js" type="text/javascript"></script>
 
+<link rel="stylesheet" href="/extendcss/animate-animo.min.css" type="text/css">
+
+<script src="/extendjs/animo.min.js" type="text/javascript"></script>
 
 
   <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
@@ -310,6 +365,7 @@
 
 <script src="/js/script.js" type="text/javascript"></script>
 
+<script src="/js/custom.js" type="text/javascript"></script>
 
   </div>
 </body>

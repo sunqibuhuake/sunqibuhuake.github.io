@@ -373,6 +373,14 @@ body {
 .widget dt {
   font-weight: bold;
 }
+.fl_show {
+  bottom: 15%;
+  position: absolute;
+  z-index: 999;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
 #show {
   height: 100%;
   width: 100%;
@@ -386,18 +394,24 @@ body {
   min-height: 600px;
 }
 .guide {
-  position: absolute;
-  z-index: 999;
-  background-color: rgba(255,255,255,0.2);
-  width: 20%;
-  height: 50px;
-  bottom: 0;
+  background-color: rgba(255,255,255,0);
+  width: 15%;
+  height: 60%;
   color: #fff;
-  margin-left: aoto;
-  margin-right: aoto;
   text-align: center;
   padding-top: 10px;
-  font-size: 20px;
+  font-size: 22px;
+  margin: 20px auto;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  border: 2px solid rgba(255,255,255,0.6);
+}
+.guide i:before {
+  font-size: 30px;
+}
+.guide:hover {
+  background-color: rgba(255,255,255,0.6);
+  color: #000;
 }
 #header {
   height: 0px;

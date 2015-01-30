@@ -25,7 +25,8 @@ var camera, scene, renderer;  //定义摄像机、场景、渲染器
 var raycaster, mouse, points = [];
 
 var mesh, line;
-
+var xSpeed=0.01;
+var ySpeed=0.02;
 init();
 
 animate();
@@ -227,20 +228,18 @@ function onDocumentMouseMove( event ) {
 }
 
 //
-
 var action=true;
+
 function animate() {
+
     requestAnimationFrame( animate );
-
     if(action){
-
-        mesh.rotation.x += 0.005;
-        mesh.rotation.y +=  0.01;
-
+        mesh.rotation.x += xSpeed;
+        mesh.rotation.y += ySpeed;
         render();
-//        stats.update();
     }
 
+    //stats.update();
 
 }
 
