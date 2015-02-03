@@ -1515,7 +1515,7 @@ pre .javascript .function {
   -webkit-background-size: cover;
 }
 .widget-title {
-  color: #6f73fb;
+  color: #d9685a;
 }
 .main-nav-link:hover {
   color: #4fffcf;
@@ -1561,7 +1561,7 @@ pre .javascript .function {
   text-decoration: none;
 }
 .widget a:hover {
-  color: #ff9e9e;
+  color: #000;
   text-decoration: none;
 }
 .article-more-link a {
@@ -1616,4 +1616,48 @@ pre .javascript .function {
 }
 a.article-title:hover {
   color: #ea2e49;
+}
+.sq_copyright {
+  float: right;
+}
+.sq_weibo_logo {
+  width: 100%;
+  position: relative;
+}
+.sq_social {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+.sq_weibo_logo img {
+  max-width: 100px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+#weibo_svg,
+#github_svg {
+  fill: #4fffcf;
+  height: 4em;
+  line-height: 4em;
+  overflow: hidden;
+  max-width: 60px;
+  height: 60px;
+  width: 15%;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+#footer {
+  background-image: url("/assets/img/bgi.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+}
+.sq_copyright {
+  color: #fff;
+}
+#footer a {
+  color: #fff;
+  font-weight: bold;
 }

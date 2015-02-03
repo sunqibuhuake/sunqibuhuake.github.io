@@ -174,6 +174,15 @@ $(document).ready(function(){
                 easing: 'ease'
             });
     })
+    $('.sq_footer_animate').mouseover(function(){
+        $(this).snabbt( {
+            valueFeeder: function(i, matrix) {
+                var x = Math.sin(i*Math.PI);
+                return matrix.rotateZ(Math.sin(4*i*Math.PI));
+            },
+            duration: 800
+        });
+    })
     //guideAnimate();
 
 })
