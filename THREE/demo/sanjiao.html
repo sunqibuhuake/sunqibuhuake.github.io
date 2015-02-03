@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sanjiao</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div id="container"></div>
+<script src="../js/build/three.min.js"></script>
+<script src="../js/lib/detector.js"></script>
+<script src="../js/lib/stats.min.js"></script>
+<script>
+if ( ! Detector.webgl ) Detector.addGetWebGLMessage();//检测是否支持WebGL
+
+var container, stats;
+
+var camera, scene, renderer;  //定义摄像机、场景、渲染器
+
+var raycaster, mouse, points = [];
+
+var mesh, line;
+var xSpeed=0.01;
+var ySpeed=0.02;
+init();
+
+animate();
+
+function init() {
+
+    container = document.getElementById( 'container' );
+
+    //
+
+    camera = new THREE.PerspectiveCamera( 27, window.innerWidth / window.innerHeight, 1, 3500 );//透视摄像机的这四个参数分别是：可视角度，横纵比，最近可视距、最远可视距
+    camera.position.z = 2750;//摄像机z轴位置
+
+    scene = new THREE.Scene();//定义场景
+    scene.fog = new THREE.Fog( 0x050505, 2000, 3500 );//定义雾效，颜色是0x050505，当据摄像机2000时开始出现雾效，距离3500时物体彻底消失在雾里
+
+    //
+
+    scene.add( new THREE.AmbientLight( 0x444444 ) );//定义环境光及颜色
+
+    var light1 = new THREE.DirectionalLight( 0xffffff, 0.5 );//定义平行光颜色、强度
+    light1.position.set( 1, 1, 1 );
+    scene.add( light1 );
+
+    var light2 = new THREE.DirectionalLight( 0xffffff, 1.5 );
+    light2.position.set( 0, -1, 0 );
+    scene.add( light2 );
+
+    //
+
+    var triangles = 5000;//三角形数量
+
+    var geometry = new THREE.BufferGeometry();
+
+    var positions = new Float32Array( triangles * 3 * 3 );
+    var normals = new Float32Array( triangles * 3 * 3 );
+    var colors = new Float32Array( triangles * 3 * 3 );
+
+    var color = new THREE.Color();
+
+    var n = 800, n2 = n/2;	// triangles spread in the cube
+    var d = 120, d2 = d/2;	// individual triangle size
+
+    var pA = new THREE.Vector3();
+    var pB = new THREE.Vector3();
+    var pC = new THREE.Vector3();
+
+    var cb = new THREE.Vector3();
+    var ab = new THREE.Vector3();
+
+    for ( var i = 0; i < positions.length; i += 9 ) {
+
+        // positions
+
+        var x = Math.random() * n - n2;//将会返回-400到400
+        var y = Math.random() * n - n2;
+        var z = Math.random() * n - n2;//这样所有三角形的位置就都位于xyz-400到400的正方形内
+
+        var ax = x + Math.random() * d - d2;  //顶点a的x坐标，其位置坐标（x-60）到（x+60）之间
+        var ay = y + Math.random() * d - d2;
+        var az = z + Math.random() * d - d2;
+
+        var bx = x + Math.random() * d - d2;
+        var by = y + Math.random() * d - d2;
+        var bz = z + Math.random() * d - d2;
+
+        var cx = x + Math.random() * d - d2;
+        var cy = y + Math.random() * d - d2;
+        var cz = z + Math.random() * d - d2;//这样三个顶点就位于位置坐标xyz为圆心的半径是60的圆内
+
+        positions[ i ]     = ax;
+        positions[ i + 1 ] = ay;
+        positions[ i + 2 ] = az;
+
+        positions[ i + 3 ] = bx;
+        positions[ i + 4 ] = by;
+        positions[ i + 5 ] = bz;
+
+        positions[ i + 6 ] = cx;
+        positions[ i + 7 ] = cy;
+        positions[ i + 8 ] = cz;//存储下所有顶点的位置信息
+
+        // flat face normals
+
+        pA.set( ax, ay, az );
+        pB.set( bx, by, bz );
+        pC.set( cx, cy, cz );//生成三个顶点
+
+        cb.subVectors( pC, pB );
+        ab.subVectors( pA, pB );
+        cb.cross( ab );
+
+        cb.normalize();
+
+        var nx = cb.x;
+        var ny = cb.y;
+        var nz = cb.z;
+
+        normals[ i ]     = nx;
+        normals[ i + 1 ] = ny;
+        normals[ i + 2 ] = nz;
+
+        normals[ i + 3 ] = nx;
+        normals[ i + 4 ] = ny;
+        normals[ i + 5 ] = nz;
+
+        normals[ i + 6 ] = nx;
+        normals[ i + 7 ] = ny;
+        normals[ i + 8 ] = nz;
+
+        // colors
+
+        var vx = ( x / n ) + 0.5;
+        var vy = ( y / n ) + 0.5;
+        var vz = ( z / n ) + 0.5;
+
+        color.setRGB( vx, vy, vz );
+
+        colors[ i ]     = color.r;
+        colors[ i + 1 ] = color.g;
+        colors[ i + 2 ] = color.b;
+
+        colors[ i + 3 ] = color.r;
+        colors[ i + 4 ] = color.g;
+        colors[ i + 5 ] = color.b;
+
+        colors[ i + 6 ] = color.r;
+        colors[ i + 7 ] = color.g;
+        colors[ i + 8 ] = color.b;
+
+    }
+
+    geometry.addAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
+    geometry.addAttribute( 'normal', new THREE.BufferAttribute( normals, 3 ) );
+    geometry.addAttribute( 'color', new THREE.BufferAttribute( colors, 3 ) );
+
+    geometry.computeBoundingSphere();
+
+    var material = new THREE.MeshPhongMaterial( {
+        color: 0xaaaaaa, ambient: 0xaaaaaa, specular: 0xffffff, shininess: 250,
+        side: THREE.DoubleSide, vertexColors: THREE.VertexColors
+    } );
+
+    mesh = new THREE.Mesh( geometry, material );
+    scene.add( mesh );
+
+    //
+
+    raycaster = new THREE.Raycaster();
+
+    mouse = new THREE.Vector2();
+
+    var geometry = new THREE.BufferGeometry();
+    geometry.addAttribute( 'position', new THREE.BufferAttribute( new Float32Array( 4 * 3 ), 3 ) );
+
+    var material = new THREE.LineBasicMaterial( { color: 0xffffff, linewidth: 2, transparent: true } );
+
+    line = new THREE.Line( geometry, material );
+    scene.add( line );
+
+    //
+
+    renderer = new THREE.WebGLRenderer( { antialias: false } );
+    renderer.setClearColor( scene.fog.color );
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    container.appendChild( renderer.domElement );
+
+    //
+//
+//    stats = new Stats();
+//    stats.domElement.style.position = 'absolute';
+//    stats.domElement.style.top = '0px';
+//    container.appendChild( stats.domElement );
+
+    //
+
+    window.addEventListener( 'resize', onWindowResize, false );
+    document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+
+}
+
+function onWindowResize() {
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
+}
+
+function onDocumentMouseMove( event ) {
+
+    event.preventDefault();
+    //console.log(event.clientX+','+event.clientY);
+    mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+    mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+
+}
+
+//
+var action=true;
+
+function animate() {
+
+    requestAnimationFrame( animate );
+    if(action){
+        mesh.rotation.x += xSpeed;
+        mesh.rotation.y += ySpeed;
+        render();
+    }
+
+    //stats.update();
+
+}
+
+function render() {
+
+//    var time = Date.now() * 0.001;
+//
+//    mesh.rotation.x = time * 0.15;
+//    mesh.rotation.y = time * 0.25;
+
+    raycaster.setFromCamera( mouse, camera );
+
+    var intersects = raycaster.intersectObject( mesh );
+
+    if ( intersects.length > 0 ) {
+
+        var intersect = intersects[ 0 ];
+        var face = intersect.face;
+
+        var linePosition = line.geometry.attributes.position;
+        var meshPosition = mesh.geometry.attributes.position;
+
+        linePosition.copyAt( 0, meshPosition, face.a );
+        linePosition.copyAt( 1, meshPosition, face.b );
+        linePosition.copyAt( 2, meshPosition, face.c );
+        linePosition.copyAt( 3, meshPosition, face.a );
+
+        mesh.updateMatrix();
+
+        line.geometry.applyMatrix( mesh.matrix );
+
+        line.visible = true;
+
+    } else {
+
+        line.visible = false;
+
+    }
+
+    renderer.render( scene, camera );
+
+}
+</script>
+</body>
+</html>
