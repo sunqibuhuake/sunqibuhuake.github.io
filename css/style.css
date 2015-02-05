@@ -1506,7 +1506,7 @@ pre .javascript .function {
   float: left;
 }
 #header {
-  background-image: url("/assets/img/bgi.png");
+  background-image: url("http://ww1.sinaimg.cn/large/b29e5633tw1eoyd6zhn2sj21kw0hln88.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1646,7 +1646,7 @@ a.article-title:hover {
   margin-bottom: 20px;
 }
 #footer {
-  background-image: url("/assets/img/bgi.png");
+  background-image: url("http://ww1.sinaimg.cn/large/b29e5633tw1eoyd6zhn2sj21kw0hln88.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1660,4 +1660,12 @@ a.article-title:hover {
 #footer a {
   color: #fff;
   font-weight: bold;
+}
+.article-entry code {
+  background-color: #dd5794;
+  color: #fff;
+  text-shadow: none;
+  padding: 0.3em 0.3em 0.1em 0.3em;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
