@@ -7,7 +7,7 @@
   <META name="Keywords" content="WebGL教程,Three.js,中文教程,可视化" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="概述
-在上一章中我们了解了Three.js库的基本知识，在本章中我们会稍微深入一下，详解组成场景的基础组件。本章主要内容如下
+在上一章中我们了解了Three.js库的基础知识，在本章中我们会稍微深入一下，详解组成场景的基础组件。本章主要内容如下
 
 搭建Three.js场景用到了哪些组件（components）
 我们能用THREE.Scene()对象做什么
@@ -18,7 +18,7 @@
 <meta property="og:url" content="http://vfind.xyz/2015/02/05/c2/">
 <meta property="og:site_name" content="孙琦在学可视化">
 <meta property="og:description" content="概述
-在上一章中我们了解了Three.js库的基本知识，在本章中我们会稍微深入一下，详解组成场景的基础组件。本章主要内容如下
+在上一章中我们了解了Three.js库的基础知识，在本章中我们会稍微深入一下，详解组成场景的基础组件。本章主要内容如下
 
 搭建Three.js场景用到了哪些组件（components）
 我们能用THREE.Scene()对象做什么
@@ -32,7 +32,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第二章:用基本组件搭建Three.js场景(part 1)">
 <meta name="twitter:description" content="概述
-在上一章中我们了解了Three.js库的基本知识，在本章中我们会稍微深入一下，详解组成场景的基础组件。本章主要内容如下
+在上一章中我们了解了Three.js库的基础知识，在本章中我们会稍微深入一下，详解组成场景的基础组件。本章主要内容如下
 
 搭建Three.js场景用到了哪些组件（components）
 我们能用THREE.Scene()对象做什么
@@ -158,7 +158,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="概述">概述</h3>
-<p>在上一章中我们了解了Three.js库的基本知识，在本章中我们会稍微深入一下，详解组成场景的基础组件。本章主要内容如下</p>
+<p>在上一章中我们了解了Three.js库的基础知识，在本章中我们会稍微深入一下，详解组成场景的基础组件。本章主要内容如下</p>
 <ul>
 <li>搭建Three.js场景用到了哪些组件（components）</li>
 <li>我们能用THREE.Scene()对象做什么</li>
@@ -166,33 +166,33 @@
 <li>正交摄像机（orthographic camera）和透视投影摄像机（perspective camera）的区别是什么</li>
 </ul>
 <a id="more"></a>
-<h3 id="创建一个scene">创建一个scene</h3>
-<p>在上一章中我们已经创建了一个THREE.Scene()对象，所以你应该已经知道了Three.js的基础知识。要在场景中显示什么东西，有三种组件是必不可少的：</p>
+<h3 id="创建一个场景">创建一个场景</h3>
+<p>在上一章中我们已经创建了一个<code>THREE.Scene()</code>对象，所以你应该已经知道要在场景中显示东西，有三种组件是必不可少的：</p>
 <ul>
 <li>camera （摄像机）：它决定了有哪些东西会被渲染</li>
 <li>lights（灯光）：能影响材质的显示效果，也能用来创建阴影效果</li>
 <li>objects（物体）：这是会被渲染到屏幕上的主要的部分，像立方体、球体等等</li>
 </ul>
-<p>看起来THREE.Scene()对象就像这些东西的容器，它本身没有什么功能和配置</p>
+<p>看起来<code>THREE.Scene()</code>就像这些东西的容器，它本身没有什么功能和设置</p>
 <p>真的是这样吗？</p>
-<h3 id="场景的基础功能">场景的基础功能</h3>
+<h3 id="场景（Scene）的基础功能">场景（Scene）的基础功能</h3>
 <p>我们来通过例子来探索场景的功能。在第二章的源码中你能找到01-basic-scene.html</p>
 <p>我们将用这个例子来解释场景的很多功能和设置。当我们打开这个例子的时候，我们看到的会是这样的</p>
 <p><img src="http://ww2.sinaimg.cn/large/b29e5633tw1eoy5hf6tp1j20r20hydhh.jpg" alt=""></p>
-<p>这看起来和上一章的东西很相似，虽然这个场景目前空空如也，但它已经包含了很多东西。通过看它的源码，我们能看到已经用<code>Scene.add(object)</code>函数添加了一个<code>THREE.Mesh</code>（就是你看到的这个平面），一个<code>THREE.SpotLight</code>点光源和<code>THREE.AmbientLight</code>环境光。</p>
-<p><code>THREE.Camera</code>摄像机对象在你渲染场景的时候被Three.js库自动添加上了。但是你也可以手动添加。</p>
+<p>这看起来和上一章的东西很相似，虽然这个场景目前空空如也，但它实际上已经包含了很多东西。通过看它的源码，能看到已经用<code>Scene.add(object)</code>函数添加了一个<code>THREE.Mesh</code>（就是你看到的这个平面），一个<code>THREE.SpotLight</code>点光源和<code>THREE.AmbientLight</code>环境光。</p>
+<p><code>THREE.Camera</code>摄像机对象在你渲染场景的时候被Three.js库自动添加上了，当然你也可以手动添加。</p>
 <figure class="highlight [javascript]"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var scene = new THREE.Scene();</div><div class="line">var camera = new THREE.PerspectiveCamera(<span class="number">45</span>,</div><div class="line">window.innerWidth / window.innerHeight, <span class="number">0.1</span>, <span class="number">1000</span>);</div><div class="line"><span class="keyword">...</span></div><div class="line">var planeGeometry = new THREE.PlaneGeometry(<span class="number">60</span>,<span class="number">40</span>,<span class="number">1</span>,<span class="number">1</span>);</div><div class="line">var planeMaterial = new THREE.MeshLambertMaterial({color: <span class="number">0xffffff</span>}); var plane = new THREE.Mesh(planeGeometry,planeMaterial);</div><div class="line"><span class="keyword">...</span></div><div class="line">scene.add(plane);</div><div class="line">var ambientLight = new THREE.AmbientLight(<span class="number">0x0c0c0c</span>); scene.add(ambientLight);</div><div class="line"><span class="keyword">...</span></div><div class="line">var spotLight = new THREE.SpotLight( <span class="number">0xffffff</span> );</div><div class="line"><span class="keyword">...</span></div><div class="line">scene.add( spotLight );</div></pre></td></tr></table></figure>
 
-<p>在我们深入探索场景对象之前，我要先解释下在这个例子中你能做什么。在浏览器中打开示例，你会在右上角有控制菜单。</p>
+<p>在我们深入学习场景对象之前，我要先解释一下在这个例子中你能做什么。在浏览器中打开示例，你会看到在右上角有个控制菜单。</p>
 <p><img src="http://ww2.sinaimg.cn/large/b29e5633tw1eoyc0lk1g0j20k60dk0vg.jpg" alt=""></p>
-<p>你能通过它添加一个立方体到场景中，或者删除刚加上的立方体，显示场景中当前的物体数量。有件事你可能已经注意到了，你就是刚打开的时候尽管没有立方体，还是显示在场景有四个物体，它们是：</p>
+<p>你能通过控制菜单向场景中添加一个立方体，或者删除刚加上的立方体。菜单还显示了场景中当前的物体数量。有件事你可能已经注意到了，你就是刚打开的时候尽管没有立方体，还是显示在场景有四个物体，它们分别是：</p>
 <ul>
 <li>平面（ground plane）</li>
 <li>环境光源(ambient light)</li>
 <li>点光源(spot light)</li>
 <li>摄像机(camera)</li>
 </ul>
-<p>接下来的代码，我们先来看看控制部分的各个函数，当然了，从最简单的<code>sddCube()</code>开始</p>
+<p>接下来，我们来看看控制部分的各个函数，当然了，从最简单的<code>sddCube()</code>开始</p>
 <figure class="highlight [javascript]"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">this</span>.addCube = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">     <span class="keyword">var</span> cubeSize = <span class="built_in">Math</span>.ceil((<span class="built_in">Math</span>.random() * <span class="number">3</span>));</div><div class="line">     <span class="keyword">var</span> cubeGeometry = <span class="keyword">new</span></div><div class="line">           THREE.CubeGeometry(cubeSize,cubeSize,cubeSize);</div><div class="line">     <span class="keyword">var</span> cubeMaterial = <span class="keyword">new</span> THREE.MeshLambertMaterial(</div><div class="line">{color: <span class="built_in">Math</span>.random() * <span class="number">0xffffff</span> });</div><div class="line"><span class="keyword">var</span> cube = <span class="keyword">new</span> THREE.Mesh(cubeGeometry, cubeMaterial); cube.castShadow = <span class="literal">true</span>;</div><div class="line">cube.name = <span class="string">"cube-"</span> + scene.children.length; cube.position.x=-<span class="number">30</span> + <span class="built_in">Math</span>.round(</div><div class="line">                (<span class="built_in">Math</span>.random() * planeGeometry.width));</div><div class="line">     cube.position.y= <span class="built_in">Math</span>.round((<span class="built_in">Math</span>.random() * <span class="number">5</span>));</div><div class="line">     cube.position.z=-<span class="number">20</span> + <span class="built_in">Math</span>.round((<span class="built_in">Math</span>.random() *</div><div class="line">                 planeGeometry.height));</div><div class="line">     scene.add(cube);</div><div class="line">     <span class="keyword">this</span>.numberOfObjects = scene.children.length;</div><div class="line">};</div></pre></td></tr></table></figure>
 
 <p>代码的意思一目了然，没有很多新的方面需要介绍。当你点击<code>sddCube</code>按钮，一个新的<code>THREE.CubeGeometry</code>实例会被创建，而且他的长宽高都是0-3之间的随机数。颜色和位置也都是随机产生的。<br>这段代码中的新内容是我们给每个立方体通过<code>name</code>属性赋予了一个名字，格式类似于cube-1，cube-2</p>
@@ -204,7 +204,7 @@
 <p>控制菜单最后一个按钮是<code>outputObjects</code>。你可能已经点击过它但是什么也没有发生。事实上它的作用是将现在场景中所有的物体/对象的信息输出到浏览器的控制台（console）中。就像下图中一样：<br><img src="http://ww4.sinaimg.cn/large/b29e5633tw1eoybzuer52j20m00em7bg.jpg" alt=""><br>输出信息搭配控制台的代码利用了内置<code>console</code>对象：</p>
 <figure class="highlight [javascript]"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">this</span>.outputObjects = <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>{</div><div class="line">       <span class="built_in">console</span>.log(scene.children);</div><div class="line">}</div></pre></td></tr></table></figure>
 
-<p>这对调试查错来说非常给力，尤其是当你给每个物体都命名了之后。你能轻松得到特定对象的信息，并且快速发现问题。比如能把cube-17的信息陈列如下</p>
+<p>这对调试查错来说非常给力，尤其是当你给每个物体都命名了之后。你能轻松得到特定对象的信息，快速发现问题。比如你能把cube-17的信息陈列如下</p>
 <figure class="highlight [javascript]"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">__webglActive</span>: <span class="string">true</span></div><div class="line"><span class="attribute">__webglInit</span>: <span class="string">true</span></div><div class="line"><span class="attribute">_modelViewMatrix</span>: <span class="string">THREE.Matrix4</span></div><div class="line"><span class="attribute">_normalMatrix</span>: <span class="string">THREE.Matrix3</span></div><div class="line"><span class="attribute">_vector</span>: <span class="string">THREE.Vector3</span></div><div class="line"><span class="attribute">castShadow</span>: <span class="string">true</span></div><div class="line"><span class="attribute">children</span>: <span class="string">Array[0]</span></div><div class="line"><span class="attribute">eulerOrder</span>: <span class="string">"XYZ"</span></div><div class="line"><span class="attribute">frustumCulled</span>: <span class="string">true</span></div><div class="line"><span class="attribute">geometry</span>: <span class="string">THREE.CubeGeometry</span></div><div class="line"><span class="attribute">id</span>: <span class="string">20</span></div><div class="line"><span class="attribute">material</span>: <span class="string">THREE.MeshLambertMaterial</span></div><div class="line"><span class="attribute">matrix</span>: <span class="string">THREE.Matrix4</span></div><div class="line"><span class="attribute">matrixAutoUpdate</span>: <span class="string">true</span></div><div class="line"><span class="attribute">matrixRotationWorld</span>: <span class="string">THREE.Matrix4</span></div><div class="line"><span class="attribute">matrixWorld</span>: <span class="string">THREE.Matrix4</span></div><div class="line"><span class="attribute">matrixWorldNeedsUpdate</span>: <span class="string">false</span></div><div class="line"><span class="attribute">name</span>: <span class="string">"cube-17"</span></div><div class="line"><span class="attribute">parent</span>: <span class="string">THREE.Scene</span></div><div class="line"><span class="attribute">position</span>: <span class="string">THREE.Vector3</span></div><div class="line"><span class="attribute">properties</span>: <span class="string">Object</span></div><div class="line"><span class="attribute">quaternion</span>: <span class="string">THREE.Quaternion</span></div><div class="line"><span class="attribute">receiveShadow</span>: <span class="string">false</span></div><div class="line"><span class="attribute">renderDepth</span>: <span class="string">null</span></div><div class="line"><span class="attribute">rotation</span>: <span class="string">THREE.Vector3</span></div><div class="line"><span class="attribute">rotationAutoUpdate</span>: <span class="string">true</span></div><div class="line"><span class="attribute">scale</span>: <span class="string">THREE.Vector3</span></div><div class="line"><span class="attribute">up</span>: <span class="string">THREE.Vector3</span></div><div class="line"><span class="attribute">useQuaternion</span>: <span class="string">false</span></div><div class="line"><span class="attribute">visible</span>: <span class="string">true</span></div><div class="line"><span class="attribute">__proto__</span>: <span class="string">Object</span></div></pre></td></tr></table></figure>
 
 <p>到此为止，我们已经认识了和场景相关的功能有：</p>
@@ -214,19 +214,20 @@
 <li><code>Scene.children()</code>：获得子对象列表</li>
 <li><code>Scene.getChildByName()</code>：通过name获得一个特定的对象</li>
 </ul>
-<p>这些都是非常重要的函数，经常会被用到。当然另外还有几个出现频率比较低的辅助函数，现在我们就以处理立方体角度的代码为例讲解<br>在上一章中，我们用一个渲染循环来渲染场景，本例中也有同样的代码：</p>
+<p>这些都是非常重要的函数，经常会被用到。当然另外还有几个出现频率比较低的辅助函数，现在我们就以处理立方体角度的代码为例讲解。<br>在上一章中，我们用一个渲染循环来渲染场景，本例中也有同样的代码：</p>
 <figure class="highlight [javascript]"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">render</span><span class="params">()</span> </span>{</div><div class="line">     stats.update();</div><div class="line">       scene.traverse(<span class="function"><span class="keyword">function</span><span class="params">(e)</span> </span>{</div><div class="line">         <span class="keyword">if</span> (e <span class="keyword">instanceof</span> THREE.Mesh && e != plane ) {</div><div class="line">           e.rotation.x+=controls.rotationSpeed;</div><div class="line">           e.rotation.y+=controls.rotationSpeed;</div><div class="line">           e.rotation.z+=controls.rotationSpeed;</div><div class="line">} });</div><div class="line">requestAnimationFrame(render);</div><div class="line">renderer.render(scene, camera);</div><div class="line">   }</div></pre></td></tr></table></figure>
 
-<p>这里我们用到了<code>THREE.Scene.traverse()</code>函数。我们能传递一个函数作为<code>traverse()</code>的参数，并且传递给traverse的函数能被scene中所有的子对象调用。在<code>render()</code>函数中，我们将使用<code>traverse()</code>函数来更新每个立方体的角度（当然我们会特意不去修改平面（plane）），我们可以使用一个for循环遍历scene子对象的数组做到了这一点</p>
-<p>在我们深入学习网格（Mesh）和几何体（Geometry）前，我还要介绍场景（scene）两个有趣的属性：</p>
+<p>这里我们用到了<code>THREE.Scene.traverse()</code>函数。我们能传递一个函数作为<code>traverse()</code>的参数，而且传递给traverse的函数能被scene中所有的子对象调用。在<code>render()</code>函数中，我们将使用<code>traverse()</code>函数来更新每个立方体的角度（当然我们会特意不去修改平面（plane）），我们可以用一个for循环遍历scene所有子对象来做到这一点</p>
+<p>在我们深入学习网格（Mesh）和几何体（Geometry）前，我还要介绍场景（Scene）两个有趣的属性：</p>
 <ul>
 <li>fog</li>
-<li>overrideMaterial<br>-<h3 id="给场景添加雾效（fog_effect）">给场景添加雾效（fog effect）</h3>
-fog属性能整个场景添加雾效，越远的物体看的越朦胧<br><img src="http://ww1.sinaimg.cn/large/b29e5633tw1eoyav44m82j20pe0h2ju0.jpg" alt=""><br>开启雾效很简单：</li>
+<li>overrideMaterial</li>
 </ul>
+<h3 id="给场景添加雾效（fog_effect）">给场景添加雾效（fog effect）</h3>
+<p>fog属性能整个场景添加雾效，越远的物体看的越朦胧<br><img src="http://ww1.sinaimg.cn/large/b29e5633tw1eoyav44m82j20pe0h2ju0.jpg" alt=""><br>开启雾效很简单：</p>
 <figure class="highlight [javascript]"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">scene.fog</span>=<span class="string">new THREE.Fog( 0xffffff, 0.015, 100 );</span></div></pre></td></tr></table></figure>
 
-<p>就这样，我们定义了一个白色的雾（0xffffff），最后两个参数是可用于调整雾的显示方式得远近属性。<code>0.015,100</code>的意义就是在里摄像机距离为0.015时开始产生雾效（小于0.015不会产生），在离摄像机100及大于100的地方将会完全呈现雾效，原有物体都被雾遮掩。<br>还有一个不同的方式来设置的雾效：</p>
+<p>就这样，我们定义了一个白色的雾（0xffffff），最后两个参数是可用于调整雾的显示方式的远近属性（near property and far property）。<code>0.015,100</code>的意义就是在里摄像机距离为0.015时开始产生雾效（小于0.015不会产生），在离摄像机100及大于100的地方将会完全呈现雾效，原有物体都被雾遮掩。<br>还有一个不同的方式来设置的雾效：</p>
 <figure class="highlight [javascript]"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">scene.fog</span>=<span class="string">new THREE.FogExp2( 0xffffff, 0.015 );</span></div></pre></td></tr></table></figure>
 
 <p>用这种方法不会有远近属性出现，只需要定义颜色和雾气密度（mist density）。</p>
@@ -235,14 +236,14 @@ fog属性能整个场景添加雾效，越远的物体看的越朦胧<br><img sr
 <figure class="highlight [javascript]"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">scene.overrideMaterial </span>=<span class="string"> new</span></div><div class="line">       THREE.MeshLambertMaterial({color: 0xffffff});</div></pre></td></tr></table></figure>
 
 <p>上面的代码就改变了所有物体的材质，现在整个场景看起来会是这个样子的：<br><img src="http://ww4.sinaimg.cn/large/b29e5633tw1eoyb8lfkx8j20po0hcq5h.jpg" alt=""></p>
-<p>我们给所有的物体使用了MeshLambertMaterial材质。用这种材质，您可以创建能对光照效果做出反应但是不会闪亮的表现效果。在第4章，你会学到更多关于这种材料的知识。</p>
+<p>我们给所有的物体使用了MeshLambertMaterial材质。用这种材质，您可以创建在光照效果下有反应但是不会闪亮的效果。在第4章，你会学到更多关于这种材料的知识。</p>
 <p>在本小节中，我们已经对Three.js的一个核心方面——场景（scene）——有了初步了解。关于场记有一点要牢记，那就是它是所有物体、光源、摄像机的容器。<br>下面是对场景（scene）最重功能和参数的总结：</p>
 <ul>
 <li><code>add(object)</code>：向场景中添加物体。你还能用这个函数创建物体组（接下来会有讲述）</li>
 <li><code>childern</code>：返回所有被添加到场景中物体的列表，包括光源（lights）和摄像机（camera）</li>
-<li><code>getChildByName(name)</code>：当你创建一个物体的时候你能通过<code>name</code>属性给它命名。利用场景（scene）的这个函数，能通过name直接获取某个特定对象</li>
+<li><code>getChildByName(name)</code>：我们已经知道能通过<code>name</code>属性给物体命名。而利用场景（scene）的<code>getChildByName(name)</code>函数，能通过名称直接获取某个特定对象</li>
 <li><code>remove(object)</code>：移除场景中的物体</li>
-<li><code>traverse(function)</code>：<code>children</code>参数返回场景所有子元素的列表，我们也能用<code>traverse()</code>函数传递一个回调函数来获取这些子元素。</li>
+<li><code>traverse(function)</code>：<code>children</code>能返回场景所有子元素的列表，我们还可以用<code>traverse()</code>函数传递一个回调函数来获取这些子元素。</li>
 <li><code>fog</code>：这个属性能给场景添加雾效</li>
 <li><code>overrideMaterial</code>：强行给场景中的所有元素使用相同的材质</li>
 </ul>
