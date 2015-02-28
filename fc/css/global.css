@@ -215,7 +215,7 @@ audio{
 
 and (max-height : 600px)
 {
-    img{
+    .resimg{
         width: 75%;
     }
 }
@@ -223,7 +223,7 @@ and (max-height : 600px)
 and ( min-height: 600px )
 
 {
-    img{
+    .resimg{
         width: 100%;
     }
 }
