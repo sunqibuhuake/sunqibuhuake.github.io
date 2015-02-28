@@ -211,17 +211,18 @@ audio{
 }
 
 
-@media (-webkit-min-device-pixel-ratio:1){
+@media only screen
+
+and (max-height : 600px)
+{
     img{
         width: 75%;
     }
 }
-@media (-webkit-min-device-pixel-ratio:1.5){
-    img{
-        width: 85%;
-    }
-}
-@media (-webkit-min-device-pixel-ratio:2){
+@media only screen
+and ( min-height: 600px )
+
+{
     img{
         width: 100%;
     }
