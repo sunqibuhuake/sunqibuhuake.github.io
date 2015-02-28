@@ -98,8 +98,8 @@ body {
 }
 
 #slide2{
-    background-color: #fbeec0;
-    color: #000000;
+    background-color: #e6af6e;
+    color: white;
     line-height: 1.5;
 }
 
@@ -193,7 +193,7 @@ audio{
     height: 30px;
 }
 #slide1{
-    color:black;
+    color:#5a5a5a;
 }
 
 #top1{
@@ -205,9 +205,6 @@ audio{
 .picbox{
     width: 100%;
 
-}
-.picbox img{
-    width: 100%;
 }
 
 

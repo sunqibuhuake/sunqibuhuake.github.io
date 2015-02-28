@@ -39,6 +39,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="app.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="111" column="23" selection-start="4021" selection-end="4021" vertical-scroll-proportion="-11.25" vertical-offset="1395" max-vertical-offset="2190">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="xbw.png" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/img/xbw.png">
           <provider selected="true" editor-type-id="images">
@@ -76,7 +85,7 @@
       <file leaf-file-name="global.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="25" selection-start="3220" selection-end="3220" vertical-scroll-proportion="0.6825397" vertical-offset="2943" max-vertical-offset="3510">
+            <state line="195" column="18" selection-start="2964" selection-end="2964" vertical-scroll-proportion="0.36044362" vertical-offset="2730" max-vertical-offset="3465">
               <folding />
             </state>
           </provider>
@@ -117,13 +126,14 @@
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/17-responsive.html" />
         <option value="$PROJECT_DIR$/js/animate.js" />
+        <option value="$PROJECT_DIR$/app.html" />
         <option value="$PROJECT_DIR$/css/global.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-28" />
-    <option name="y" value="22" />
+    <option name="x" value="-33" />
+    <option name="y" value="122" />
     <option name="width" value="1260" />
     <option name="height" value="713" />
   </component>
@@ -305,7 +315,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-28" y="22" width="1260" height="713" extended-state="0" />
+    <frame x="-33" y="122" width="1260" height="713" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -339,13 +349,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/animate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="23" selection-start="2351" selection-end="2351" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1185">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/animate.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="70" selection-start="231" selection-end="231" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165">
@@ -406,11 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/fc.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/xbw.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -430,9 +428,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/fc.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="23" selection-start="4021" selection-end="4021" vertical-scroll-proportion="-11.25" vertical-offset="1395" max-vertical-offset="2190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/global.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="25" selection-start="3220" selection-end="3220" vertical-scroll-proportion="0.6825397" vertical-offset="2943" max-vertical-offset="3510">
+        <state line="195" column="18" selection-start="2964" selection-end="2964" vertical-scroll-proportion="0.36044362" vertical-offset="2730" max-vertical-offset="3465">
           <folding />
         </state>
       </provider>
