@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="height:1500px"></div>
+<!-- ECharts单文件引入 -->
+<script src="../js/echart.js"></script>
+<script type="text/javascript">
+    // 路径配置
+    require.config({
+        paths: {
+            echarts: '.././dist'
+        }
+    });
+
+    // 使用
+    require(
+            [
+                'echarts',
+                'echarts/chart/bar' // 使用柱状图就加载bar模块，按需加载
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('main'));
+
+
+                var placeHoledStyle = {
+                    normal:{
+                        barBorderColor:'rgba(0,0,0,0)',
+                        color:'rgba(0,0,0,0)'
+                    },
+                    emphasis:{
+                        barBorderColor:'rgba(0,0,0,0)',
+                        color:'rgba(0,0,0,0)'
+                    }
+                };
+                var dataStyle = {
+                    normal: {
+                        label : {
+                            show: true,
+                            position: 'insideLeft',
+                            formatter: '{c}'
+                        }
+                    }
+                };
+                option = {
+                    title: {
+                        text: '全国各类高校地域分布',
+                        x: 'center',
+                        y:1,
+                        textStyle: {
+							fontFamily:"微软雅黑",
+                            fontSize:30
+                        }
+                    },
+                    tooltip : {
+                        trigger: 'axis',
+                        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                        },
+                        formatter : '{b}<br/>{a0}:{c0}<br/>{a2}:{c2}<br/>{a4}:{c4}'
+                    },
+                    legend: {
+                        y: 55,
+                        itemGap : document.getElementById('main').offsetWidth / 8,
+                        data:['全部高校', '本科高校','211高校']
+                    },
+
+                    grid: {
+                        y: 80,
+                        y2: 30
+                    },
+                    xAxis : [
+                        {
+                            type : 'value',
+                            position: 'top',
+                            splitLine: {show: false},
+                            axisLabel: {show: false}
+                        }
+                    ],
+                    yAxis : [
+                        {
+                            type : 'category',
+                            splitLine: {show: false},
+                            data : ["河北","山西","内蒙古","浙江","江西","河南","广西","海南","贵州","云南","西藏","甘肃","青海","宁夏","福建","重庆","新疆","吉林","安徽","山东","天津","辽宁","黑龙江","湖南","广东","四川","湖北","陕西","上海","江苏","北京"]
+
+                        }
+                    ],
+                    series : [
+                        {
+                            name:'全部高校',
+                            type:'bar',
+                            stack: '总量',
+                            itemStyle : dataStyle,
+                            data:[95,67,46,80,75,112,61,17,41,59,6,37,8,14,77,53,34,48,107,124,45,94,77,106,120,86,96,79,63,128,83]
+                        },
+                        {
+                            name:'全部高校',
+                            type:'bar',
+                            stack: '总量',
+                            itemStyle: placeHoledStyle,
+                            data:[35,63,84,50,55,18,69,113,89,71,124,93,122,116,53,77,96,82,23,6,85,36,53,24,10,44,34,51,67,2,47]
+                        },
+                        {
+                            name:'本科高校',
+                            type:'bar',
+                            stack: '总量',
+                            itemStyle : dataStyle,
+                            data:[37,19,13,33,24,39,22,6,17,22,3,15,3,6,23,17,13,28,33,49,19,45,34,31,40,34,40,42,31,46,57]
+                        },
+                        {
+                            name:'本科高校',
+                            type:'bar',
+                            stack: '总量',
+                            itemStyle: placeHoledStyle,
+                            data:[53,71,77,57,66,51,68,84,73,68,87,75,87,84,67,73,77,62,57,41,71,45,56,59,50,56,50,48,59,44,33]
+                        },
+                        {
+                            name:'211高校',
+                            type:'bar',
+                            stack: '总量',
+                            itemStyle : dataStyle,
+                            data:[1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,3,3,3,4,4,4,4,4,5,7,8,10,11,26]
+                        },
+                        {
+                            name:'211高校',
+                            type:'bar',
+                            stack: '总量',
+                            itemStyle: placeHoledStyle,
+                            data:[29,29,29,29,29,29,29,29,29,29,29,29,29,29,28,28,28,27,27,27,26,26,26,26,26,25,23,22,20,19,4]
+                        }
+
+                    ]
+                }
+
+
+
+                // 为echarts对象加载数据
+                myChart.setOption(option);
+            }
+    );
+</script>
+</body>
+</html>

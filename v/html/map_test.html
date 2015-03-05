@@ -1,0 +1,346 @@
+<!DOCTYPE html><head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <link href=".././css/custom.css" rel="stylesheet" >
+</head>
+        
+<style>
+            html,body{
+                width:100%;
+                height:100%
+            }
+            .container{
+                width: 100%;
+                height: 100%;
+            }
+            .left{
+                float: left;
+                width: 50%;
+                height:90%;
+            }
+            .center{
+                float: left;
+                width: 20%;
+                height:90%;
+            }
+            .right{
+                float: right;
+                width: 30%;
+                height:90%;
+            }
+            #div1, #div2,#div3 {
+                width: 80px;
+                height: 140px;
+                margin-top: 20px;
+                margin-left: 20px;;
+                box-sizing: border-box;
+
+            }
+            /*#div3{*/
+                /*width: 33%;*/
+                /*height: 400px;*/
+                /*margin-top: 70px;*/
+                /*box-sizing: border-box;*/
+                /*float: right;*/
+            /*}*/
+            #left{
+                box-sizing: border-box;
+
+                border-left:1px solid rgba(0,0,0,0.7);
+            }
+        </style>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div class="container">
+    <div class="left" id="main"></div>
+    <div class="center" id="left">
+
+            <div  id="div1"></div>
+            <div  id="div2"></div>
+            <div  id="div3"></div>
+
+
+    </div>
+    <div class="right"  style="font-family:'微软雅黑'; margin-top:80px;"><p style="color:#E9474A">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点击左侧省份出现各省高校比例</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由时间轴可知，1998年为“211”<br>工程立项高潮，立项学校高达25所；<br>既隶属于“211”工程也属于“985”<br>工程的高校均在1998年前加入“211”<br>工程；从2008年至今，未有高校加入<br>“211”工程。</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由全国高校分布图可得知，江苏、<br>广东、山东、安徽、河南为高校分布<br>较多的地区，数目均超过100所；北<br>京全部高校数目虽未上百，但本科高<br>校与“211”高校数目在全国都位列<br>第一。</p></div>
+</div>
+
+<!-- ECharts单文件引入 -->
+<script src=".././dist/echarts.js"></script>
+
+
+<script type="text/javascript" src=".././js/d3.min.js"></script>
+<script type="text/javascript" src=".././js/radialProgress.js"></script>
+<script src=".././js/my_map.js"></script>
+
+
+
+<script type="text/javascript" >
+// 路径配置
+require.config({
+    paths: {
+        echarts: '.././dist'
+    }
+});
+
+// 使用
+require(
+        [
+            'echarts',
+            'echarts/chart/map' // 使用柱状图就加载bar模块，按需加载
+        ],
+        function (ec) {
+            // 基于准备好的dom，初始化echarts图表
+            var myChart = ec.init(document.getElementById('main'));
+            var dataRangeStyle=[
+                {
+                    min: 0,
+                    max: 130,
+                    x: 'left',
+                    y: 'bottom',
+                    color:['#ff4500','#f0ffff'],
+                    text:['高','低'],           // 文本，默认为数值文本
+                    calculable : true
+                },
+                {
+                    min: 0,
+                    max: 60,
+                    x: 'left',
+                    y: 'bottom',
+                    color:['#1e90ff','#f0ffff'],
+                    text:['高','低'],           // 文本，默认为数值文本
+                    calculable : true
+                },
+                {
+                    min: 0,
+                    max: 30,
+                    x: 'left',
+                    y: 'bottom',
+                    color:['#c71585','#f0ffff'],
+                    text:['高','低'],           // 文本，默认为数值文本
+                    calculable : true
+                }
+
+            ]
+            var a=0;
+
+            var option = {
+                title : {
+                    text: '全国高校分布',
+                    x:'center',
+                    textStyle:{
+                        fontSize: 26
+                    }
+                },
+                tooltip : {
+                    trigger: 'item'
+                },
+                legend: {
+                    orient: 'vertical',
+                    x:'left',
+                    data:['全部高校','本科高校','211高校'],
+                    selectedMode:"single",
+                    selected:{
+                        "本科高校":false,
+                        "211高校":false
+                    }
+                },
+
+                dataRange: dataRangeStyle[a],
+                toolbox: {
+                    show: false,
+                    orient : 'vertical',
+                    x: 'right',
+                    y: 'center',
+                    feature : {
+                        mark : {show: true},
+                        dataView : {show: true, readOnly: false},
+                        restore : {show: true},
+                        saveAsImage : {show: true}
+                    }
+                },
+//                roamController: {
+//                    show: true,
+//                    x: 'right',
+//                    mapTypeControl: {
+//                        'china': true
+//                    }
+//                },
+                series : [
+                    {
+                        name: '全部高校',
+                        type: 'map',
+                        mapType: 'china',
+                        roam: false,
+                        selectedMode:'single',
+                        itemStyle:{
+                            normal:{label:{show:true}},
+                            emphasis:{label:{show:true}}
+                        },
+                        data:[{"name":"北京","value":83},
+                            {"name":"天津","value":45},
+                            {"name":"河北","value":95},
+                            {"name":"山西","value":67},
+                            {"name":"内蒙古","value":46},
+                            {"name":"辽宁","value":94},
+                            {"name":"吉林","value":48},
+                            {"name":"黑龙江","value":77},
+                            {"name":"上海","value":63},
+                            {"name":"江苏","value":128},
+                            {"name":"浙江","value":80},
+                            {"name":"安徽","value":107},
+                            {"name":"福建","value":77},
+                            {"name":"江西","value":75},
+                            {"name":"山东","value":124},
+                            {"name":"河南","value":112},
+                            {"name":"湖北","value":96},
+                            {"name":"湖南","value":106},
+                            {"name":"广东","value":120},
+                            {"name":"广西","value":61},
+                            {"name":"海南","value":17},
+                            {"name":"重庆","value":53},
+                            {"name":"四川","value":86},
+                            {"name":"贵州","value":41},
+                            {"name":"云南","value":59},
+                            {"name":"陕西","value":79},
+                            {"name":"西藏","value":6},
+                            {"name":"甘肃","value":37},
+                            {"name":"青海","value":8},
+                            {"name":"宁夏","value":14},
+                            {"name":"新疆","value":34}]
+                    },
+                    {
+                        name: '本科高校',
+                        type: 'map',
+                        mapType: 'china',
+                        selectedMode:'single',
+
+                        itemStyle:{
+                            normal:{label:{show:true}},
+                            emphasis:{label:{show:true}}
+                        },
+                        data:[{"name":"北京","value":57},
+                            {"name":"天津","value":19},
+                            {"name":"河北","value":37},
+                            {"name":"山西","value":19},
+                            {"name":"内蒙古","value":13},
+                            {"name":"辽宁","value":45},
+                            {"name":"吉林","value":28},
+                            {"name":"黑龙江","value":34},
+                            {"name":"上海","value":31},
+                            {"name":"江苏","value":46},
+                            {"name":"浙江","value":33},
+                            {"name":"安徽","value":33},
+                            {"name":"福建","value":23},
+                            {"name":"江西","value":24},
+                            {"name":"山东","value":49},
+                            {"name":"河南","value":39},
+                            {"name":"湖北","value":40},
+                            {"name":"湖南","value":31},
+                            {"name":"广东","value":40},
+                            {"name":"广西","value":22},
+                            {"name":"海南","value":6},
+                            {"name":"重庆","value":17},
+                            {"name":"四川","value":34},
+                            {"name":"贵州","value":17},
+                            {"name":"云南","value":22},
+                            {"name":"陕西","value":42},
+                            {"name":"西藏","value":3},
+                            {"name":"甘肃","value":15},
+                            {"name":"青海","value":3},
+                            {"name":"宁夏","value":6},
+                            {"name":"新疆","value":13}]
+                    },
+                    {
+                        name: '211高校',
+                        type: 'map',
+                        mapType: 'china',
+                        selectedMode:'single',
+
+                        itemStyle:{
+                            normal:{label:{show:true}},
+                            emphasis:{label:{show:true}}
+                        },
+                        data:[{"name":"北京","value":26},
+                            {"name":"天津","value":4},
+                            {"name":"河北","value":1},
+                            {"name":"山西","value":1},
+                            {"name":"内蒙古","value":1},
+                            {"name":"辽宁","value":4},
+                            {"name":"吉林","value":3},
+                            {"name":"黑龙江","value":4},
+                            {"name":"上海","value":10},
+                            {"name":"江苏","value":11},
+                            {"name":"浙江","value":1},
+                            {"name":"安徽","value":3},
+                            {"name":"福建","value":2},
+                            {"name":"江西","value":1},
+                            {"name":"山东","value":3},
+                            {"name":"河南","value":1},
+                            {"name":"湖北","value":7},
+                            {"name":"湖南","value":4},
+                            {"name":"广东","value":4},
+                            {"name":"广西","value":1},
+                            {"name":"海南","value":1},
+                            {"name":"重庆","value":2},
+                            {"name":"四川","value":5},
+                            {"name":"贵州","value":1},
+                            {"name":"云南","value":1},
+                            {"name":"陕西","value":8},
+                            {"name":"西藏","value":1},
+                            {"name":"甘肃","value":1},
+                            {"name":"青海","value":1},
+                            {"name":"宁夏","value":1},
+                            {"name":"新疆","value":2}]
+                    }
+                ]
+            };
+
+
+
+            myChart.setOption(option);
+
+
+            //========================================以下是孙琦加上的
+            var ecConfig = require('echarts/config');
+            myChart.on(ecConfig.EVENT.LEGEND_SELECTED, function (param){
+                var selected = param.selected;
+                if(selected['211高校']){
+                    myChart.setOption({dataRange:dataRangeStyle[2]});
+                }
+                if(selected['本科高校']){
+                    myChart.setOption({dataRange:dataRangeStyle[1]});
+                }
+                if(selected['全部高校']){
+                    myChart.setOption({dataRange:dataRangeStyle[0]});
+                }
+
+            });
+            var ecConfig = require('echarts/config');
+            myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param){
+                var selected=param.selected;
+                var mapSeries=option.series[0];
+                var data= [];
+                var legendData= [];
+                var name;
+                for (var p=0,len=mapSeries.data.length; p<len; p++) {
+                    name=mapSeries.data[p].name;
+                    mapSeries.data[p].selected=selected[name];
+                    if (selected[name]) {
+                        console.log(name);
+                        uclickme(name);
+
+
+                    }
+                }
+
+
+            })
+
+            //========================================以上是孙琦加上的
+
+        }
+);
+</script>
+
+</body>
+</html>

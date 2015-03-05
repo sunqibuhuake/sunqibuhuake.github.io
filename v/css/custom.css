@@ -1,0 +1,55 @@
+
+#outer {
+    background:#FFFFFF;
+    border-radius: 5px;
+    color: #000;
+}
+
+#div1, #div2, #div3, #div4 {
+
+    height: 200px;
+    box-sizing: border-box;
+
+}
+
+#div1 .arc {
+    stroke-weight: 0.1;
+    fill: #f0a417;
+}
+
+#div2 .arc {
+    stroke-weight: 0.1;
+    fill: #b00d08;
+}
+
+#div3 .arc {
+    stroke-weight: 0.1;
+    fill: #1d871b;
+}
+
+.component .label{
+    font-size: 15px;
+}
+.component{
+    fill:#e1e1e1;
+}
+.radial {
+    border-radius: 3px;
+    background: #FFFFFF;
+    color: #000;
+
+}
+
+.background {
+    fill: #FFFFFF;
+    fill-opacity: 0.01;
+}
+.label {
+    font-family: Myriad, "Helvetic Neue", Helvetica, Arial;
+    text-anchor: middle;
+}
+.component .label {
+    font-family: Myriad, "Helvetic Neue", Helvetica, Arial;
+    text-anchor: middle;
+    fill: #0000FF;
+}

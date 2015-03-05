@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<settings
+
+autoRotate="1"
+autoRotateSpeed="4"
+
+useSubtitle="0"
+useTooltip="1"
+useSecondCaption="1"
+
+spanX="400" 
+spanY="40"
+centerX="500" 
+centerY="300"
+
+distanceValue="0" 
+perspectiveRatio="0.5"
+minimumscale=".1" 
+turningspeed="4" 
+rotationKind="1" 
+
+useFocalBlur="1" 
+focalBlurValue=".6" 
+useMotionBlur="1" 
+motionBlurValue=".25" 
+useFadeOnMouseOver="1"
+mouseOverAlphaValue=".5"  
+useReflection="1" 
+reflectionAlphaValue=".5"
+/>
+
+<photos>
+	<photo imageURL="images/01.jpg" linkData="http://www.nifengla.com" linkType="URL" linkTarget="_blank" captionText="01" captionText2="nifengla.com" enableButtonWhenInFront="1" />
+	<photo imageURL="images/02.jpg" linkData="http://www.nifengla.com" linkType="URL" linkTarget="_blank" captionText="01" captionText2="nifengla.com" enableButtonWhenInFront="1" />
+	<photo imageURL="images/03.jpg" linkData="http://www.nifengla.com" linkType="URL" linkTarget="_blank" captionText="01" captionText2="nifengla.com" enableButtonWhenInFront="1" />
+	<photo imageURL="images/04.jpg" linkData="http://www.nifengla.com" linkType="URL" linkTarget="_blank" captionText="01" captionText2="nifengla.com" enableButtonWhenInFront="1" />
+	<photo imageURL="images/05.jpg" linkData="http://www.nifengla.com" linkType="URL" linkTarget="_blank" captionText="01" captionText2="nifengla.com" enableButtonWhenInFront="1" />
+	<photo imageURL="images/06.jpg" linkData="http://www.nifengla.com" linkType="URL" linkTarget="_blank" captionText="01" captionText2="nifengla.com" enableButtonWhenInFront="1" />
+</photos>

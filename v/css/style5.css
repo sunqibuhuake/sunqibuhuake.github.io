@@ -1,0 +1,88 @@
+/* CSS Document */
+.wrap a {color:#000;}
+img {vertical-align:top;}
+.header {width:100%;height:140px;background:url(http://imgedu.gmw.cn/24631.files/images/fuyun.png) 0 0 repeat;}
+.headbox,.area {width:1000px;margin:0 auto;}
+.area {margin-bottom:30px;}
+.logo {float:left;padding-top:15px;}
+.nav {float:right;padding-top:60px;font-size:18px;}
+.nav a {background:url(http://imgedu.gmw.cn/24631.files/images/nav_ico.png) 0 center no-repeat;padding-left:15px;margin-right:30px;}
+.headlines {width:100%;height:300px;background:#f0f0f0;margin-bottom:30px;}
+.left_area {float:left;width:400px;}
+.rig_area {float:right;width:555px;}
+.hl {overflow:hidden;zoom:1;padding-top:30px;}
+.hl h1 {float:left;font-size:34px;padding-bottom:20px;color:#000;}
+.hl h1 a,.hl h1 a:hover {text-decoration:none;}
+.source {float:left;width:110px;font-size:14px;padding:72px 0 0 10px;}
+.source i {display:inline-block;width:7px;height:7px;}
+.source .time_l {background:url(http://imgedu.gmw.cn/24631.files/images/ico_l.png) 0 center no-repeat;}
+.source .time_r {background:url(http://imgedu.gmw.cn/24631.files/images/ico_r.png) 0 center no-repeat;}
+.fc {zoom:1;}
+.fc:after{content:"";display:block;clear:both;}
+.abstract {color:#666;font-size:14px;line-height:28px;border-bottom:1px dotted #ddd;padding-bottom:10px;margin-bottom:10px;}
+.anchor {float:left;width:400px;}
+.fc .btn {float:right;background:url(http://imgedu.gmw.cn/24631.files/images/btn_bg.png) 0 0 no-repeat;width:120px;height:40px;line-height:40px;margin-top:30px;color:#fff;text-align:center;text-decoration:none;}
+
+/* 交锋 */
+.hd {margin-bottom:20px;}
+.w460 {float:left;width:460px;}
+.view_l {padding-right:40px;background:url(http://imgedu.gmw.cn/24631.files/images/ico_gray.png) right 0 repeat-y;}
+.imgbox {overflow:hidden;zoom:1;}
+.imgbox img {float:left;margin-right:20px;}
+.info {float:left;width:320px;}
+.imgbox h3 {font-size:24px;padding-bottom:10px;}
+.info p {background:url(http://imgedu.gmw.cn/24631.files/images/quotes_s.png) 0 0 no-repeat;width:310px;height:80px;color:#666;font-size:12px;line-height:24px;text-indent:4em;}
+.info p a {color:#ed3d21;}
+.tit {background:url(http://imgedu.gmw.cn/24631.files/images/twr_ico.png) 0 0 repeat;margin-top:20px;width:460px;height:36px;line-height:36px;text-align:center;margin-bottom:10px;}
+.cont {background:url(http://imgedu.gmw.cn/24631.files/images/quotes.png) 0 0 no-repeat;width:460px;height:115px;font-size:12px;line-height:28px;color:#666;text-indent:4em;}
+.view_r {padding-left:40px;}
+.view_r .imgbox img {margin:0 0 0 20px;}
+.view_r .info p a {color:#02b5fb;}
+.view_r .tit {background-image:url(http://imgedu.gmw.cn/24631.files/images/twb_ico.png);}
+
+/* 投票 */
+.votebox {background:url(http://imgedu.gmw.cn/24631.files/images/wallbg.png) 0 0 repeat;height:108px;padding-top:16px;}
+.vote_all {background:url(http://imgedu.gmw.cn/24631.files/images/votebg.png) center 0 no-repeat;width:480px;margin:0 auto;height:85px;position:relative;}
+.affbox {float:left;}
+.negbox {float:right;}
+.aff {float:left;padding:5px 0 0 5px;}
+.vote {float:left;padding:32px 0 0 10px;width:300px;height:20px;}
+.aff_nums {position:absolute;top:60px;left:90px;font-weight: 700;color: #e03c16;width:150px;text-align:left;}
+.neg_nums {position:absolute;top:60px;left:240px;font-weight: 700;color: #02b5fb;width:150px;text-align:right;}
+.support {float:left;background:#e03c16;height:20px;color:#fff;text-align:center;width:50%;}
+.unsupport {float:right;background:#02b5fb;height:20px;color:#fff;text-align:center;width:50%;}
+.neg {float:right;padding:5px 5px 0 0;}
+
+/* 助阵 */
+.w460 li {list-style:none;border-bottom:1px solid #ccc;padding-bottom:15px;margin-top:15px;}
+.w460 li .pic {float:left;width:120px;margin-right:30px;}
+.w460 li .pic p {width:120px;height:30px;line-height:30px;background:#e5e5e5;margin-top:1px;font-size:14px;text-align:center;font-weight:700;}
+.w460 li h3 {font-size:18px;padding-bottom:10px;}
+.w460 li p {font-size:12px;line-height:24px;color:#666;}
+.bor {border-right:1px solid #ccc;padding-right:38px;margin-right:38px;}
+.nobor {border:none!important;}
+
+/* 灌水 */
+.waterfront {padding:0 15px;}
+.waterfront .w460 {width:410px;border:1px solid #ccc;padding:25px;color:#666;}
+.waterfront .imgbox {border-bottom:1px dotted #ccc;padding-bottom:15px;margin-top:15px;}
+.waterfront .imgbox img {margin-right:10px;}
+.waterfront .imgbox h3 {font-weight:400;font-size:14px;}
+.waterfront .imgbox h3 a {color:#0d7fbe;}
+.waterfront .imgbox h3 span {color:#999;padding-left:10px;}
+.waterfront .imgbox p {font-size:12px;line-height:24px;}
+.pr40 {margin-right:40px;}
+#scrollDiv01,#scrollDiv02 {height:335px;overflow:hidden;}
+
+.fix_menu{display:none;position:fixed;z-index:10;bottom:105px;padding:10px 0 0 0;left:49%;margin-left:540px;width:25px;}
+.fx {width:85px;overflow:hidden;zoom:1;padding-left: 2px;}
+.fix_menu a{display:block}
+.fix_menu{_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-505))}
+.bshare-custom{ float:right;width:20px;}
+.bshare-custom a{ display:block; margin:5px 0;}
+
+
+
+
+
+

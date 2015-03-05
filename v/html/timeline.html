@@ -1,0 +1,597 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jQuery时间轴插件Timelinr</title>
+
+
+    <style type="text/css">
+        *{margin:0;padding:0;list-style-type:none;}
+        a,img{border:0;text-decoration:none;color:#3366cc;}
+        body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+
+        /* timeline */
+        #timeline{width:1300px;height:1100px;overflow:hidden;margin:100px auto;position:relative;background:url(../images/dot.gif) left 45px repeat-x;}
+        #dates{width:1300px;height:60px;overflow:hidden;}
+        #dates li{list-style:none;float:left;width:100px;height:50px;font-size:24px;text-align:center;background:url(../images/biggerdot.png) center bottom no-repeat;}
+        #dates a{line-height:38px;padding-bottom:10px;}
+        #dates .selected{font-size:38px;color:orangered}
+        #issues{width:1300px;height:1100px;overflow:hidden;}
+        #issues li{width:1300px;height:1100px;list-style:none;float:left;}
+        /*#issues li h2{color:#ffcc00;font-size:42px;margin:20px 0;text-shadow:#000 1px 1px 2px;}
+        #issues li p{font-size:14px;margin-right:70px; margin:10px; font-weight:normal;line-height:22px;}*/
+    </style>
+
+    <style type="text/css">
+        .tip{position:relative;float:left;width:200px;height:200px;overflow:hidden;}
+        .tip a{overflow:hidden;position:absolute;left:0px;top:0px;line-height:30px;text-align:center;display:block;color:#FFF;width:100%;height:200px; background:rgba(0, 0, 0, 0.5) }
+        .tip a:hover{color:#FFF;text-decoration:none;}
+        a {outline-style:none;color:#535353;text-decoration:none}
+        a:hover{color:#D40000;text-decoration:none}
+        p{font-size: 15px;position: relative;top: 40px}
+    </style>
+
+
+
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.timelinr-0.9.53.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#timeline").timelinr({
+                autoPlay: 'false',
+                autoPlayDirection: 'forward',
+                startAt: 1  /*  默认显示第几个 */
+            })
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.tip').each(function(m) {
+                $(this).find('a').css('top', -$(this).height());
+                $(this).hover(function() {
+                            $(this).find('a').animate({
+                                        'top': '0'
+                                    },
+                                    200)
+                        },
+                        function() {
+                            $(this).find('a').animate({
+                                        'top': $(this).height()
+                                    },
+                                    {
+                                        duration: 200,
+                                        complete: function() {
+                                            $(this).css('top', -$(this).parent('.tip').height())
+                                        }
+                                    })
+                        })
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div>
+<div class="title" style="font-family: '微软雅黑'; font-size: xx-large; text-align: center; margin-top: 100px; ">
+211高校立项时间轴
+</div>
+<div class="remind" style="font-family: '微软雅黑'; font-size: medium; text-align: right; float: right; margin-top:50px; margin-bottom:20px; margin-right:20px;">
+★为“985”工程学校<br />
+▲为“211”工程学校<br />
+注：所有“985”高校均属“211”高校之列
+</div>
+
+<div id="timeline">
+
+    <ul id="dates">
+        <li><a href="#1995">1995</a></li>
+        <li><a href="#1996">1996</a></li>
+        <li><a href="#1997">1997</a></li>
+        <li><a href="#1998">1998</a></li>
+        <li><a href="#1999">1999</a></li>
+        <li><a href="#2001">2001</a></li>
+        <li><a href="#2004">2004</a></li>
+        <li><a href="#2005">2005</a></li>
+        <li><a href="#2006">2006</a></li>
+        <li><a href="#2008">2008</a></li>
+    </ul>
+    <ul id="issues">
+        <li id="1995">
+            <div class="tip">
+                <img src="../logo/PKU.png" alt="PKU" width="200" height="200" />
+                <a href="#"><p>北京大学★<br/>学校类型：综合类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/THU.png" alt="THU" width="200" height="200"/>
+                <a href="#"><p>清华大学★<br/>学校类型：理工类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/BUAA.png" alt="BUAA" width="200" height="200"/>
+                <a href="#"><p>北京航空航天大学★<br/>学校类型：理工类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/BIT.png" alt="BIT"  width="200" height="200"/>
+                <a href="#"><p>北京理工大学★<br/>学校类型：理工类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/CAU.png" alt="CAU" width="200" height="200"/>
+                <a href="#"><p>中国农业大学★<br/>学校类型：农林类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/FDU.png" alt="FDU" width="200" height="200"/>
+                <a href="#"><p>复旦大学★<br/>学校类型：综合类<br/>所在地区：上海</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/NJU.png" alt="NJU" width="200" height="200"/>
+                <a href="#"><p>南京大学★<br/>学校类型：综合类<br/>所在地区：江苏南京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/TIANJINU.png" alt="TIANJINU" width="200" height="200"/>
+                <a href="#"><p>天津大学★<br/>学校类型：理工类<br/>所在地区：天津</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/NKU.png" alt="NKU" width="200" height="200"/>
+                <a href="#"><p>南开大学★<br/>学校类型：综合类<br/>所在地区：天津</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/浙江大学.png" alt="浙江大学" width="200" height="200"/>
+                <a href="#"><p>浙江大学★<br/>学校类型：综合类<br/>所在地区：浙江杭州</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/中国科学技术大学.png" alt="中国科学技术大学" width="200" height="200"/>
+                <a href="#"><p>中国科学技术大学★<br/>学校类型：理工类<br/>所在地区：安徽合肥</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/HIT.png" alt="HIT" width="200" height="200"/>
+                <a href="#"><p>哈尔滨工业大学★<br/>学校类型：理工类<br/>所在地区：黑龙江哈尔滨</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/SJTU.png" alt="SJTU" width="200" height="200"/>
+                <a href="#"><p>上海交通大学★<br/>学校类型：综合类<br/>所在地区：上海</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/西北工业大学.png" alt="西北工业大学" width="200" height="200"/>
+                <a href="#"><p>西北工业大学★<br/>学校类型：理工类<br/>所在地区：陕西西安</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/西安交通大学.png" alt="西安交通大学" width="200" height="200"/>
+                <a href="#"><p>西安交通大学★<br/>学校类型：综合类<br/>所在地区：陕西西安</p></a>
+            </div>
+        </li>
+        <li id="1996">
+            <div class="tip">
+                <img src="../logo/RUC.png" alt="RUC" width="200" height="200"/>
+                <a href="#"><p>中国人民大学★<br/>学校类型：综合类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/BNU.png" alt="BNU" width="200" height="200"/>
+                <a href="#"><p>北京师范大学★<br/>学校类型：师范类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/中山大学.png" alt="中山大学" width="200" height="200"/>
+                <a href="#"><p>中山大学★<br/>学校类型：综合类<br/>所在地区：广东广州</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/HEU.png" alt="HEU" width="200" height="200"/>
+                <a href="#"><p>哈尔滨工程大学★<br/>学校类型：理工类<br/>所在地区：黑龙江哈尔滨</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/武汉大学.png" alt="武汉大学" width="200" height="200"/>
+                <a href="#"><p>武汉大学★<br/>学校类型：综合类<br/>所在地区：湖北武汉</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/华中科技大学.png" alt="华中科技大学" width="200" height="200"/>
+                <a href="#"><p>华中科技大学★<br/>学校类型：理工类<br/>所在地区：湖北武汉</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/中南大学.png" alt="中南大学" width="200" height="200"/>
+                <a href="#"><p>中南大学★<br/>学校类型：综合类<br/>所在地区：湖南长沙</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/国防科技大学.png" alt="国防科技大学" width="200" height="200"/>
+                <a href="#"><p>国防科技大学★<br/>学校类型：军事类<br/>所在地区：湖南长沙</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/JLU.png" alt="JLU" width="200" height="200"/>
+                <a href="#"><p>吉林大学★<br/>学校类型：综合类<br/>所在地区：吉林长春</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/东南大学.png" alt="东南大学" width="200" height="200"/>
+                <a href="#"><p>东南大学★<br/>学校类型：综合类<br/>所在地区：江苏南京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/TJU.png" alt="同济大学" width="200" height="200"/>
+                <a href="#"><p>同济大学★<br/>学校类型：理工类<br/>所在地区：上海</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/DUT.png" alt="DUT" width="200" height="200"/>
+                <a href="#"><p>大连理工大学★<br/>学校类型：理工类<br/>所在地区：辽宁大连</p></a>
+            </div>
+
+        </li>
+        <li id="1997">
+            <div class="tip">
+                <img src="../logo/SUFE.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>上海财经大学▲<br/>学校类型：财经类<br/>所在地区：上海</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/云南大学.png" alt="云南大学" width="200" height="200"/>
+                <a href="#"><p>云南大学▲<br/>学校类型：综合类<br/>所在地区：云南昆明</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/CUMT.png" alt="CUMT" width="200" height="200"/>
+                <a href="#"><p>中国矿业大学（北京）▲<br/>学校类型：理工类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/河海大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>河海大学▲<br/>学校类型：理工类<br/>所在地区：江苏南京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/USTB.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>北京科技大学▲<br/>学校类型：理工类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/BFSU.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>北京外国语大学▲<br/>学校类型：语言类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/CUG.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>中国地质大学(北京）▲<br/>学校类型：理工类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/CUP.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>中国石油大学（北京）▲<br/>学校类型：理工类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/厦门大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>厦门大学★<br/>学校类型：综合类<br/>所在地区：福建厦门</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/兰州大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>兰州大学★<br/>学校类型：综合类<br/>所在地区：甘肃兰州</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/华南理工大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>华南理工大学★<br/>学校类型：理工类<br/>所在地区：广东广州</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/湖南大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>湖南大学★<br/>学校类型：综合类<br/>所在地区：湖南长沙</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/南京航空航天大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>南京航天航空大学▲<br/>学校类型：理工类<br/>所在地区：江苏南京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/南京理工大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>南京理工大学▲<br/>学校类型：理工类<br/>所在地区：江苏南京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/NEU.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>东北大学★<br/>学校类型：综合类<br/>所在地区：辽宁沈阳</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/山东大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>山东大学★<br/>学校类型：综合类<br/>所在地区：山东济南</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/西安电子科技大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>西安电子科技大学▲<br/>学校类型：理工类<br/>所在地区：陕西西安</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/ECNU.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>华东师范大学★<br/>学校类型：师范类<br/>所在地区：上海</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/四川大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>四川大学★<br/>学校类型：综合类<br/>所在地区：四川成都</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/电子科技大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>电子科技大学★<br/>学校类型：理工类<br/>所在地区：四川成都</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/CQU.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>重庆大学★<br/>学校类型：综合类<br/>所在地区：重庆</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/南昌大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>南昌大学▲<br/>学校类型：综合类<br/>所在地区：江西南昌</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/IMU.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>内蒙古大学▲<br/>学校类型：综合类<br/>所在地区：内蒙古呼和浩特</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/新疆大学.png" alt="SUFE" width="200" height="200"/>
+                <a href="#"><p>新疆大学▲<br/>学校类型：综合类<br/>所在地区：新疆乌鲁木齐</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/中国地质大学武汉.png" alt="" width="200" height="200"/>
+                <a href="#"><p>中国地质大学（武汉）▲<br/>学校类型：理工类<br/>所在地区：湖北武汉</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/中国石油大学华东.png" alt="PKU" width="200" height="200" />
+                <a href="#"><p>中国石油大学（华东）▲<br/>学校类型：理工类<br/>所在地区：山东青岛</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/中国矿业大学徐州.png" alt="PKU" width="200" height="200" />
+                <a href="#"><p>中国矿业大学（徐州）▲<br/>学校类型：理工类<br/>所在地区：江苏徐州</p></a>
+            </div>
+
+        </li>
+        <li id="1998">
+            <div class="tip">
+                <img src="../logo/MUC.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>中央民族大学★<br/>学校类型：综合类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/BJTU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>北京交通大学▲<br/>学校类型：理工类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/BUPT.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>北京邮电大学▲<br/>学校类型：理工类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/UIBE.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>对外经济贸易大学▲<br/>学校类型：财经类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/BFU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>北京林业大学▲<br/>学校类型：农林类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/BUCT.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>北京化工大学▲<br/>学校类型： 理工类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/BUCM.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>北京中医药大学▲<br/>学校类型：医药类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/CCM.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>中央音乐学院▲<br/>学校类型：艺术类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/NENU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>东北师范大学▲<br/>学校类型：师范类<br/>所在地区：吉林长春</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/江南大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>江南大学▲<br/>学校类型：综合类<br/>所在地区：江苏无锡</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/中国药科大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>中国药科大学▲<br/>学校类型：医药类<br/>所在地区：江苏南京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/南京农业大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>南京农业大学▲<br/>学校类型：农林类<br/>所在地区：江苏南京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/LNU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>辽宁大学▲<br/>学校类型：综合类<br/>所在地区：辽宁沈阳</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/DMU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>大连海事大学▲<br/>学校类型：理工类<br/>所在地区：辽宁大连</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/中国海洋大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>中国海洋大学▲<br/>学校类型：综合类<br/>所在地区：山东青岛</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/TUT.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>太原理工大学▲<br/>学校类型：理工类<br/>所在地区：山西太原</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/第四军医大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>第四军医大学▲<br/>学校类型：军事类<br/>所在地区：陕西西安</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/长安大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>长安大学▲<br/>学校类型：理工类<br/>所在地区：陕西西安</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/ECUST.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>华东理工大学▲<br/>学校类型：理工类<br/>所在地区：上海</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/SISU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>上海外国语大学▲<br/>学校类型：语言类<br/>所在地区：上海</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/DHU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>东华大学▲<br/>学校类型：理工类<br/>所在地区：上海</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/第二军医大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>第二军医大学▲<br/>学校类型：军事类<br/>所在地区：上海</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/西南交通大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>西南交通大学▲<br/>学校类型：理工类<br/>所在地区：四川成都</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/西南财经大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>西南财经大学▲<br/>学校类型：财经类<br/>所在地区：四川成都</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/四川农业大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>四川农业大学▲<br/>学校类型：农林类<br/>所在地区：四川雅安</p></a>
+            </div>
+
+        </li>
+        <li id="1999">
+            <div class="tip">
+                <img src="../logo/HEBUT.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>河北工业大学▲<br/>学校类型：理工类<br/>所在地区：天津</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/安徽大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>安徽大学▲<br/>学校类型：综合类<br/>所在地区：安徽合肥</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/BJUT.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>北京工业大学▲<br/>学校类型：理工类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/广西大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>广西大学▲<br/>学校类型：综合类<br/>所在地区：广西南宁</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/郑州大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>郑州大学▲<br/>学校类型：综合类<br/>所在地区：河南郑州</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/NEAU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>东北农业大学▲<br/>学校类型：农林类<br/>所在地区：黑龙江哈尔滨</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/湖南师范大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>湖南师范大学▲<br/>学校类型：师范类<br/>所在地区：湖南长沙</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/西北大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>西北大学▲<br/>学校类型：综合类<br/>所在地区：陕西西安</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/南京师范大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>南京师范大学▲<br/>学校类型：师范类<br/>所在地区：江苏南京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/福州大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>福州大学▲<br/>学校类型：理工类<br/>所在地区：福建福州</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/SCU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>苏州大学▲<br/>学校类型：综合类<br/>所在地区：江苏苏州</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/TMU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>天津医科大学▲<br/>学校类型：医药类<br/>所在地区：天津</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/暨南大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>暨南大学▲<br/>学校类型：综合类<br/>所在地区：广东广州</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/华南师范大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>华南师范大学▲<br/>学校类型：师范类<br/>所在地区：广东广州</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/YBU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>延边大学▲<br/>学校类型：综合类<br/>所在地区：吉林延吉</p></a>
+            </div>
+
+        </li>
+        <li id="2001">
+            <div class="tip">
+                <img src="../logo/武汉理工大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>武汉理工大学▲<br/>学校类型：理工类<br/>所在地区：湖北武汉</p></a>
+            </div>
+
+
+        </li>
+        <li id="2004">
+            <div class="tip">
+                <img src="../logo/CUC.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>中国传媒大学▲<br/>学校类型：艺术类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/SHU.png" alt="MUC" width="206" height="206"/>
+                <a href="#"><p>上海大学▲<br/>学校类型：综合类<br/>所在地区：上海</p></a>
+            </div>
+
+
+        </li>
+        <li id="2005">
+            <div class="tip">
+                <img src="../logo/NEFU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>东北农业大学▲<br/>学校类型：农林类<br/>所在地区：黑龙江哈尔滨</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/合肥工业大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>合肥工业大学▲<br/>学校类型：理工类<br/>所在地区：安徽合肥</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/CUPL.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>中国政法大学▲<br/>学校类型：政法类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/CUFE.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>中央财经大学▲<br/>学校类型：财经类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/NCEPU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>华北电力大学▲<br/>学校类型：理工类<br/>所在地区：北京</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/贵州大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>贵州大学▲<br/>学校类型：综合类<br/>所在地区：贵州</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/中南财经政法大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>中南财经政法大学▲<br/>学校类型 财经类<br/>所在地区：湖北武汉</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/西南大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>西南大学▲<br/>学校类型：综合类<br/>所在地区：重庆</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/华中师范大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>华中师范大学▲<br/>学校类型：师范类<br/>所在地区：湖北武汉</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/华中农业大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>华中农业大学▲<br/>学校类型：农林类<br/>所在地区：湖北武汉</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/西北农业科技大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>西北农业科技大学★<br/>学校类型：农林类<br/>所在地区：陕西杨凌</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/陕西师范大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>陕西师范大学▲<br/>学校类型：师范类<br/>所在地区：陕西西安</p></a>
+            </div>
+
+        </li>
+        <li id="2006">
+            <div class="tip">
+                <img src="../logo/BSU.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>北京体育大学▲<br/>学校类型：体育类<br/>所在地区：北京</p></a>
+            </div>
+
+        </li>
+        <li id="2008">
+            <div class="tip">
+                <img src="../logo/宁夏大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>宁夏大学▲<br/>学校类型：综合类<br/>所在地区：宁夏银川</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/青海大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>青海大学▲<br/>学校类型：综合类<br/>所在地区：青海西宁</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/海南大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>海南大学▲<br/>学校类型：综合类<br/>所在地区：海南海口</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/西藏大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>西藏大学▲<br/>学校类型：综合类<br/>所在地区：西藏拉萨</p></a>
+            </div>
+            <div class="tip">
+                <img src="../logo/石河子大学.png" alt="MUC" width="200" height="200"/>
+                <a href="#"><p>石河子大学▲<br/>学校类型：综合类<br/>所在地区：新疆石河子</p></a>
+            </div>
+
+        </li>
+    </ul>
+</div>
+</div>
+
+</body>
+</html>
