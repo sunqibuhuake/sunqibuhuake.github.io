@@ -162,6 +162,7 @@ body {
 }
 #tree,#gear,#flag,#man,#tree2,#chart{
     width: 70px;
+    height: 70px;
 }
 .t{
     width: 95%;
