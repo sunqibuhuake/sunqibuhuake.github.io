@@ -8,7 +8,7 @@ var mapnow='';
 var visited=[];
 window.onload=function(){
     $(function(){
-        $('.loading').animo({animation:'fadeOut'},function(){
+        $('.loading').animo({animation:'fadeOutUpBig'},function(){
             $('.loading').css('display','none');
             var h2=$('#tam1').height()+50;
             var h2=h2+'px';
