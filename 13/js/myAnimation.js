@@ -141,16 +141,20 @@ function anima(i){
 
 
         xianshi('#guoqi');
-        $('#guoqi').animo({animation:'fadeInLeft',duration:1},function(){
+        $('#guoqi').animo({animation:'fadeInLeft',duration:2},function(){
+            xianshi('#gezi1');
+            $('#gezi1').animo({animation:'fadeInLeft',duration:1},function(){
+                xianshi('#gezi3');
+                $('#gezi3').animo({animation:'fadeInLeft',duration:2})
+                xianshi('#gezi2');
+                $('#gezi2').animo({animation:'fadeInLeft',duration:4})
+            })
 
         })
-        xianshi('#gezi1');
 
-        $('#gezi1').animo({animation:'fadeInLeft',duration:1})
-        xianshi('#gezi3');
-        $('#gezi3').animo({animation:'fadeInLeft',duration:4})
-        xianshi('#gezi2');
-        $('#gezi2').animo({animation:'fadeInLeft',duration:7})
+
+
+
 
         $('#cb1').animo({animation:'tada',duration:0.5},function(){
 

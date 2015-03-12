@@ -5,6 +5,7 @@ body {
     margin: 0;
     position: relative;
     height: 100%;
+    font-family:"Microsoft YaHei","MicrosoftJhengHei",STHeiti,MingLiu
 }
 .swiper-container {
     width: 100%;
@@ -113,7 +114,7 @@ body {
     width: 50px;
     height: 50px;
     overflow: hidden;
-    margin: 5px auto;
+    margin: 0px auto 20px;
 }
 .yearBtn{
     height: 50px;
@@ -146,7 +147,8 @@ body {
     height: 100%;
 }
 .talk{
-    padding-top: 10px;
+
+    display: table;
     height: 300px;
     width: 85%;
     margin: 20px auto 0.1px;
@@ -154,7 +156,8 @@ body {
     border-radius: 30%;
 }
 .intalk{
-    margin: 20px auto 0;
+
+    margin:10px auto 20px ;
     width: 85%;
     text-align: left;
     color: black;
@@ -162,6 +165,10 @@ body {
 
     line-height: 1.5;
 
+}
+.vm{
+    display: table-cell;
+    vertical-align:middle;
 }
 .tri{
     height: 40px;
@@ -280,10 +287,11 @@ and ( min-height: 600px )
     color:#000000;
 }
 #why{
+
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: #ff6666;
+    background: rgb(255,102,102);
     margin: 50px auto;
     font-size: 70px;
     text-align: center;
@@ -317,7 +325,7 @@ and ( min-height: 600px )
     background: #181b5a;
 }
 #slide0{
-    background: #b7eaff;
+    background: #42a4ff;
     color:#000000;
 }
 #slide1 .cover{
