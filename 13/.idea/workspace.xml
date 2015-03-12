@@ -23,13 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="586" column="0" selection-start="42600" selection-end="42600" vertical-scroll-proportion="-8.66" vertical-offset="5357" max-vertical-offset="7980">
+            <state line="134" column="41" selection-start="4195" selection-end="4195" vertical-scroll-proportion="0.7861771" vertical-offset="1646" max-vertical-offset="8880">
               <folding>
-                <element signature="tag#div#3;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#0;tag#div#0;tag#div#3;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#4;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="tag#div#5;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -63,7 +61,7 @@
       <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="14" selection-start="2293" selection-end="2293" vertical-scroll-proportion="-8.692307" vertical-offset="2069" max-vertical-offset="4995">
+            <state line="336" column="21" selection-start="4732" selection-end="4732" vertical-scroll-proportion="-10.576923" vertical-offset="4765" max-vertical-offset="5280">
               <folding />
             </state>
           </provider>
@@ -99,19 +97,16 @@
       <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="27" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.0" vertical-offset="964" max-vertical-offset="2745">
-              <folding>
-                <marker date="1426157480000" expanded="true" signature="1562:1635" placeholder="..." />
-                <marker date="1426157480000" expanded="true" signature="1658:1731" placeholder="..." />
-              </folding>
+            <state line="98" column="24" selection-start="2084" selection-end="2084" vertical-scroll-proportion="0.0" vertical-offset="1294" max-vertical-offset="3225">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myAnimation.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="myAnimation.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="49" selection-start="5011" selection-end="5011" vertical-scroll-proportion="0.7984791" vertical-offset="1245" max-vertical-offset="5235">
+            <state line="167" column="13" selection-start="5231" selection-end="5232" vertical-scroll-proportion="-10.384615" vertical-offset="1605" max-vertical-offset="5715">
               <folding>
                 <element signature="n#!!block;n#clear#0" expanded="false" />
                 <element signature="n#!!block;n#mapchange#0" expanded="false" />
@@ -134,16 +129,16 @@
         <option value="$PROJECT_DIR$/t.html" />
         <option value="$PROJECT_DIR$/js/jquery.js" />
         <option value="$PROJECT_DIR$/js/interactive.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/global.css" />
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/js/myAnimation.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-104" />
-    <option name="y" value="127" />
+    <option name="x" value="103" />
+    <option name="y" value="22" />
     <option name="width" value="1232" />
     <option name="height" value="672" />
   </component>
@@ -250,7 +245,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-104" y="127" width="1232" height="672" extended-state="0" />
+    <frame x="103" y="22" width="1232" height="672" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -327,10 +322,7 @@
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="14" selection-start="2010" selection-end="2011" vertical-scroll-proportion="0.0" vertical-offset="538" max-vertical-offset="1665">
-          <folding>
-            <marker date="1426157480000" expanded="true" signature="1562:1635" placeholder="..." />
-            <marker date="1426157480000" expanded="true" signature="1658:1731" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -379,29 +371,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
+    <entry file="file://$PROJECT_DIR$/css/global.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="27" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.0" vertical-offset="964" max-vertical-offset="2745">
-          <folding>
-            <marker date="1426157480000" expanded="true" signature="1562:1635" placeholder="..." />
-            <marker date="1426157480000" expanded="true" signature="1658:1731" placeholder="..." />
-          </folding>
+        <state line="336" column="21" selection-start="4732" selection-end="4732" vertical-scroll-proportion="-10.576923" vertical-offset="4765" max-vertical-offset="5280">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/global.css">
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="14" selection-start="2293" selection-end="2293" vertical-scroll-proportion="-8.692307" vertical-offset="2069" max-vertical-offset="4995">
+        <state line="98" column="24" selection-start="2084" selection-end="2084" vertical-scroll-proportion="0.0" vertical-offset="1294" max-vertical-offset="3225">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="13" selection-start="5231" selection-end="5232" vertical-scroll-proportion="-10.384615" vertical-offset="1605" max-vertical-offset="5715">
+          <folding>
+            <element signature="n#!!block;n#clear#0" expanded="false" />
+            <element signature="n#!!block;n#mapchange#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="586" column="0" selection-start="42600" selection-end="42600" vertical-scroll-proportion="-8.66" vertical-offset="5357" max-vertical-offset="7980">
+        <state line="134" column="41" selection-start="4195" selection-end="4195" vertical-scroll-proportion="0.7861771" vertical-offset="1646" max-vertical-offset="8880">
           <folding>
-            <element signature="tag#div#3;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#0;tag#div#3;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#4;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#5;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -409,16 +406,6 @@
             <element signature="tag#div#7;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="tag#div#0;tag#div#10;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="49" selection-start="5011" selection-end="5011" vertical-scroll-proportion="0.7984791" vertical-offset="1245" max-vertical-offset="5235">
-          <folding>
-            <element signature="n#!!block;n#clear#0" expanded="false" />
-            <element signature="n#!!block;n#mapchange#0" expanded="false" />
           </folding>
         </state>
       </provider>

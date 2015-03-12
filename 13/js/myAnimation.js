@@ -1,6 +1,9 @@
 /**
  * Created by sunqi on 15-3-10.
  */
+function xianshi(s){
+    $(s).css('visibility','visible');
+}
 var mapnow='';
 var visited=[];
 window.onload=function(){
@@ -9,23 +12,14 @@ window.onload=function(){
             $('.loading').css('display','none');
             var h2=$('#tam1').height()+50;
             var h2=h2+'px';
-            alert(h2);
+
             $('.foot').css('margin-top',h2);
-//            var play=true;
-//            var music=document.getElementById("myAudio");
-//            music.play();
-//            $('.music').click(function(){
-//                if(play){
-//                    play=!play;
-//                    music.pause();
-//                    $('#music').css('fill','#b4b4b4')
-//                }else{
-//                    play=!play;
-//                    music.play();
-//                    $('#music').css('fill','#fb7575')
-//
-//                }
-//            })
+            var h1=$('#test1').height()+'px';
+
+            $('.myGroup').css('margin-top',h1)
+
+            anima(0);
+
 
         });
     })
@@ -114,9 +108,7 @@ function active(k){
         press5();
     }
 }
-var h1=$('#test1').height()+'px';
 
-$('.myGroup').css('margin-top',h1)
 $('#y3').click(function(){
     press3();
 })
@@ -129,10 +121,50 @@ press5();
 
 
 function anima(i){
+    if((i==0)&&(visited[i]==1)){
+        $('#hongchou').addClass('swing2')
+    }
+    if((i==0)&&(visited[i]!=1)){
+        visited[i]=1;
+        xianshi('#hongchou');
+        $('#hongchou').animo({animation:'bounceInUp',duration:1.5},function(){
+            $('#hongchou').animo('cleanse');
+            $('#hongchou').addClass('swing2')
+        })
+        xianshi('#huabiao');
+        $('#huabiao').animo({animation:'bounceInUp',duration:1.7})
+        xianshi('#tiananmen');
+        $('#tiananmen').animo({animation:'bounceInUp',duration:1.9})
+        xianshi('.xlxt')
+        $('.xlxt').animo({animation:'bounceInUp',duration:2.5});
+
+
+
+        xianshi('#guoqi');
+        $('#guoqi').animo({animation:'fadeInLeft',duration:1},function(){
+
+        })
+        xianshi('#gezi1');
+
+        $('#gezi1').animo({animation:'fadeInLeft',duration:1})
+        xianshi('#gezi3');
+        $('#gezi3').animo({animation:'fadeInLeft',duration:4})
+        xianshi('#gezi2');
+        $('#gezi2').animo({animation:'fadeInLeft',duration:7})
+
+        $('#cb1').animo({animation:'tada',duration:0.5},function(){
+
+        })
+
+
+    }
     if((i==1)&&(visited[i]==1)){
+        $('#hongchou').removeClass('swing2')
         active(mapnow);
     }
     if((i==1)&&(visited[i]!=1)){
+        $('#hongchou').removeClass('swing2')
+
         press3();
         $('#cb5').animo({animation:'tada',duration:2},function(){
             console.log('1')

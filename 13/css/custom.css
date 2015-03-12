@@ -71,6 +71,38 @@
 
     100% {opacity: 1}
 }
+.swing1{
+    animation: swing1 1s ease-in-out infinite alternate  ;
+    -webkit-animation: swing1 1s ease-in-out infinite alternate  ;	/* Safari 和 Chrome */
+    -webkit-transform-origin:100% 50%;
+    transform-origin:100% 50%;
+}
+@keyframes  swing1{
+    0% {transform: rotate(0);}
+
+    100% {transform: rotate(-5deg);}
+}
+@-webkit-keyframes  swing1{
+    0% {transform: rotate(0);}
+
+    100% {transform: rotate(-5deg);}
+}
+.swing2{
+    animation: swing2 1s ease-in-out infinite alternate  ;
+    -webkit-animation: swing2 1s ease-in-out infinite alternate  ;	/* Safari 和 Chrome */
+    -webkit-transform-origin:100% 100%;
+    transform-origin:100% 100%;
+}
+@keyframes  swing2{
+    0% {margin-left: 0px}
+
+    100% {margin-left: 7px}
+}
+@-webkit-keyframes  swing2{
+    0% {margin-left: 0px}
+
+    100% {margin-left:7px}
+}
 .xz{
     animation: xz 3s linear infinite  ;
     -webkit-animation: xz 3s linear infinite  ;	/* Safari 和 Chrome */

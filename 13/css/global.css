@@ -326,3 +326,22 @@ and ( min-height: 600px )
     margin-top: 50px;
     width: 100%;
 }
+#slide0 .cover{
+    width: 100%;
+}
+#slide0{
+    position: relative;
+}
+#slide0 .bottom{
+    bottom:0;
+    overflow: hidden;
+}
+#slide0 .bottom img{
+    margin-bottom: -3px;
+}
+#slide0{
+    background: #f3f3f3;
+}
+.xlxt{
+    width: 80%;
+}
