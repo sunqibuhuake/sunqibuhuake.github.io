@@ -62,13 +62,13 @@
 @keyframes sm
 {
     0% {opacity: 0}
-
+    50% {opacity: 1}
     100% {opacity: 1}
 }
 @-webkit-keyframes sm /* Safari 和 Chrome */
 {
     0% {opacity: 0}
-
+    50% {opacity: 1}
     100% {opacity: 1}
 }
 .swing1{
