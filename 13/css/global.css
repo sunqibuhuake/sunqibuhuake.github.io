@@ -17,7 +17,7 @@ body {
     display: table-cell;
     vertical-align:middle;
 }
-.swiper-slide{
+.swiper-slide,.loading{
     display: table;
     height: 100%;
 }
@@ -40,8 +40,8 @@ body {
 }
 .loadingText{
     color:white;
-    margin-top: 100px;
-    margin-bottom: 80px;
+    margin-top: 50px;
+
     text-align: center;
 }
 .hide{
@@ -344,4 +344,12 @@ and ( min-height: 600px )
 }
 .xlxt{
     width: 80%;
+}
+#slide3{
+    background-image:url('./bg/dht.png') ;
+    /*background-attachment:fixed;*/
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
 }

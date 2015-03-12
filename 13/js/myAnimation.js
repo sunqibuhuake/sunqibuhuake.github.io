@@ -369,7 +369,7 @@ function anima(i){
     }
     if((i==11)&&(visited[i]!=1)){
         $('#b1').css('visibility','visible');
-        $('#b1').animo({animation:"rotateInDownLeft",duration:1},function(){
+        $('#b1').animo({animation:"rotateInDownLeft",duration:0.5},function(){
             $('#u1').css('visibility','visible');
             $('#u1').animo({animation:"fadeInUp"})
         })
@@ -378,7 +378,7 @@ function anima(i){
     }
     if((i==12)&&(visited[i]!=1)){
         $('#b2').css('visibility','visible');
-        $('#b2').animo({animation:"rotateInDownLeft",duration:1},function(){
+        $('#b2').animo({animation:"rotateInDownLeft",duration:0.5},function(){
             $('#u2').css('visibility','visible');
             $('#u2').animo({animation:"fadeInUp"})
         })
@@ -388,7 +388,7 @@ function anima(i){
     }
     if((i==13)&&(visited[i]!=1)){
         $('#b3').css('visibility','visible');
-        $('#b3').animo({animation:"rotateInDownLeft",duration:1},function(){
+        $('#b3').animo({animation:"rotateInDownLeft",duration:0.5},function(){
             $('#u3').css('visibility','visible');
             $('#u3').animo({animation:"fadeInUp"})
         })
@@ -398,7 +398,7 @@ function anima(i){
     }
     if((i==14)&&(visited[i]!=1)){
         $('#b4').css('visibility','visible');
-        $('#b4').animo({animation:"rotateInDownLeft",duration:1},function(){
+        $('#b4').animo({animation:"rotateInDownLeft",duration:0.5},function(){
             $('#u4').css('visibility','visible');
             $('#u4').animo({animation:"fadeInUp"})
         })
