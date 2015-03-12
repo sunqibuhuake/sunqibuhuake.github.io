@@ -96,12 +96,12 @@
 @keyframes  swing2{
     0% {margin-left: 0px}
 
-    100% {margin-left: 7px}
+    100% {margin-left: 15px}
 }
 @-webkit-keyframes  swing2{
     0% {margin-left: 0px}
 
-    100% {margin-left:7px}
+    100% {margin-left:15px}
 }
 .xz{
     animation: xz 3s linear infinite  ;
