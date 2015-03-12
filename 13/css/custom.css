@@ -55,20 +55,52 @@
 }
 
 /*习近平闪烁*/
+.showedMap{
+    animation: sm 2s  ease-in-out infinite  ;
+    -webkit-animation: sm 2s ease-in-out infinite  ;	/* Safari 和 Chrome */
+}
+@keyframes sm
+{
+    0% {opacity: 0}
+
+    100% {opacity: 1}
+}
+@-webkit-keyframes sm /* Safari 和 Chrome */
+{
+    0% {opacity: 0}
+
+    100% {opacity: 1}
+}
+.xz{
+    animation: xz 3s linear infinite  ;
+    -webkit-animation: xz 3s linear infinite  ;	/* Safari 和 Chrome */
+    -webkit-transform-origin:50% 50%;
+    transform-origin:50% 50%;
+}
+@keyframes  xz{
+    0% {transform: rotate(0);}
+
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes  xz{
+    0% {transform: rotate(0);}
+
+    100% {transform: rotate(360deg);}
+}
 .mapXi{
-    animation: mapXi 1s  ease-in-out infinite  ;
-    -webkit-animation: mapXi 1s ease-in-out infinite  ;	/* Safari 和 Chrome */
+    animation: mapXi 2s  ease-in-out infinite  ;
+    -webkit-animation: mapXi 2s ease-in-out infinite  ;	/* Safari 和 Chrome */
 }
 @keyframes mapXi
 {
     0% {fill:#bbbbbb}
-
+    30% {fill:#EA7351}
     100% {fill:#EA7351}
 }
 @-webkit-keyframes mapXi /* Safari 和 Chrome */
 {
     0% {fill:#bbbbbb}
-
+    30% {fill:#EA7351}
     100% {fill:#EA7351}
 }
 
@@ -79,13 +111,13 @@
 @keyframes mapLi
 {
     0% {fill:#bbbbbb}
-
+    30% {fill:#eae851}
     100% {fill:#eae851}
 }
 @-webkit-keyframes mapLi /* Safari 和 Chrome */
 {
     0% {fill:#bbbbbb}
-
+    30% {fill:#eae851}
     100% {fill:#eae851}
 }
 .original{

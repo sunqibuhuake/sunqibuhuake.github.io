@@ -111,14 +111,25 @@ body {
     position: relative;
 
 }
+.oh{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin: 5px auto;
+}
 .yearBtn{
     height: 50px;
-    line-height: 4.2;
+
     width: 50px;
     margin: 0 auto;
     border: 1px solid white;
     border-radius: 50%;
     font-size: 10px;
+    display: table ;
+}
+.inYearBtn{
+    display: table-cell;
+    vertical-align: middle;
 }
 .yearBtnActive{
     background: #ffffff;
@@ -140,7 +151,7 @@ body {
     padding-top: 10px;
     height: 300px;
     width: 85%;
-    margin: 50px auto -1px;
+    margin: 20px auto -1px;
     background: white;
     border-radius: 30%;
 }
@@ -161,8 +172,8 @@ body {
     height: 40px;
 }
 #tree,#gear,#flag,#man,#tree2,#chart{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 .t{
     width: 95%;
@@ -202,6 +213,9 @@ body {
 #sldie11{
     color: #000000;
 }
+#slide11  .bigcover .cover{
+    margin-top:50px;
+}
 #slide10 .underbanner{
     width: 100%;
 }
@@ -232,6 +246,7 @@ body {
     text-align: center;
 
 }
+
 .cover{
     position: absolute;
     width: 95%;
@@ -246,9 +261,7 @@ body {
 
 and (max-height : 600px)
 {
-    .foot{
-        margin-top: 70%;
-    }
+
     .intalk{
         font-size:15px;
     }
@@ -257,9 +270,7 @@ and (max-height : 600px)
 and ( min-height: 600px )
 
 {
-    .foot{
-        margin-top: 70%;
-    }
+
     .intalk{
         font-size:15px;
     }
@@ -310,4 +321,8 @@ and ( min-height: 600px )
 #slide0{
     background: white;
     color:#000000;
+}
+#slide1 .cover{
+    margin-top: 50px;
+    width: 100%;
 }

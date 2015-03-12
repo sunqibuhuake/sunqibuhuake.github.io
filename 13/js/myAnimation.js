@@ -1,11 +1,16 @@
 /**
  * Created by sunqi on 15-3-10.
  */
+var mapnow='';
 var visited=[];
 window.onload=function(){
     $(function(){
         $('.loading').animo({animation:'fadeOut'},function(){
             $('.loading').css('display','none');
+            var h2=$('#tam1').height()+50;
+            var h2=h2+'px';
+            alert(h2);
+            $('.foot').css('margin-top',h2);
 //            var play=true;
 //            var music=document.getElementById("myAudio");
 //            music.play();
@@ -72,139 +77,67 @@ function mapchange(i){
     }
 }
 function press3(){
+    $('.showedMap').addClass('hide');
+    $('.showedMap').removeClass('showedMap');
     $('.yearBtnActive').removeClass('yearBtnActive')
     $('#y3').addClass('yearBtnActive');
-    var l=document.getElementsByClassName('mapXi');
-    var u=document.getElementsByClassName('mapLi');
-
-    console.log(l.length);
-    var a=[];
-    for(var i=0;i< l.length;i++){
-        a.push(l[i].id);
-    }
-    for(var i=0;i< u.length;i++){
-        a.push(u[i].id);
-    }
-    console.log(a);
-    clear(a);
-    $('#cb1').animo({animation:'tada',duration:0.5},function(){
-        mapchange(3);
-    })
+    $('#map2013').removeClass('hide');
+    $('#map2013').addClass('showedMap');
+    mapnow=3;
 }
 function press4(){
+    $('.showedMap').addClass('hide');
+    $('.showedMap').removeClass('showedMap');
     $('.yearBtnActive').removeClass('yearBtnActive')
     $('#y4').addClass('yearBtnActive');
-    var l=document.getElementsByClassName('mapXi');
-    var u=document.getElementsByClassName('mapLi');
-
-    console.log(l.length);
-    var a=[];
-    for(var i=0;i< l.length;i++){
-        a.push(l[i].id);
-    }
-    for(var i=0;i< u.length;i++){
-        a.push(u[i].id);
-    }
-    console.log(a);
-    clear(a);
-
-    $('#cb1').animo({animation:'tada',duration:0.5},function(){
-        mapchange(4);
-    })
+    $('#map2014').removeClass('hide');
+    $('#map2014').addClass('showedMap');
+    mapnow=4;
 }
 function press5(){
+    $('.showedMap').addClass('hide');
+    $('.showedMap').removeClass('showedMap');
     $('.yearBtnActive').removeClass('yearBtnActive')
     $('#y5').addClass('yearBtnActive');
-    var l=document.getElementsByClassName('mapXi');
-    var u=document.getElementsByClassName('mapLi');
-
-    console.log(l.length);
-    var a=[];
-    for(var i=0;i< l.length;i++){
-        a.push(l[i].id);
-    }
-    for(var i=0;i< u.length;i++){
-        a.push(u[i].id);
-    }
-    console.log(a);
-    clear(a);
-    $('#cb1').animo({animation:'tada',duration:0.5},function(){
-        mapchange(5);
-    })
+    $('#map2015').removeClass('hide');
+    $('#map2015').addClass('showedMap');
+    mapnow=5;
 }
+function active(k){
+    if(k==3){
+        press3();
+    }
+    if(k==4){
+        press4();
+    }
+    if(k==5){
+        press5();
+    }
+}
+var h1=$('#test1').height()+'px';
+
+$('.myGroup').css('margin-top',h1)
 $('#y3').click(function(){
-    $('.yearBtnActive').removeClass('yearBtnActive')
-    $('#y3').addClass('yearBtnActive');
-    var l=document.getElementsByClassName('mapXi');
-    var u=document.getElementsByClassName('mapLi');
-
-    console.log(l.length);
-    var a=[];
-    for(var i=0;i< l.length;i++){
-        a.push(l[i].id);
-    }
-    for(var i=0;i< u.length;i++){
-        a.push(u[i].id);
-    }
-    console.log(a);
-    clear(a);
-    $('#cb1').animo({animation:'tada',duration:0.5},function(){
-        mapchange(3);
-    })
-
+    press3();
 })
 $('#y4').click(function(){
-    $('.yearBtnActive').removeClass('yearBtnActive')
-    $('#y4').addClass('yearBtnActive');
-    var l=document.getElementsByClassName('mapXi');
-    var u=document.getElementsByClassName('mapLi');
-
-    console.log(l.length);
-    var a=[];
-    for(var i=0;i< l.length;i++){
-        a.push(l[i].id);
-    }
-    for(var i=0;i< u.length;i++){
-        a.push(u[i].id);
-    }
-    console.log(a);
-    clear(a);
-
-    $('#cb1').animo({animation:'tada',duration:0.5},function(){
-        mapchange(4);
-    })
-
+press4();
 })
 $('#y5').click(function(){
-    $('.yearBtnActive').removeClass('yearBtnActive')
-    $('#y5').addClass('yearBtnActive');
-    var l=document.getElementsByClassName('mapXi');
-    var u=document.getElementsByClassName('mapLi');
-
-    console.log(l.length);
-    var a=[];
-    for(var i=0;i< l.length;i++){
-        a.push(l[i].id);
-    }
-    for(var i=0;i< u.length;i++){
-        a.push(u[i].id);
-    }
-    console.log(a);
-    clear(a);
-    $('#cb1').animo({animation:'tada',duration:0.5},function(){
-        mapchange(5);
-    })
-
+press5();
 })
 
 
 function anima(i){
+    if((i==1)&&(visited[i]==1)){
+        active(mapnow);
+    }
     if((i==1)&&(visited[i]!=1)){
         press3();
-        $('#cb5').animo({animation:'tada',duration:1.5},function(){
+        $('#cb5').animo({animation:'tada',duration:2},function(){
             console.log('1')
             press4();
-            $('#cb6').animo({animation:'tada',duration:1.5},function(){
+            $('#cb6').animo({animation:'tada',duration:2},function(){
                 console.log('1')
                 press5();
 
@@ -212,7 +145,13 @@ function anima(i){
         })
         visited[i]=1;
     }
+    if((i==2)&&(visited[i]==1)){
+        $('.showedMap').addClass('hide');
+        $('.showedMap').removeClass('showedMap');
+    }
     if((i==2)&&(visited[i]!=1)){
+        $('.showedMap').addClass('hide');
+        $('.showedMap').removeClass('showedMap');
         $('#why2').css('visibility','visible');
         $('#why2').animo({animation:'bounceInDown',duration:1.5})
         $('#cb7').animo({animation:'tada',duration:0.2},function(){
@@ -223,12 +162,13 @@ function anima(i){
             $('#why1').css('visibility','visible');
             $('#why1').animo({animation:'bounceInDown',duration:1.5},function(){
                 visited[i]=1
-                $('#why').animo({animation: "spinner", duration:2,iterate: "infinite"})
+                $('#why').animo('cleanse')
+                $('#why').addClass('xz');
             })
         })
     }
     if((i==3)&&(visited[i]!=1)){
-        $('#why').animo("cleanse");
+        $('#why').removeClass('xz');
         $('#li1').css('visibility','visible');
         $('#li1').animo({animation:'fadeInUp'});
         $('.talk1').css('visibility','visible');
@@ -320,13 +260,28 @@ function anima(i){
         $('#cb5').animo({animation:'fadeIn',duration:1.3},function(){
             $('#tam6').css('visibility','visible');
             $('#tam6').animo({animation:'bounceInRight',duration:2},function(){
-                document.getElementById('foot1').setAttribute("class","show1");
-                document.getElementById('foot2').setAttribute("class","show2");
-                document.getElementById('foot3').setAttribute("class","show3");
-                document.getElementById('foot4').setAttribute("class","show4");
-                document.getElementById('foot5').setAttribute("class","show5");
-                document.getElementById('foot6').setAttribute("class","show6");
-                document.getElementById('foot7').setAttribute("class","show7");
+                $('#step1').css('visibility','visible');
+                $('#step1').animo({animation:'fadeIn',duration:0.3},function(){
+                    $('#step2').css('visibility','visible');
+                    $('#step2').animo({animation:'fadeIn',duration:0.3},function(){
+                        $('#step3').css('visibility','visible');
+                        $('#step3').animo({animation:'fadeIn',duration:0.3},function(){
+                            $('#step4').css('visibility','visible');
+                            $('#step4').animo({animation:'fadeIn',duration:0.3},function(){
+                                $('#step5').css('visibility','visible');
+                                $('#step5').animo({animation:'fadeIn',duration:0.3},function(){
+                                    $('#step6').css('visibility','visible');
+                                    $('#step6').animo({animation:'fadeIn',duration:0.3},function(){
+                                        $('#step7').css('visibility','visible');
+                                        $('#step7').animo({animation:'fadeIn',duration:0.3},function(){
+
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
 
             });
             visited[i]=1;
