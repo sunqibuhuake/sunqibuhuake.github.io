@@ -209,8 +209,8 @@
     100% {opacity: 1}
 }
 .yearBtnActive{
-    animation: yearBtnActive 1s  ease-in   forwards ;
-    -webkit-animation: yearBtnActive 1s ease-in    forwards;	/* Safari 和 Chrome */
+    animation: yearBtnActive 0.5s  ease-in   forwards ;
+    -webkit-animation: yearBtnActive 0.5s ease-in    forwards;	/* Safari 和 Chrome */
 }
 @keyframes yearBtnActive
 {
