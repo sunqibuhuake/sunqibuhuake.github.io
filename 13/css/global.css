@@ -151,15 +151,15 @@ body {
     padding-top: 10px;
     height: 300px;
     width: 85%;
-    margin: 20px auto -1px;
-    background: white;
+    margin: 20px auto 0.1px;
+    background:rgba(255,255,255,0.5);
     border-radius: 30%;
 }
 .intalk{
     margin: 20px auto 0;
     width: 85%;
     text-align: left;
-    color: gray;
+    color: black;
 
 
     line-height: 1.5;
@@ -345,8 +345,32 @@ and ( min-height: 600px )
 .xlxt{
     width: 80%;
 }
-#slide3{
-    background-image:url('./bg/dht.png') ;
+#slide3,#slide6,#slide12{
+    background-image:url('./bg/gh.png') ;
+    /*background-attachment:fixed;*/
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+}
+#slide5,#slide8,#slide13{
+    background-image:url('./bg/lkq.png') ;
+    /*background-attachment:fixed;*/
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+}
+#slide4,#slide7,#slide14{
+    background-image:url('./bg/fy.png') ;
+    /*background-attachment:fixed;*/
+    background-repeat:no-repeat;
+    background-size:cover;
+    -moz-background-size:cover;
+    -webkit-background-size:cover;
+}
+#slide10,#slide15,#slide1{
+    background-image:url('./bg/tt.png') ;
     /*background-attachment:fixed;*/
     background-repeat:no-repeat;
     background-size:cover;

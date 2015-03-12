@@ -195,7 +195,7 @@ function anima(i){
             $('#why1').animo({animation:'bounceInDown',duration:1.5},function(){
                 visited[i]=1
                 $('#why').animo('cleanse')
-                $('#why').addClass('xz');
+                $('#why').animo( { animation: ['tada', 'bounce','pulse'], duration: 1.5 } );
             })
         })
     }
