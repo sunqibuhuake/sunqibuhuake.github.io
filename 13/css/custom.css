@@ -208,3 +208,19 @@
     0% {opacity: 0}
     100% {opacity: 1}
 }
+.yearBtnActive{
+    animation: yearBtnActive 1s  ease-in   forwards ;
+    -webkit-animation: yearBtnActive 1s ease-in    forwards;	/* Safari 和 Chrome */
+}
+@keyframes yearBtnActive
+{
+    0% {background-color: rgba(255,255,255,0);color: rgba(0,0,0,0)}
+
+    100% {background-color: rgba(255,255,255,1);color: rgba(0,0,0,1)}
+}
+@-webkit-keyframes yearBtnActive /* Safari 和 Chrome */
+{
+    0% {background-color: rgba(255,255,255,0);color: rgba(0,0,0,0)}
+
+    100% {background-color: rgba(255,255,255,1);color: rgba(0,0,0,1)}
+}
