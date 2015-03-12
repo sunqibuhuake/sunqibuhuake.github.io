@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="265" selection-end="265" vertical-scroll-proportion="0.18518518" vertical-offset="0" max-vertical-offset="11625">
+            <state line="748" column="25" selection-start="48712" selection-end="48712" vertical-scroll-proportion="-3.1538463" vertical-offset="10974" max-vertical-offset="11625">
               <folding>
                 <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -53,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="global.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="339" column="0" selection-start="4680" selection-end="4680" vertical-scroll-proportion="-7.0384617" vertical-offset="4902" max-vertical-offset="5700">
+            <state line="360" column="31" selection-start="5232" selection-end="5234" vertical-scroll-proportion="0.4827586" vertical-offset="5134" max-vertical-offset="5700">
               <folding />
             </state>
           </provider>
@@ -123,16 +123,16 @@
         <option value="$PROJECT_DIR$/t.html" />
         <option value="$PROJECT_DIR$/js/jquery.js" />
         <option value="$PROJECT_DIR$/js/interactive.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/myAnimation.js" />
-        <option value="$PROJECT_DIR$/css/global.css" />
         <option value="$PROJECT_DIR$/css/custom.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/global.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-56" />
-    <option name="y" value="63" />
+    <option name="x" value="47" />
+    <option name="y" value="22" />
     <option name="width" value="1232" />
     <option name="height" value="723" />
   </component>
@@ -239,7 +239,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-56" y="63" width="1232" height="723" extended-state="0" />
+    <frame x="47" y="22" width="1232" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -372,13 +372,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="0" selection-start="4680" selection-end="4680" vertical-scroll-proportion="-7.0384617" vertical-offset="4902" max-vertical-offset="5700">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="36" selection-start="1717" selection-end="1717" vertical-scroll-proportion="-17.423077" vertical-offset="777" max-vertical-offset="3225">
@@ -388,11 +381,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="265" selection-end="265" vertical-scroll-proportion="0.18518518" vertical-offset="0" max-vertical-offset="11625">
+        <state line="748" column="25" selection-start="48712" selection-end="48712" vertical-scroll-proportion="-3.1538463" vertical-offset="10974" max-vertical-offset="11625">
           <folding>
             <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="360" column="31" selection-start="5232" selection-end="5234" vertical-scroll-proportion="0.4827586" vertical-offset="5134" max-vertical-offset="5700">
+          <folding />
         </state>
       </provider>
     </entry>
