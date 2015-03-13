@@ -223,6 +223,7 @@ function anima(i){
             $('#why2').animo({animation:'bounceInUp',duration:1.5})
         }
 
+        visited[i]=1;
 
     }
 
@@ -399,6 +400,8 @@ function anima(i){
             setTimeout(x5,2800);
 
         })
+        visited[i]=1;
+
     }
     if((i==10)&&(visited[i]!=1)){
         xianshi('#t10');
@@ -431,6 +434,8 @@ function anima(i){
             setTimeout(x5,2800);
 
         })
+        visited[i]=1;
+
     }
     if((i==11)&&(visited[i]!=1)){
         $('#yjkx').css('visibility','visible');
