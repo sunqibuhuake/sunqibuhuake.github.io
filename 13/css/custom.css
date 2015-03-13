@@ -104,6 +104,24 @@
     0% {transform:translateX(0px)}
     100% {transform:translateX(15px)}
 }
+
+.swing3{
+    animation: swing3 1s ease-in-out infinite alternate  ;
+    -webkit-animation: swing3 1s ease-in-out infinite alternate  ;	/* Safari 和 Chrome */
+
+}
+@keyframes  swing3{
+    0% {margin-left: 0px}
+    100% {margin-left: 15px}
+    /*0% {transform:translateX(0px)}*/
+    /*100% {transform:translateX(15px)}*/
+}
+@-webkit-keyframes  swing3{
+    0% {margin-left: 0px}
+    100% {margin-left:15px}
+    /*0% {transform:translateX(0px)}*/
+    /*100% {transform:translateX(15px)}*/
+}
 .xz{
     animation: xz 3s linear infinite  ;
     -webkit-animation: xz 3s linear infinite  ;	/* Safari 和 Chrome */

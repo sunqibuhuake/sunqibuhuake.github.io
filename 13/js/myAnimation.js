@@ -130,14 +130,14 @@ press5();
 
 function anima(i){
     if((i==0)&&(visited[i]==1)){
-        $('#hongchou').addClass('swing2')
+        $('#hongchou').addClass('swing3')
     }
     if((i==0)&&(visited[i]!=1)){
         visited[i]=1;
         xianshi('#hongchou');
         $('#hongchou').animo({animation:'bounceInUp',duration:1.5},function(){
             $('#hongchou').animo('cleanse');
-            $('#hongchou').addClass('swing2')
+            $('#hongchou').addClass('swing3')
         })
         xianshi('#huabiao');
         $('#huabiao').animo({animation:'bounceInUp',duration:1.7})
@@ -171,11 +171,11 @@ function anima(i){
 
     }
     if((i==1)&&(visited[i]==1)){
-        $('#hongchou').removeClass('swing2')
+        $('#hongchou').removeClass('swing3')
         active(mapnow);
     }
     if((i==1)&&(visited[i]!=1)){
-        $('#hongchou').removeClass('swing2')
+        $('#hongchou').removeClass('swing3')
 
         press3();
         $('#cb5').animo({animation:'tada',duration:2},function(){
