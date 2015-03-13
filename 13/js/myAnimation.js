@@ -329,6 +329,38 @@ function anima(i){
         })
     }
     if((i==10)&&(visited[i]!=1)){
+        xianshi('#t10');
+        $('#t10').animo({animation:'fadeInUp',duration:1},function(){
+            xianshi('#l1');xianshi('#l5');
+            $('#l1').addClass('zi');
+            $('#l5').addClass('zi');
+            function x2(){
+                xianshi('#l9');xianshi('#l2');
+                $('#l2').addClass('zi');
+                $('#l9').addClass('zi');
+            }
+            function x3(){
+                xianshi('#l3');xianshi('#l7');
+                $('#l3').addClass('zi');
+                $('#l7').addClass('zi');
+            }
+            function x4(){
+                xianshi('#l4');xianshi('#l8');
+                $('#l4').addClass('zi');
+                $('#l8').addClass('zi');
+            }
+            function x5(){
+                xianshi('#l6');
+                $('#l6').addClass('zi');
+            }
+            setTimeout(x2,700);
+            setTimeout(x3,1400);
+            setTimeout(x4,2100);
+            setTimeout(x5,2800);
+
+        })
+    }
+    if((i==11)&&(visited[i]!=1)){
         $('#yjkx').css('visibility','visible');
         $('#yjkx').animo({animation:'fadeInUp',duration:1});
         function showSgqm(){
@@ -377,7 +409,7 @@ function anima(i){
 
 
     }
-    if((i==11)&&(visited[i]!=1)){
+    if((i==12)&&(visited[i]!=1)){
         $('#b1').css('visibility','visible');
         $('#b1').animo({animation:"rotateInDownLeft",duration:0.5},function(){
             $('#u1').css('visibility','visible');
@@ -386,7 +418,7 @@ function anima(i){
         visited[i]=1;
 
     }
-    if((i==12)&&(visited[i]!=1)){
+    if((i==13)&&(visited[i]!=1)){
         $('#b2').css('visibility','visible');
         $('#b2').animo({animation:"rotateInDownLeft",duration:0.5},function(){
             $('#u2').css('visibility','visible');
@@ -396,7 +428,7 @@ function anima(i){
 
 
     }
-    if((i==13)&&(visited[i]!=1)){
+    if((i==14)&&(visited[i]!=1)){
         $('#b3').css('visibility','visible');
         $('#b3').animo({animation:"rotateInDownLeft",duration:0.5},function(){
             $('#u3').css('visibility','visible');
@@ -406,7 +438,7 @@ function anima(i){
 
 
     }
-    if((i==14)&&(visited[i]!=1)){
+    if((i==15)&&(visited[i]!=1)){
         $('#b4').css('visibility','visible');
         $('#b4').animo({animation:"rotateInDownLeft",duration:0.5},function(){
             $('#u4').css('visibility','visible');
