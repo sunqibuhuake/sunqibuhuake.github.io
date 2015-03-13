@@ -22,9 +22,17 @@ window.onload=function(){
             var h2=h2+'px';
 
             $('.foot').css('margin-top',h2);
-            var h1=$('#test1').height()+'px';
+            var h1=$('#test1').height();
+            var h3=$('#maptbox').height();
+            var h4=h1-h3;
+            var h4=h4+'px';
 
-            $('.myGroup').css('margin-top',h1)
+
+            $('.myGroup').css('margin-top',h4)
+            var h5=$('#xic').height()-30;
+            h5=h5+'px';
+            $('#why2').css('margin-top',h5);
+
 
             anima(0);
 

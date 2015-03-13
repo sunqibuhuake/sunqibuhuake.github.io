@@ -16,7 +16,7 @@ body {
     font-size: 22px;
 }
 .swiper-container {
-  max-width: 359.04px;
+  max-width: 500px;
 }
 .wrapper{
     display: table-cell;
@@ -330,7 +330,7 @@ and ( min-height: 600px )
     color:#000000;
 }
 #slide1 .cover{
-    margin-top: 50px;
+    margin-top: 0px;
     width: 100%;
 }
 #slide0 .cover{
@@ -382,11 +382,18 @@ and ( min-height: 600px )
     -moz-background-size:cover;
     -webkit-background-size:cover;
 }
-#slide1,#slide0{
-    background-image:url('./bg/2.png') ;
+#slide1{
+    background-image:url('./bg/tt.png') ;
     /*background-attachment:fixed;*/
     background-repeat:no-repeat;
     background-size:cover;
     -moz-background-size:cover;
     -webkit-background-size:cover;
+}
+.maptbox{
+    width: 100%;
+    margin-top: 20px;
+}
+.mapt{
+    width: 85%;
 }
