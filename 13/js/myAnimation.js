@@ -178,15 +178,17 @@ function anima(i){
         $('#hongchou').removeClass('swing3')
 
         press3();
-        $('#cb5').animo({animation:'tada',duration:2},function(){
-            console.log('1')
-            press4();
-            $('#cb6').animo({animation:'tada',duration:2},function(){
-                console.log('1')
-                press5();
-
-            })
-        })
+//        $('#cb5').animo({animation:'tada',duration:2},function(){
+//            console.log('1')
+//            press4();
+//            $('#cb6').animo({animation:'tada',duration:2},function(){
+//                console.log('1')
+//                press5();
+//
+//            })
+//        })
+        setTimeout(press4,2000);
+        setTimeout(press5,4000);
         visited[i]=1;
     }
     if((i==2)&&(visited[i]==1)){
