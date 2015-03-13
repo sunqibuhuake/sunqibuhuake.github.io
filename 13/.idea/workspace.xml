@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b222e362-c4bd-4ca9-a6f0-ba41e6974c1b" name="Default" comment="" />
-    <ignored path="coding4Party.iws" />
+    <list default="true" id="a3b615dd-ea9e-48af-a34d-07db00421989" name="Default" comment="" />
+    <ignored path="13.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,78 +19,26 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="coding4Party" />
+    <favorites_list name="13" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-<<<<<<< HEAD
-      <file leaf-file-name="idangerous.swiper.min.js" pinned="false" current="true" current-in-tab="true">
-=======
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="6" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.09072581" vertical-offset="510" max-vertical-offset="10860">
+            <state line="524" column="18" selection-start="23202" selection-end="23202" vertical-scroll-proportion="0.086444005" vertical-offset="7816" max-vertical-offset="8325">
               <folding>
-                <element signature="tag#div#0;tag#div#0;tag#div#3;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
-                <element signature="tag#div#0;tag#div#0;tag#div#4;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="tag#div#0;tag#div#0;tag#div#6;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="idangerous.swiper.min.js" pinned="false" current="false" current-in-tab="false">
->>>>>>> origin/master
-        <entry file="file://$PROJECT_DIR$/js/idangerous.swiper.min.js">
+      <file leaf-file-name="myAnimation.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="79" selection-start="32412" selection-end="32412" vertical-scroll-proportion="0.05319149" vertical-offset="0" max-vertical-offset="564">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="idangerous.swiper.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/idangerous.swiper.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="1965">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/global.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="0" selection-start="1954" selection-end="1954" vertical-scroll-proportion="-7.0384617" vertical-offset="1857" max-vertical-offset="5970">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="interactive.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/interactive.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="28" selection-start="4530" selection-end="4530" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="83654" selection-end="83654" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="225">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="t.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/t.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="41" selection-start="513" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="705">
+            <state line="13" column="38" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="6420">
               <folding />
             </state>
           </provider>
@@ -99,19 +47,26 @@
       <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="46" selection-start="5319" selection-end="5319" vertical-scroll-proportion="-17.153847" vertical-offset="2884" max-vertical-offset="3465">
+            <state line="105" column="1" selection-start="2302" selection-end="2302" vertical-scroll-proportion="-18.192308" vertical-offset="1102" max-vertical-offset="3480">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myAnimation.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
+      <file leaf-file-name="swiper.min.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/swiper.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="64" selection-start="4759" selection-end="4759" vertical-scroll-proportion="-12.115385" vertical-offset="1305" max-vertical-offset="5850">
-              <folding>
-                <element signature="n#!!block;n#mapchange#0" expanded="false" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="swiper.jquery.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/swiper.jquery.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,31 +81,17 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css/grid.css" />
-        <option value="$PROJECT_DIR$/t.html" />
-        <option value="$PROJECT_DIR$/js/jquery.js" />
-        <option value="$PROJECT_DIR$/js/interactive.js" />
-        <option value="$PROJECT_DIR$/js/myAnimation.js" />
-<<<<<<< HEAD
-=======
-        <option value="$PROJECT_DIR$/index.html" />
->>>>>>> origin/master
-        <option value="$PROJECT_DIR$/css/global.css" />
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/myAnimation.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-<<<<<<< HEAD
-    <option name="x" value="28" />
-    <option name="y" value="22" />
-=======
-    <option name="x" value="-98" />
-    <option name="y" value="30" />
->>>>>>> origin/master
-    <option name="width" value="1232" />
-    <option name="height" value="723" />
+    <option name="x" value="-11" />
+    <option name="y" value="23" />
+    <option name="width" value="1242" />
+    <option name="height" value="669" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -182,8 +123,46 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="coding4Party" />
+              <option name="myItemId" value="13" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="13" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="13" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="13" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="13" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="13" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="13" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -192,81 +171,36 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/css" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="name" value="Dart" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
-      <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="" />
-      <setting name="serverType" value="INTERNAL" />
-      <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <browser start="false" url="" with-js-debugger="false" />
-      <method />
-    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b222e362-c4bd-4ca9-a6f0-ba41e6974c1b" name="Default" comment="" />
-      <created>1425985834493</created>
-      <updated>1425985834493</updated>
+      <changelist id="a3b615dd-ea9e-48af-a34d-07db00421989" name="Default" comment="" />
+      <created>1426207619358</created>
+      <updated>1426207619358</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="28" y="22" width="1232" height="723" extended-state="0" />
-=======
-    <frame x="-98" y="30" width="1232" height="723" extended-state="0" />
->>>>>>> origin/master
+    <frame x="-11" y="23" width="1242" height="669" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21266234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -290,142 +224,57 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="413" column="63" selection-start="14595" selection-end="14595" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4425">
+        <state line="370" column="58" selection-start="16485" selection-end="16485" vertical-scroll-proportion="0.0" vertical-offset="5148" max-vertical-offset="8325">
           <folding>
-            <element signature="n#!!block;n#mapchange#0" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="2835">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/interactive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="2416" selection-end="2416" vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="1815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="83654" selection-end="83654" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/t.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="41" selection-start="513" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="705">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="14" selection-start="2010" selection-end="2011" vertical-scroll-proportion="0.0" vertical-offset="538" max-vertical-offset="1665">
+        <state line="105" column="1" selection-start="2302" selection-end="2302" vertical-scroll-proportion="-18.192308" vertical-offset="1102" max-vertical-offset="3480">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/swiper.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="533">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/swiper.jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="533">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="600">
-          <folding>
-            <element signature="n#!!block;n#mapchange#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/idangerous.swiper.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/t.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="41" selection-start="513" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="83654" selection-end="83654" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/interactive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="28" selection-start="4530" selection-end="4530" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1950">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="64" selection-start="4759" selection-end="4759" vertical-scroll-proportion="-12.115385" vertical-offset="1305" max-vertical-offset="5850">
-          <folding>
-            <element signature="n#!!block;n#mapchange#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="0" selection-start="1954" selection-end="1954" vertical-scroll-proportion="-7.0384617" vertical-offset="1857" max-vertical-offset="5970">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="46" selection-start="5319" selection-end="5319" vertical-scroll-proportion="-17.153847" vertical-offset="2884" max-vertical-offset="3465">
+        <state line="13" column="38" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="6420">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state line="391" column="32" selection-start="19218" selection-end="19218" vertical-scroll-proportion="1.0262097" vertical-offset="4396" max-vertical-offset="10860">
-=======
-        <state line="37" column="6" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.09072581" vertical-offset="510" max-vertical-offset="10860">
->>>>>>> origin/master
+        <state line="524" column="18" selection-start="23202" selection-end="23202" vertical-scroll-proportion="0.086444005" vertical-offset="7816" max-vertical-offset="8325">
           <folding>
-            <element signature="tag#div#0;tag#div#0;tag#div#3;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#0;tag#div#4;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#div#0;tag#div#0;tag#div#6;tag#div#0;tag#div#11;tag#body#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#8;n#div#0;n#div#11;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/js/idangerous.swiper.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="79" selection-start="32412" selection-end="32412" vertical-scroll-proportion="0.05319149" vertical-offset="0" max-vertical-offset="564">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-=======
->>>>>>> origin/master
   </component>
 </project>
 

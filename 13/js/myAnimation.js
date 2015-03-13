@@ -10,6 +10,14 @@ window.onload=function(){
     $(function(){
         $('.loading').animo({animation:'fadeOutUpBig'},function(){
             $('.loading').css('display','none');
+            var mySwiper = new Swiper('.swiper-container',{
+                direction: 'vertical',
+                onSlideChangeEnd:function(){
+                    console.log(mySwiper.activeIndex)
+                    anima(mySwiper.activeIndex);
+                }
+            })
+
             var h2=$('#tam1').height()+50;
             var h2=h2+'px';
 
@@ -412,10 +420,3 @@ function anima(i){
     }
 }
 
-var mySwiper = new Swiper('.swiper-container',{
-    mode: 'vertical',
-    onSlideChangeEnd:function(){
-        console.log(mySwiper.activeIndex)
-        anima(mySwiper.activeIndex);
-    }
-})
