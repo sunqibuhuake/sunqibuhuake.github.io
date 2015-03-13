@@ -285,6 +285,15 @@ and ( min-height: 600px )
     .intalk{
         font-size:15px;
     }
+    .pao1{
+        margin-top: 5%;
+    }
+    .pao2{
+        margin-top: 10%;
+    }
+    .pao3{
+        margin-top: 15%;
+    }
 }
 .hide{
     visibility: hidden;
@@ -410,4 +419,15 @@ and ( min-height: 600px )
 }
 #slide12,#slide13,#slide14,#slide15{
     background-color: seashell;
+}
+#slide3,#slide4,#slide5,#slide6{
+    width: 100%;
+}
+#why2{
+    width: 100%;
+
+}
+#why2 img{
+    width: 80%;
+    margin: 0  auto;
 }

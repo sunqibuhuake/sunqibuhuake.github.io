@@ -210,74 +210,146 @@ function anima(i){
     if((i==2)&&(visited[i]!=1)){
         $('.showedMap').addClass('hide');
         $('.showedMap').removeClass('showedMap');
-        $('#why2').css('visibility','visible');
-        $('#why2').animo({animation:'bounceInDown',duration:1.5})
-        $('#cb7').animo({animation:'tada',duration:0.2},function(){
-            $('#why').css('visibility','visible');
-            $('#why').animo({animation:'bounceInDown',duration:1.5})
-        })
-        $('#cb8').animo({animation:'tada',duration:0.4},function(){
-            $('#why1').css('visibility','visible');
-            $('#why1').animo({animation:'bounceInDown',duration:1.5},function(){
-                visited[i]=1
-                $('#why').animo('cleanse')
-                $('#why').animo( { animation: ['tada', 'bounce','pulse'], duration: 1.5 } );
-            })
-        })
-    }
-    if((i==3)&&(visited[i]!=1)){
-        $('#why').removeClass('xz');
-        $('#li1').css('visibility','visible');
-        $('#li1').animo({animation:'fadeInUp'});
-        $('.talk1').css('visibility','visible');
-        $('.talk1').animo({animation:'fadeInDown'},function(){
+        xianshi('#xic');
+        $('#xic').addClass('bee');
+        function lic(){
+            xianshi('#lic');
+            $('#lic').addClass('bee');
+        }
+        setTimeout(lic,200);
+        setTimeout(why2,500);
+        function why2(){
+            $('#why2').css('visibility','visible');
+            $('#why2').animo({animation:'bounceInUp',duration:1.5})
+        }
 
-        });
+
+    }
+
+    if((i==3)&&(visited[i]!=1)){
+        $('#tou1').css('visibility','visible');
+        $('#tou1').animo({animation:'fadeInRight'});
+        function caca1(){
+            xianshi('#pao1');
+            $('#pao1').animo({animation:"fadeInLeft"});
+        }
+        function caca2(){
+            xianshi('#pao2');
+            $('#pao2').animo({animation:"fadeInLeft"});
+        }
+        function caca3(){
+            xianshi('#pao3');
+            $('#pao3').animo({animation:"fadeInLeft"});
+        }
+        setTimeout(caca1,500)
+
+        setTimeout(caca2,1000)
+        setTimeout(caca3,1500)
+
+
+
         visited[i]=1;
     }
     if((i==4)&&(visited[i]!=1)){
-        $('#li2').css('visibility','visible');
-        $('#li2').animo({animation:'fadeInUp'});
-        $('.talk2').css('visibility','visible');
-        $('.talk2').animo({animation:'fadeInDown'},function(){
+        $('#tou2').css('visibility','visible');
+        $('#tou2').animo({animation:'fadeInRight'});
+        function caca4(){
+            xianshi('#pao4');
+            $('#pao4').animo({animation:"fadeInLeft"});
+        }
+        function caca5(){
+            xianshi('#pao5');
+            $('#pao5').animo({animation:"fadeInLeft"});
+        }
+        function caca6(){
+            xianshi('#pao6');
+            $('#pao6').animo({animation:"fadeInLeft"});
+        }
+        setTimeout(caca4,500)
 
-        });
+        setTimeout(caca5,1000)
+        setTimeout(caca6,1500)
         visited[i]=1;
     }
     if((i==5)&&(visited[i]!=1)){
-        $('#li3').css('visibility','visible');
-        $('#li3').animo({animation:'fadeInUp'});
-        $('.talk3').css('visibility','visible');
-        $('.talk3').animo({animation:'fadeInDown'},function(){
+        $('#tou3').css('visibility','visible');
+        $('#tou3').animo({animation:'fadeInRight'});
+        function caca7(){
+            xianshi('#pao7');
+            $('#pao7').animo({animation:"fadeInLeft"});
+        }
+        function caca8(){
+            xianshi('#pao8');
+            $('#pao8').animo({animation:"fadeInLeft"});
+        }
+        function caca9(){
+            xianshi('#pao9');
+            $('#pao9').animo({animation:"fadeInLeft"});
+        }
+        setTimeout(caca7,500)
 
-        });
+        setTimeout(caca8,1000)
+        setTimeout(caca9,1500)
         visited[i]=1;
     }
     if((i==6)&&(visited[i]!=1)){
-        $('#li4').css('visibility','visible');
-        $('#li4').animo({animation:'fadeInUp'});
-        $('.talk4').css('visibility','visible');
-        $('.talk4').animo({animation:'fadeInDown'},function(){
+        $('#tou4').css('visibility','visible');
+        $('#tou4').animo({animation:'fadeInRight'});
+        function caca10(){
+            xianshi('#pao10');
+            $('#pao10').animo({animation:"fadeInLeft"});
+        }
+        function caca11(){
+            xianshi('#pao11');
+            $('#pao11').animo({animation:"fadeInLeft"});
+        }
+        function caca12(){
+            xianshi('#pao12');
+            $('#pao12').animo({animation:"fadeInLeft"});
+        }
+        setTimeout(caca10,500)
 
-        });
+        setTimeout(caca11,1000)
+        setTimeout(caca12,1500)
         visited[i]=1;
     }
     if((i==7)&&(visited[i]!=1)){
-        $('#li5').css('visibility','visible');
-        $('#li5').animo({animation:'fadeInUp'});
-        $('.talk5').css('visibility','visible');
-        $('.talk5').animo({animation:'fadeInDown'},function(){
+        $('#tou5').css('visibility','visible');
+        $('#tou5').animo({animation:'fadeInRight'});
+        function caca13(){
+            xianshi('#pao13');
+            $('#pao13').animo({animation:"fadeInLeft"});
+        }
+        function caca14(){
+            xianshi('#pao14');
+            $('#pao14').animo({animation:"fadeInLeft"});
+        }
+        function caca15(){
+            xianshi('#pao15');
+            $('#pao15').animo({animation:"fadeInLeft"});
+        }
+        setTimeout(caca13,500)
 
-        });
+        setTimeout(caca14,1000)
+        setTimeout(caca15,1500)
         visited[i]=1;
     }
     if((i==8)&&(visited[i]!=1)){
-        $('#li6').css('visibility','visible');
-        $('#li6').animo({animation:'fadeInUp'});
-        $('.talk6').css('visibility','visible');
-        $('.talk6').animo({animation:'fadeInDown'},function(){
+        $('#tou6').css('visibility','visible');
+        $('#tou6').animo({animation:'fadeInRight'});
+        function caca16(){
+            xianshi('#pao16');
+            $('#pao16').animo({animation:"fadeInLeft"});
+        }
+        function caca17(){
+            xianshi('#pao17');
+            $('#pao17').animo({animation:"fadeInLeft"});
+        }
 
-        });
+        setTimeout(caca16,500)
+
+        setTimeout(caca17,1000)
+
         visited[i]=1;
     }
 //    if((i==9)&&(visited[i]!=1)){
