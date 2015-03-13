@@ -238,8 +238,8 @@ body {
     width: 80%;
 }
 .banner img{
-    float: left;
-    margin-bottom: 30px;
+    width: 75%;
+    margin: 0 auto 8%;
 }
 #slide12 #city{
     float: left;
@@ -407,4 +407,7 @@ and ( min-height: 600px )
 }
 #slide9 .cover img{
     width: 80%;
+}
+#slide12,#slide13,#slide14,#slide15{
+    background-color: seashell;
 }
