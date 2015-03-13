@@ -190,11 +190,11 @@ function anima(i){
 
     }
     if((i==1)&&(visited[i]==1)){
-        $('#hongchou').removeClass('swing3')
+        $('#hongchou').removeClass('swing2')
         active(mapnow);
     }
     if((i==1)&&(visited[i]!=1)){
-        $('#hongchou').removeClass('swing3')
+        $('#hongchou').removeClass('swing2')
 
         press3();
 //        $('#cb5').animo({animation:'tada',duration:2},function(){
