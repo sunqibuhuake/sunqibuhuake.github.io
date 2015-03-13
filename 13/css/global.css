@@ -472,4 +472,31 @@ and (max-height : 400px)
         display: table;
         overflow: hidden;
     }
+    .pao1{
+        margin-top: -5%;
+    }
+    .pao2{
+        margin-top: -5%;
+    }
+    .pao3{
+        margin-top: -5%;
+    }
+
+}
+@media only screen
+
+and (max-height : 440px)
+{
+    .t {
+        width: 50%;
+    }
+}
+.end{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#slide15 .end img{
+    width: 100%;
+    margin-bottom: -3px;
 }

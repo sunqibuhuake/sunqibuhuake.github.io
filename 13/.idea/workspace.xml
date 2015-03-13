@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="392" column="48" selection-start="12972" selection-end="12972" vertical-scroll-proportion="-5.9" vertical-offset="5585" max-vertical-offset="6420">
+            <state line="398" column="22" selection-start="13110" selection-end="13110" vertical-scroll-proportion="-1.4" vertical-offset="5900" max-vertical-offset="6360">
               <folding />
             </state>
           </provider>
@@ -53,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myAnimation.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="myAnimation.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="526" column="43" selection-start="15919" selection-end="15919" vertical-scroll-proportion="0.8443497" vertical-offset="7494" max-vertical-offset="8130">
+            <state line="526" column="43" selection-start="15919" selection-end="15919" vertical-scroll-proportion="-4.240741" vertical-offset="7661" max-vertical-offset="8130">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -89,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="global.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="472" column="25" selection-start="7306" selection-end="7306" vertical-scroll-proportion="-17.961538" vertical-offset="6613" max-vertical-offset="7200">
+            <state line="487" column="21" selection-start="7483" selection-end="7483" vertical-scroll-proportion="0.668008" vertical-offset="6973" max-vertical-offset="7605">
               <folding />
             </state>
           </provider>
@@ -116,16 +116,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/css/youthanimation.css" />
-        <option value="$PROJECT_DIR$/css/global.css" />
         <option value="$PROJECT_DIR$/css/custom.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/myAnimation.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/global.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="22" />
-    <option name="y" value="89" />
+    <option name="x" value="299" />
+    <option name="y" value="22" />
     <option name="width" value="1242" />
     <option name="height" value="669" />
   </component>
@@ -339,7 +339,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="22" y="89" width="1242" height="669" extended-state="0" />
+    <frame x="299" y="22" width="1242" height="669" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -420,13 +420,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="472" column="25" selection-start="7306" selection-end="7306" vertical-scroll-proportion="-17.961538" vertical-offset="6613" max-vertical-offset="7200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/sgqm/01.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -442,13 +435,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="392" column="48" selection-start="12972" selection-end="12972" vertical-scroll-proportion="-5.9" vertical-offset="5585" max-vertical-offset="6420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="104" column="18" selection-start="2289" selection-end="2289" vertical-scroll-proportion="-5.1923075" vertical-offset="1425" max-vertical-offset="4290">
@@ -458,10 +444,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="526" column="43" selection-start="15919" selection-end="15919" vertical-scroll-proportion="0.8443497" vertical-offset="7494" max-vertical-offset="8130">
+        <state line="526" column="43" selection-start="15919" selection-end="15919" vertical-scroll-proportion="-4.240741" vertical-offset="7661" max-vertical-offset="8130">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="398" column="22" selection-start="13110" selection-end="13110" vertical-scroll-proportion="-1.4" vertical-offset="5900" max-vertical-offset="6360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="487" column="21" selection-start="7483" selection-end="7483" vertical-scroll-proportion="0.668008" vertical-offset="6973" max-vertical-offset="7605">
+          <folding />
         </state>
       </provider>
     </entry>
