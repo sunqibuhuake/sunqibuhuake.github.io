@@ -26,16 +26,37 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="400" column="33" selection-start="13113" selection-end="13113" vertical-scroll-proportion="-0.8" vertical-offset="5960" max-vertical-offset="6420">
+            <state line="392" column="48" selection-start="12972" selection-end="12972" vertical-scroll-proportion="-5.9" vertical-offset="5585" max-vertical-offset="6420">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="01.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/sgqm/01.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="001.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/sgqm/001.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/sgqm/02.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="myAnimation.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="196" column="42" selection-start="6165" selection-end="6165" vertical-scroll-proportion="-0.09594883" vertical-offset="2985" max-vertical-offset="8130">
+            <state line="526" column="43" selection-start="15919" selection-end="15919" vertical-scroll-proportion="0.8443497" vertical-offset="7494" max-vertical-offset="8130">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -68,13 +89,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="btn2014.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/btn2014.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/global.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,13 +105,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2010.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/2010.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -109,16 +116,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/css/youthanimation.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/global.css" />
         <option value="$PROJECT_DIR$/css/custom.css" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/myAnimation.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="295" />
-    <option name="y" value="231" />
+    <option name="x" value="22" />
+    <option name="y" value="89" />
     <option name="width" value="1242" />
     <option name="height" value="669" />
   </component>
@@ -227,6 +234,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="13" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="13" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="step" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="13" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="13" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sgqm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -237,6 +280,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/sgqm" />
       <recent name="$PROJECT_DIR$/css/bg" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/js" />
@@ -295,7 +339,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="295" y="231" width="1242" height="669" extended-state="0" />
+    <frame x="22" y="89" width="1242" height="669" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -329,16 +373,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/42.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/421.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/2014.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -393,9 +427,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sgqm/01.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sgqm/001.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sgqm/02.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="400" column="33" selection-start="13113" selection-end="13113" vertical-scroll-proportion="-0.8" vertical-offset="5960" max-vertical-offset="6420">
+        <state line="392" column="48" selection-start="12972" selection-end="12972" vertical-scroll-proportion="-5.9" vertical-offset="5585" max-vertical-offset="6420">
           <folding />
         </state>
       </provider>
@@ -409,7 +458,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="42" selection-start="6165" selection-end="6165" vertical-scroll-proportion="-0.09594883" vertical-offset="2985" max-vertical-offset="8130">
+        <state line="526" column="43" selection-start="15919" selection-end="15919" vertical-scroll-proportion="0.8443497" vertical-offset="7494" max-vertical-offset="8130">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
