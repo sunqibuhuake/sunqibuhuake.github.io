@@ -16,7 +16,7 @@ body {
     font-size: 22px;
 }
 .swiper-container {
-  max-width: 700px;
+  max-width: 359.04px;
 }
 .wrapper{
     display: table-cell;
@@ -375,15 +375,15 @@ and ( min-height: 600px )
     -webkit-background-size:cover;
 }
 #slide10,#slide15,#slide2{
-    background-image:url('./bg/tt.png') ;
+    background-image:url('./bg/1.png') ;
     /*background-attachment:fixed;*/
     background-repeat:no-repeat;
     background-size:cover;
     -moz-background-size:cover;
     -webkit-background-size:cover;
 }
-#slide1{
-    background-image:url('./bg/hc.png') ;
+#slide1,#slide0{
+    background-image:url('./bg/2.png') ;
     /*background-attachment:fixed;*/
     background-repeat:no-repeat;
     background-size:cover;
