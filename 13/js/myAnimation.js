@@ -32,6 +32,10 @@ window.onload=function(){
             var h5=$('#xic').height()-30;
             h5=h5+'px';
             $('#why2').css('margin-top',h5);
+            var h6=$('#yjkx').height()+70;
+            var h6=h6+'px';
+            $('.step').css('margin-top',h6)
+
 
 
             anima(0);
@@ -276,117 +280,101 @@ function anima(i){
         });
         visited[i]=1;
     }
+//    if((i==9)&&(visited[i]!=1)){
+//        visited[i]=1;
+//        $('#p1').animo({animation:'pulse'})
+//        $('#cb1').animo({animation:'tada',duration:0.3},function(){
+//            $('#p2').animo({animation:'pulse'})
+//        })
+//        $('#cb2').animo({animation:'tada',duration:0.6},function(){
+//            $('#p3').animo({animation:'pulse'})
+//        })
+//        $('#cb3').animo({animation:'tada',duration:0.9},function(){
+//            $('#p4').animo({animation:'pulse'})
+//        })
+//        $('#cb4').animo({animation:'tada',duration:1.2},function(){
+//            $('#p5').animo({animation:'pulse'})
+//        })
+//    }
     if((i==9)&&(visited[i]!=1)){
-        visited[i]=1;
-        $('#p1').animo({animation:'pulse'})
-        $('#cb1').animo({animation:'tada',duration:0.3},function(){
-            $('#p2').animo({animation:'pulse'})
-        })
-        $('#cb2').animo({animation:'tada',duration:0.6},function(){
-            $('#p3').animo({animation:'pulse'})
-        })
-        $('#cb3').animo({animation:'tada',duration:0.9},function(){
-            $('#p4').animo({animation:'pulse'})
-        })
-        $('#cb4').animo({animation:'tada',duration:1.2},function(){
-            $('#p5').animo({animation:'pulse'})
+        xianshi('#t9');
+        $('#t9').animo({animation:'fadeInUp',duration:1},function(){
+            xianshi('#x1');xianshi('#x5');
+            $('#x1').addClass('zi');
+            $('#x5').addClass('zi');
+            function x2(){
+                xianshi('#x9');xianshi('#x4');
+                $('#x9').addClass('zi');
+                $('#x4').addClass('zi');
+            }
+            function x3(){
+                xianshi('#x8');xianshi('#x2');
+                $('#x8').addClass('zi');
+                $('#x2').addClass('zi');
+            }
+            function x4(){
+                xianshi('#x7');xianshi('#x3');
+                $('#x3').addClass('zi');
+                $('#x7').addClass('zi');
+            }
+            function x5(){
+                xianshi('#x6');
+                $('#x6').addClass('zi');
+            }
+            setTimeout(x2,700);
+            setTimeout(x3,1400);
+            setTimeout(x4,2100);
+            setTimeout(x5,2800);
+
         })
     }
     if((i==10)&&(visited[i]!=1)){
-        $('#tam1').css('visibility','visible');
-        $('#tam1').animo({animation:'fadeInUp',duration:1});
-        $('#cb1').animo({animation:'fadeIn',duration:0.5},function(){
-            $('#tam2').css('visibility','visible');
-            $('#tam2').animo({animation:'bounceInRight',duration:2});
-        })
-        $('#cb2').animo({animation:'fadeIn',duration:0.7},function(){
-            $('#tam5').css('visibility','visible');
-            $('#tam5').animo({animation:'bounceInRight',duration:2});
-        })
-        $('#cb3').animo({animation:'fadeIn',duration:0.9},function(){
-            $('#tam4').css('visibility','visible');
-            $('#tam4').animo({animation:'bounceInRight',duration:2});
-        })
-        $('#cb4').animo({animation:'fadeIn',duration:1.1},function(){
-            $('#tam3').css('visibility','visible');
-            $('#tam3').animo({animation:'bounceInRight',duration:2});
-        })
-        $('#cb5').animo({animation:'fadeIn',duration:1.3},function(){
-            $('#tam6').css('visibility','visible');
-            $('#tam6').animo({animation:'bounceInRight',duration:2},function(){
-                $('#step1').css('visibility','visible');
-                $('#step1').animo({animation:'fadeIn',duration:0.3},function(){
-                    $('#step2').css('visibility','visible');
-                    $('#step2').animo({animation:'fadeIn',duration:0.3},function(){
-                        $('#step3').css('visibility','visible');
-                        $('#step3').animo({animation:'fadeIn',duration:0.3},function(){
-                            $('#step4').css('visibility','visible');
-                            $('#step4').animo({animation:'fadeIn',duration:0.3},function(){
-                                $('#step5').css('visibility','visible');
-                                $('#step5').animo({animation:'fadeIn',duration:0.3},function(){
-                                    $('#step6').css('visibility','visible');
-                                    $('#step6').animo({animation:'fadeIn',duration:0.3},function(){
-                                        $('#step7').css('visibility','visible');
-                                        $('#step7').animo({animation:'fadeIn',duration:0.3},function(){
+        $('#yjkx').css('visibility','visible');
+        $('#yjkx').animo({animation:'fadeInUp',duration:1});
+        function showSgqm(){
+            xianshi('#sgqm');
+            $('#sgqm').animo({animation:'fadeInUp',duration:1})
+        }
+        function showStep1(){
+            xianshi('#s1');
+            $('#s1').animo({animation:'fadeIn',duration:0.3})
+        }
+        function showStep2(){
+            xianshi('#s2');
+            $('#s2').animo({animation:'fadeIn',duration:0.3})
+        }
+        function showStep3(){
+            xianshi('#s3');
+            $('#s3').animo({animation:'fadeIn',duration:0.3})
+        }
+        function showStep4(){
+            xianshi('#s4');
+            $('#s4').animo({animation:'fadeIn',duration:0.3})
+        }
+        function showStep5(){
+            xianshi('#s5');
+            $('#s5').animo({animation:'fadeIn',duration:0.3})
+        }
+        function showStep6(){
+            xianshi('#s6');
+            $('#s6').animo({animation:'fadeIn',duration:0.3})
+        }
 
-                                        })
-                                    })
-                                })
-                            })
-                        })
-                    })
-                })
+        setTimeout(showSgqm,500);
+        setTimeout(showStep1,1000);
+        setTimeout(showStep2,1300);
+        setTimeout(showStep3,1600);
+        setTimeout(showStep4,1900);
+        setTimeout(showStep5,2100);
+        setTimeout(showStep6,2400);
 
-            });
+
             visited[i]=1;
-        })
 
 
 
-// $('#cb1').animo({animation:'fadeIn',duration:0.5},function(){
-//
-//     $('#cb').css('visibility','hidden');
-//     $('#cb').animo({animation:'fadeIn',duration:0.5},function(){
-//         console.log('ok')
-//         $('#tam2').css('visibility','visible');
-//         $('#tam2').animo({animation:'bounceInLeft'});
-//         $('#cb').animo({animation:'fadeIn',duration:0.5},function(){
-//             $('#tam5').css('visibility','visible');
-//             $('#tam5').animo({animation:'bounceInLeft'});
-//             $('#cb').animo({animation:'fadeIn',duration:0.5},function(){
-//                 $('#tam4').css('visibility','visible');
-//                 $('#tam4').animo({animation:'bounceInLeft'});
-//                 $('#cb').animo({animation:'fadeIn',duration:0.5},function(){
-//                     $('#tam3').css('visibility','visible');
-//                     $('#tam3').animo({animation:'bounceInLeft'});
-//                     $('#cb').animo({animation:'fadeIn',duration:0.5},function(){
-//                         $('#tam6').css('visibility','visible');
-//                         $('#tam6').animo({animation:'bounceInLeft'});
-//                     })
-//                 })
-//             })
-//         })
-//     })
-// })
-//        $('#tam1').css('visibility','visible');
-//        $('#tam1').animo({animation:'fadeInUp',duration:1},function(){
-//            $('#tam2').css('visibility','visible');
-//            $('#tam2').animo({animation:'bounceInLeft',duration:0.3},function(){
-//                $('#tam5').css('visibility','visible');
-//                $('#tam5').animo({animation:'bounceInLeft',duration:0.3},function(){
-//                    $('#tam4').css('visibility','visible');
-//                    $('#tam4').animo({animation:'bounceInLeft',duration:0.3},function(){
-//                        $('#tam3').css('visibility','visible');
-//                        $('#tam3').animo({animation:'bounceInLeft',duration:0.3},function(){
-//                            $('#tam6').css('visibility','visible');
-//                            $('#tam6').animo({animation:'bounceInRight',duration:0.3},function(){
-//
-//                            })
-//                        })
-//                    })
-//                })
-//            })
-//        })
+
+
 
     }
     if((i==11)&&(visited[i]!=1)){

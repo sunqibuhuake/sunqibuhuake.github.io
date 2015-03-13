@@ -18,6 +18,9 @@ body {
 .swiper-container {
   max-width: 500px;
 }
+.cover img{
+    width: 85%;
+}
 .wrapper{
     display: table-cell;
     vertical-align:middle;
@@ -26,7 +29,9 @@ body {
     display: table;
     height: 100%;
 }
-
+#slide9 .cover{
+    opacity: 0.85;
+}
 #slide1{
     background: #7C9CBC;
 }
@@ -390,10 +395,16 @@ and ( min-height: 600px )
     -moz-background-size:cover;
     -webkit-background-size:cover;
 }
-.maptbox{
+.tbox{
     width: 100%;
     margin-top: 20px;
 }
-.mapt{
+.t{
     width: 85%;
+}
+#slide9 .cover{
+    width: 100%;
+}
+#slide9 .cover img{
+    width: 80%;
 }
