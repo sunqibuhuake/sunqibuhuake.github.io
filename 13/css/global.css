@@ -449,3 +449,27 @@ position: absolute;
     width: 90%;
     margin: 0 auto ;
 }
+@media only screen
+
+and (max-height : 400px)
+{
+
+    .tbox {
+        width: 100%;
+        margin-top: -10px;
+    }
+    #slide1 .cover {
+        margin-top: -30px;
+        width: 100%;
+    }
+    .yaerBtn{
+        height: 30px;
+        width: 30px;
+        margin: 0 auto;
+        border: 1px solid white;
+        border-radius: 50%;
+        font-size: 5px;
+        display: table;
+        overflow: hidden;
+    }
+}

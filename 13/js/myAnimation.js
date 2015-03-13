@@ -142,7 +142,7 @@ press5();
 
 function anima(i){
     if((i==0)&&(visited[i]==1)){
-        $('#hongchou').addClass('swing3')
+        $('#hongchou').addClass('swing2')
     }
     if((i==0)&&(visited[i]!=1)){
         visited[i]=1;
