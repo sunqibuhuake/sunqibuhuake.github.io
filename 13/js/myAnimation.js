@@ -1,6 +1,7 @@
 /**
  * Created by sunqi on 15-3-10.
  */
+
 ;(function(){
     var isTouch = ('ontouchstart' in document.documentElement) ? 'touchstart' : 'click', _on = $.fn.on;
     $.fn.on = function(){
@@ -24,7 +25,9 @@ window.onload=function(){
                     anima(mySwiper.activeIndex);
                 }
             })
-
+            $('.yearBtn').click(function(event){
+                event.preventDefault();
+            });
             var h2=$('#tam1').height()+50;
             var h2=h2+'px';
 
