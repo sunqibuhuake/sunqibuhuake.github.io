@@ -224,10 +224,10 @@ function anima(i){
             $('#lic').addClass('bee');
         }
         setTimeout(lic,200);
-        setTimeout(why2,500);
+        setTimeout(why2,400);
         function why2(){
             $('#why2').css('visibility','visible');
-            $('#why2').animo({animation:'bounceInUp',duration:1.5})
+            $('#why2').addClass('bee')
         }
 
         visited[i]=1;
