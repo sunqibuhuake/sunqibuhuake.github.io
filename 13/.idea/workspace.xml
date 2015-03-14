@@ -23,10 +23,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="1.png" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="313" column="18" selection-start="10174" selection-end="10174" vertical-scroll-proportion="-1.2" vertical-offset="4635" max-vertical-offset="6360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.png" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/bg/1.png">
           <provider selected="true" editor-type-id="images">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1056" column="1" selection-start="21102" selection-end="21102" vertical-scroll-proportion="0.88245034" vertical-offset="15307" max-vertical-offset="15930">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/global.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="538" column="1" selection-start="22725" selection-end="22725" vertical-scroll-proportion="0.0" vertical-offset="7569" max-vertical-offset="8160">
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -44,16 +71,16 @@
         <option value="$PROJECT_DIR$/js/interactive.js" />
         <option value="$PROJECT_DIR$/css/animate+animo.css" />
         <option value="$PROJECT_DIR$/css/idangerous.swiper.css" />
-        <option value="$PROJECT_DIR$/css/global.css" />
         <option value="$PROJECT_DIR$/js/myAnimation.js" />
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/global.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="105" />
-    <option name="y" value="202" />
+    <option name="x" value="15" />
+    <option name="y" value="173" />
     <option name="width" value="1242" />
     <option name="height" value="727" />
   </component>
@@ -249,14 +276,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="105" y="202" width="1242" height="727" extended-state="0" />
+    <frame x="15" y="173" width="1242" height="727" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959743" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -353,13 +380,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="354" column="0" selection-start="10496" selection-end="10496" vertical-scroll-proportion="0.12068965" vertical-offset="5240" max-vertical-offset="5880">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/animate+animo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="847" column="1" selection-start="12613" selection-end="13391" vertical-scroll-proportion="0.7152318" vertical-offset="12273" max-vertical-offset="29295">
@@ -376,20 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1056" column="1" selection-start="21102" selection-end="21102" vertical-scroll-proportion="0.88245034" vertical-offset="15307" max-vertical-offset="15930">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="511" column="19" selection-start="22484" selection-end="22484" vertical-scroll-proportion="0.23857868" vertical-offset="7524" max-vertical-offset="8115">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/swiper.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="6355" selection-start="0" selection-end="14968" vertical-scroll-proportion="0.35532996" vertical-offset="0" max-vertical-offset="591">
@@ -400,6 +406,27 @@
     <entry file="file://$PROJECT_DIR$/css/bg/1.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="538" column="1" selection-start="22725" selection-end="22725" vertical-scroll-proportion="0.0" vertical-offset="7569" max-vertical-offset="8160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="313" column="18" selection-start="10174" selection-end="10174" vertical-scroll-proportion="-1.2" vertical-offset="4635" max-vertical-offset="6360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1056" column="1" selection-start="21102" selection-end="21102" vertical-scroll-proportion="0.88245034" vertical-offset="15307" max-vertical-offset="15930">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
