@@ -227,20 +227,8 @@ body {
 #slide11  .bigcover .cover{
     margin-top:50px;
 }
-#slide10 .underbanner{
-    width: 100%;
-}
-#slide10 .underbanner img{
-    width: 90%;
-    float: left;
-}
-#slide12 img,#slide13 img,#slide14 img,#slide15 img{
-    width: 80%;
-}
-.banner img{
-    width: 75%;
-    margin: 0 auto 8%;
-}
+
+
 #slide12 #city{
     float: left;
     width: 40%;
@@ -502,4 +490,29 @@ and (max-height : 440px)
 #slide15 .end img{
     width: 100%;
     margin-bottom: -3px;
+}
+ .banner img{
+    height: 30px;
+    margin-left:auto ;
+     margin-right: auto;
+}
+ .bigcover .cover{
+     width: 100%;
+ }
+.bigcover .cover img{
+    width: 85%
+}
+ .banner{
+    margin-bottom: 12%;
+}
+.underbanner{
+    width: 100%;
+}
+.underbanner img{
+    width: 85%;
+    margin:  0 auto;
+}
+#slide15 .underbanner{
+    margin-bottom: 20%;
+
 }
