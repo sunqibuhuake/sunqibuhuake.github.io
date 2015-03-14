@@ -26,6 +26,20 @@ window.onload=function(){
                     clean(mySwiper.previousIndex);
                 }
             })
+            var caidan1=0;var caidan2=0;
+            $('#yjkx').click(function(){
+                caidan1=caidan1+1;
+                console.log("a")
+            })
+            $('#s6').click(function(){
+                caidan2=caidan2+1;
+                console.log("b")
+                if((caidan2==10)&&(caidan1==10)){
+                    xianshi('#yibuliangbu')
+                    $('#yibuliangbu').addClass('yibuliangbu')
+                }
+
+            })
             $('.yearBtn').click(function(event){
                 event.preventDefault();
             });
@@ -101,10 +115,10 @@ $('#y3').click(function(){
     press3();
 })
 $('#y4').click(function(){
-press4();
+    press4();
 })
 $('#y5').click(function(){
-press5();
+    press5();
 })
 function anima(i){
 
