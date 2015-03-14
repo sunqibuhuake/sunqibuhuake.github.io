@@ -21,8 +21,9 @@ window.onload=function(){
             var mySwiper = new Swiper('.swiper-container',{
                 direction: 'vertical',
                 onSlideChangeEnd:function(){
-                    console.log(mySwiper.activeIndex)
+                    console.log("当前索引："+mySwiper.activeIndex+'\n'+'上一索引：'+mySwiper.previousIndex)
                     anima(mySwiper.activeIndex);
+                    clean(mySwiper.previousIndex);
                 }
             })
             $('.yearBtn').click(function(event){
@@ -56,50 +57,8 @@ window.onload=function(){
 
 }
 
-function clear(a){
-    console.log(a.length)
-    for(var i=0;i< a.length;i++){
-        document.getElementById(a[i]).setAttribute("class","original");
-    }
-}
-function mapchange(i){
-    if(i==3){
-        document.getElementById("Hei_Long_Jiang").setAttribute("class","mapXi");
-        document.getElementById("Liao_Ning").setAttribute("class","mapXi");
-        document.getElementById("Jiang_Su").setAttribute("class","mapXi");
-        document.getElementById("Xi_Zang").setAttribute("class","mapXi");
-        document.getElementById("Shan_Dong").setAttribute("class","mapLi");
-        document.getElementById("Hu_Nan").setAttribute("class","mapLi");
-        document.getElementById("Gui_Zhou").setAttribute("class","mapLi");
-        document.getElementById("He_Nan").setAttribute("class","mapLi");
-        document.getElementById("Ji_Lin").setAttribute("class","mapLi");
 
 
-    }
-    if(i==4){
-        document.getElementById("Shang_Hai1").setAttribute("class","mapXi");
-        document.getElementById("Shang_Hai2").setAttribute("class","mapXi");
-
-        document.getElementById("Guang_Dong1").setAttribute("class","mapXi");
-        document.getElementById("Guang_Dong2").setAttribute("class","mapXi");
-        document.getElementById("Guang_Dong3").setAttribute("class","mapXi");
-        document.getElementById("Guang_Dong4").setAttribute("class","mapXi");
-
-        document.getElementById("Gui_Zhou").setAttribute("class","mapXi");
-        document.getElementById("An_Hui").setAttribute("class","mapXi");
-        document.getElementById("Shan_Dong").setAttribute("class","mapLi");
-        document.getElementById("Qing_Hai").setAttribute("class","mapLi");
-        document.getElementById("Yun_Nan").setAttribute("class","mapLi");
-        document.getElementById("Shan1_Xi").setAttribute("class","mapLi");
-        document.getElementById("Jiang_Xi").setAttribute("class","mapLi");
-    }
-    if(i==5){
-        document.getElementById("Shang_Hai1").setAttribute("class","mapXi");
-        document.getElementById("Shang_Hai2").setAttribute("class","mapXi");
-        document.getElementById("Jiang_Xi").setAttribute("class","mapXi");
-        document.getElementById("Shan_Dong").setAttribute("class","mapLi");
-    }
-}
 function press3(){
     $('.showedMap').addClass('hide');
     $('.showedMap').removeClass('showedMap');
@@ -138,7 +97,6 @@ function active(k){
         press5();
     }
 }
-
 $('#y3').click(function(){
     press3();
 })
@@ -148,14 +106,11 @@ press4();
 $('#y5').click(function(){
 press5();
 })
-
-
 function anima(i){
-    if((i==0)&&(visited[i]==1)){
-        $('#hongchou').addClass('swing2')
-    }
+
     if((i==0)&&(visited[i]!=1)){
-        visited[i]=1;
+
+        ////visited[i]=1;
         xianshi('#hongchou');
         $('#hongchou').animo({animation:'bounceInUp',duration:1.5},function(){
             $('#hongchou').animo('cleanse');
@@ -167,9 +122,6 @@ function anima(i){
         $('#tiananmen').animo({animation:'bounceInUp',duration:1.9})
         xianshi('.xlxt')
         $('.xlxt').animo({animation:'bounceInUp',duration:2.5});
-
-
-
         xianshi('#guoqi');
         $('#guoqi').animo({animation:'fadeInLeft',duration:2},function(){
             xianshi('#gezi1');
@@ -181,45 +133,20 @@ function anima(i){
             })
 
         })
-
-
-
-
-
-        $('#cb1').animo({animation:'tada',duration:0.5},function(){
-
-        })
-
-
-    }
-    if((i==1)&&(visited[i]==1)){
-        $('#hongchou').removeClass('swing2')
-        active(mapnow);
     }
     if((i==1)&&(visited[i]!=1)){
-        $('#hongchou').removeClass('swing2')
+        if(mapnow==''){
+            press3();
+            setTimeout(press4,2000)
+            setTimeout(press5,4000)
+        }else{
+            active(mapnow);
+        }
 
-        press3();
-//        $('#cb5').animo({animation:'tada',duration:2},function(){
-//            console.log('1')
-//            press4();
-//            $('#cb6').animo({animation:'tada',duration:2},function(){
-//                console.log('1')
-//                press5();
-//
-//            })
-//        })
-        var timer1=setTimeout(press4,2000);
-        var timer2=setTimeout(press5,4000);
-        visited[i]=1;
+        ////visited[i]=1;
     }
-    if((i==2)&&(visited[i]==1)){
-        $('.showedMap').addClass('hide');
-        $('.showedMap').removeClass('showedMap');
-    }
+
     if((i==2)&&(visited[i]!=1)){
-        $('.showedMap').addClass('hide');
-        $('.showedMap').removeClass('showedMap');
         xianshi('#xic');
         $('#xic').addClass('bee');
         function lic(){
@@ -236,7 +163,7 @@ function anima(i){
         var timer3=setTimeout(lic,200);
 
 
-        visited[i]=1;
+        ////visited[i]=1;
 
     }
 
@@ -262,7 +189,7 @@ function anima(i){
             var timer6=setTimeout(caca2,500)
         }
         var timer5=setTimeout(caca1,500)
-        visited[i]=1;
+        //visited[i]=1;
     }
     if((i==4)&&(visited[i]!=1)){
         $('#tou2').css('visibility','visible');
@@ -285,7 +212,7 @@ function anima(i){
             var timer9=setTimeout(caca5,500)
         }
         var timer8=setTimeout(caca4,500)
-        visited[i]=1;
+        //visited[i]=1;
     }
     if((i==5)&&(visited[i]!=1)){
         $('#tou3').css('visibility','visible');
@@ -309,7 +236,7 @@ function anima(i){
         }
         var timer11=setTimeout(caca7,500)
 
-        visited[i]=1;
+        //visited[i]=1;
     }
     if((i==6)&&(visited[i]!=1)){
         $('#tou4').css('visibility','visible');
@@ -332,7 +259,7 @@ function anima(i){
             var timer15=setTimeout(caca11,500)
         }
         var timer14=setTimeout(caca10,500)
-        visited[i]=1;
+        //visited[i]=1;
     }
     if((i==7)&&(visited[i]!=1)){
         $('#tou5').css('visibility','visible');
@@ -355,7 +282,7 @@ function anima(i){
             var timer18=setTimeout(caca14,500)
         }
         var timer17=setTimeout(caca13,500)
-        visited[i]=1;
+        //visited[i]=1;
     }
     if((i==8)&&(visited[i]!=1)){
         $('#tou6').css('visibility','visible');
@@ -373,7 +300,7 @@ function anima(i){
 
         }
         var timer20=setTimeout(caca16,500)
-        visited[i]=1;
+        //visited[i]=1;
     }
 
     if((i==9)&&(visited[i]!=1)){
@@ -413,7 +340,7 @@ function anima(i){
 
 
         })
-        visited[i]=1;
+        //visited[i]=1;
 
     }
     if((i==10)&&(visited[i]!=1)){
@@ -447,7 +374,7 @@ function anima(i){
             setTimeout(x2,700);
 
         })
-        visited[i]=1;
+        //visited[i]=1;
 
     }
     if((i==11)&&(visited[i]!=1)){
@@ -459,45 +386,28 @@ function anima(i){
         }
         function showStep1(){
             xianshi('#s1');
-            $('#s1').animo({animation:'fadeIn',duration:0.3})
+            $('#s1').animo({animation:'fadeIn',duration:0.3},function(){
+                xianshi('#s2');
+                $('#s2').animo({animation:'fadeIn',duration:0.3},function(){
+                    xianshi('#s3');
+                    $('#s3').animo({animation:'fadeIn',duration:0.3},function(){
+                        xianshi('#s4');
+                        $('#s4').animo({animation:'fadeIn',duration:0.3},function(){
+                            xianshi('#s5');
+                            $('#s5').animo({animation:'fadeIn',duration:0.3},function(){
+                                xianshi('#s6');
+                                $('#s6').animo({animation:'fadeIn',duration:0.3})
+                            })
+                        })
+                    })
+                })
+            })
         }
-        function showStep2(){
-            xianshi('#s2');
-            $('#s2').animo({animation:'fadeIn',duration:0.3})
-        }
-        function showStep3(){
-            xianshi('#s3');
-            $('#s3').animo({animation:'fadeIn',duration:0.3})
-        }
-        function showStep4(){
-            xianshi('#s4');
-            $('#s4').animo({animation:'fadeIn',duration:0.3})
-        }
-        function showStep5(){
-            xianshi('#s5');
-            $('#s5').animo({animation:'fadeIn',duration:0.3})
-        }
-        function showStep6(){
-            xianshi('#s6');
-            $('#s6').animo({animation:'fadeIn',duration:0.3})
-        }
+
 
         setTimeout(showSgqm,500);
         setTimeout(showStep1,1000);
-        setTimeout(showStep2,1300);
-        setTimeout(showStep3,1600);
-        setTimeout(showStep4,1900);
-        setTimeout(showStep5,2100);
-        setTimeout(showStep6,2400);
-
-
-            visited[i]=1;
-
-
-
-
-
-
+        //visited[i]=1;
     }
     if((i==12)&&(visited[i]!=1)){
         $('#b1').css('visibility','visible');
@@ -505,8 +415,7 @@ function anima(i){
             $('#u1').css('visibility','visible');
             $('#u1').animo({animation:"fadeInUp"})
         })
-        visited[i]=1;
-
+        //visited[i]=1;
     }
     if((i==13)&&(visited[i]!=1)){
         $('#b2').css('visibility','visible');
@@ -514,7 +423,7 @@ function anima(i){
             $('#u2').css('visibility','visible');
             $('#u2').animo({animation:"fadeInUp"})
         })
-        visited[i]=1;
+        //visited[i]=1;
 
 
     }
@@ -524,7 +433,7 @@ function anima(i){
             $('#u3').css('visibility','visible');
             $('#u3').animo({animation:"fadeInUp"})
         })
-        visited[i]=1;
+        //visited[i]=1;
 
 
     }
@@ -534,9 +443,63 @@ function anima(i){
             $('#u4').css('visibility','visible');
             $('#u4').animo({animation:"fadeInUp"})
         })
-        visited[i]=1;
+        //visited[i]=1;
 
 
     }
 }
-
+function clean(i){
+    if(i==0){
+        $('#slide0').find('.hide').css('visibility','hidden');
+        $('#slide0').find('.swing2').removeClass('swing2');
+    }
+    if(i==1){
+        $('.showedMap').addClass('hide');
+        $('.showedMap').removeClass('showedMap');
+    }
+    if(i==2){
+        $('#slide2').find('.hide').css('visibility','hidden');
+        $('#slide2').find('.bee').removeClass('bee');
+    }
+    if(i==3){
+        $('#slide3').find('.hide').css('visibility','hidden');
+    }
+    if(i==4){
+        $('#slide4').find('.hide').css('visibility','hidden');
+    }
+    if(i==5){
+        $('#slide5').find('.hide').css('visibility','hidden');
+    }
+    if(i==6){
+        $('#slide6').find('.hide').css('visibility','hidden');
+    }
+    if(i==7){
+        $('#slide7').find('.hide').css('visibility','hidden');
+    }
+    if(i==8){
+        $('#slide8').find('.hide').css('visibility','hidden');
+    }
+    if(i==9){
+        $('#slide9').find('.hide').css('visibility','hidden');
+        $('#slide9').find('.zi').removeClass('zi');
+    }
+    if(i==10){
+        $('#slide10').find('.hide').css('visibility','hidden');
+        $('#slide10').find('.zi').removeClass('zi');
+    }
+    if(i==11){
+        $('#slide11').find('.hide').css('visibility','hidden');
+    }
+    if(i==12){
+        $('#slide12').find('.hide').css('visibility','hidden');
+    }
+    if(i==13){
+        $('#slide13').find('.hide').css('visibility','hidden');
+    }
+    if(i==14){
+        $('#slide14').find('.hide').css('visibility','hidden');
+    }
+    if(i==15){
+        $('#slide15').find('.hide').css('visibility','hidden');
+    }
+}
