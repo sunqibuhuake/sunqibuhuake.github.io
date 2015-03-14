@@ -117,6 +117,7 @@ function press4(){
     $('#map2014').removeClass('hide');
     $('#map2014').addClass('showedMap');
     mapnow=4;
+    clearTimeout(timer1)
 }
 function press5(){
     $('.showedMap').addClass('hide');
@@ -126,6 +127,7 @@ function press5(){
     $('#map2015').removeClass('hide');
     $('#map2015').addClass('showedMap');
     mapnow=5;
+    clearTimeout(timer2)
 }
 function active(k){
     if(k==3){
@@ -223,15 +225,18 @@ function anima(i){
         xianshi('#xic');
         $('#xic').addClass('bee');
         function lic(){
+            clearTimeout(timer3);
             xianshi('#lic');
             $('#lic').addClass('bee');
+            var timer4=setTimeout(why2,200);
+            function why2(){
+                $('#why2').css('visibility','visible');
+                $('#why2').addClass('bee')
+                clearTimeout(timer4)
+            }
         }
-        setTimeout(lic,200);
-        setTimeout(why2,400);
-        function why2(){
-            $('#why2').css('visibility','visible');
-            $('#why2').addClass('bee')
-        }
+        var timer3=setTimeout(lic,200);
+
 
         visited[i]=1;
 
@@ -241,24 +246,24 @@ function anima(i){
         $('#tou1').css('visibility','visible');
         $('#tou1').animo({animation:'fadeInRight'});
         function caca1(){
+            clearTimeout(timer5)
             xianshi('#pao1');
             $('#pao1').animo({animation:"fadeInLeft"});
+            function caca2(){
+                clearTimeout(timer6)
+                xianshi('#pao2');
+
+                $('#pao2').animo({animation:"fadeInLeft"});
+                function caca3(){
+                    clearTimeout(timer7)
+                    xianshi('#pao3');
+                    $('#pao3').animo({animation:"fadeInLeft"});
+                }
+                var timer7=setTimeout(caca3,500)
+            }
+            var timer6=setTimeout(caca2,500)
         }
-        function caca2(){
-            xianshi('#pao2');
-            $('#pao2').animo({animation:"fadeInLeft"});
-        }
-        function caca3(){
-            xianshi('#pao3');
-            $('#pao3').animo({animation:"fadeInLeft"});
-        }
-        setTimeout(caca1,500)
-
-        setTimeout(caca2,1000)
-        setTimeout(caca3,1500)
-
-
-
+        var timer5=setTimeout(caca1,500)
         visited[i]=1;
     }
     if((i==4)&&(visited[i]!=1)){
