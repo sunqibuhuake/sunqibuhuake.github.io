@@ -87,6 +87,23 @@
 
     100% {transform: rotate(-1deg); }
 }
+.yibuliangbu{
+    animation: yibuliangbu 0.5s linear forwards  ;
+    -webkit-animation: yibuliangbu 0.5s linear forwards  ;	/* Safari 和 Chrome */
+    -webkit-transform-origin:50% 50%;
+    transform-origin:50% 50%;
+}
+@keyframes  yibuliangbu{
+    0% {  transform:scale(0.1); opacity: 0 }
+    50% {  transform:scale(1); opacity: 0.7 }
+    100% { transform:scale(2); opacity: 0 }
+}
+@-webkit-keyframes  yibuliangbu{
+    0% {  -webkit-transform:scale(0.1); opacity: 0 }
+    50% {  -webkit-transform:scale(1); opacity: 0.7 }
+    100% { -webkit-transform:scale(2); opacity: 0 }
+
+}
 .swing2{
     animation: swing2 1s ease-in-out infinite alternate  ;
     -webkit-animation: swing2 1s ease-in-out infinite alternate  ;	/* Safari 和 Chrome */
