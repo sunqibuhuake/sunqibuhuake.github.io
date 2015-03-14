@@ -161,7 +161,7 @@ function anima(i){
         xianshi('#hongchou');
         $('#hongchou').animo({animation:'bounceInUp',duration:1.5},function(){
             $('#hongchou').animo('cleanse');
-            $('#hongchou').addClass('swing3')
+            $('#hongchou').addClass('swing2')
         })
         xianshi('#huabiao');
         $('#huabiao').animo({animation:'bounceInUp',duration:1.7})
