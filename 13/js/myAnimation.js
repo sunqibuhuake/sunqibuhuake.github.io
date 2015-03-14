@@ -117,7 +117,6 @@ function press4(){
     $('#map2014').removeClass('hide');
     $('#map2014').addClass('showedMap');
     mapnow=4;
-    clearTimeout(timer1)
 }
 function press5(){
     $('.showedMap').addClass('hide');
@@ -127,7 +126,6 @@ function press5(){
     $('#map2015').removeClass('hide');
     $('#map2015').addClass('showedMap');
     mapnow=5;
-    clearTimeout(timer2)
 }
 function active(k){
     if(k==3){
