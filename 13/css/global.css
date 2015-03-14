@@ -285,6 +285,9 @@ and ( min-height: 600px )
     .intalk{
         font-size:15px;
     }
+    #slide8 .cover{
+        margin-top: 10%;
+    }
     .pao1{
         margin-top: 4%;
     }
