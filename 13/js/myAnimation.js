@@ -209,8 +209,8 @@ function anima(i){
 //
 //            })
 //        })
-        setTimeout(press4,2000);
-        setTimeout(press5,4000);
+        var timer1=setTimeout(press4,2000);
+        var timer2=setTimeout(press5,4000);
         visited[i]=1;
     }
     if((i==2)&&(visited[i]==1)){
