@@ -270,120 +270,114 @@ function anima(i){
         $('#tou2').css('visibility','visible');
         $('#tou2').animo({animation:'fadeInRight'});
         function caca4(){
+            clearTimeout(timer8)
             xianshi('#pao4');
             $('#pao4').animo({animation:"fadeInLeft"});
+            function caca5(){
+                clearTimeout(timer9)
+                xianshi('#pao5');
+                $('#pao5').animo({animation:"fadeInLeft"});
+                function caca6(){
+                    clearTimeout(timer10)
+                    xianshi('#pao6');
+                    $('#pao6').animo({animation:"fadeInLeft"});
+                }
+                var timer10=setTimeout(caca6,500)
+            }
+            var timer9=setTimeout(caca5,500)
         }
-        function caca5(){
-            xianshi('#pao5');
-            $('#pao5').animo({animation:"fadeInLeft"});
-        }
-        function caca6(){
-            xianshi('#pao6');
-            $('#pao6').animo({animation:"fadeInLeft"});
-        }
-        setTimeout(caca4,500)
-
-        setTimeout(caca5,1000)
-        setTimeout(caca6,1500)
+        var timer8=setTimeout(caca4,500)
         visited[i]=1;
     }
     if((i==5)&&(visited[i]!=1)){
         $('#tou3').css('visibility','visible');
         $('#tou3').animo({animation:'fadeInRight'});
         function caca7(){
+            clearTimeout(timer11)
             xianshi('#pao7');
             $('#pao7').animo({animation:"fadeInLeft"});
+            function caca8(){
+                clearTimeout(timer12)
+                xianshi('#pao8');
+                $('#pao8').animo({animation:"fadeInLeft"});
+                function caca9(){
+                    clearTimeout(timer13)
+                    xianshi('#pao9');
+                    $('#pao9').animo({animation:"fadeInLeft"});
+                }
+                var timer13=setTimeout(caca9,500)
+            }
+            var timer12=setTimeout(caca8,500)
         }
-        function caca8(){
-            xianshi('#pao8');
-            $('#pao8').animo({animation:"fadeInLeft"});
-        }
-        function caca9(){
-            xianshi('#pao9');
-            $('#pao9').animo({animation:"fadeInLeft"});
-        }
-        setTimeout(caca7,500)
+        var timer11=setTimeout(caca7,500)
 
-        setTimeout(caca8,1000)
-        setTimeout(caca9,1500)
         visited[i]=1;
     }
     if((i==6)&&(visited[i]!=1)){
         $('#tou4').css('visibility','visible');
         $('#tou4').animo({animation:'fadeInRight'});
         function caca10(){
+            clearTimeout(timer14)
             xianshi('#pao10');
             $('#pao10').animo({animation:"fadeInLeft"});
+            function caca11(){
+                clearTimeout(timer15)
+                xianshi('#pao11');
+                $('#pao11').animo({animation:"fadeInLeft"});
+                function caca12(){
+                    clearTimeout(timer16)
+                    xianshi('#pao12');
+                    $('#pao12').animo({animation:"fadeInLeft"});
+                }
+                var timer16=setTimeout(caca12,500)
+            }
+            var timer15=setTimeout(caca11,500)
         }
-        function caca11(){
-            xianshi('#pao11');
-            $('#pao11').animo({animation:"fadeInLeft"});
-        }
-        function caca12(){
-            xianshi('#pao12');
-            $('#pao12').animo({animation:"fadeInLeft"});
-        }
-        setTimeout(caca10,500)
-
-        setTimeout(caca11,1000)
-        setTimeout(caca12,1500)
+        var timer14=setTimeout(caca10,500)
         visited[i]=1;
     }
     if((i==7)&&(visited[i]!=1)){
         $('#tou5').css('visibility','visible');
         $('#tou5').animo({animation:'fadeInRight'});
         function caca13(){
+            clearTimeout(timer17)
             xianshi('#pao13');
             $('#pao13').animo({animation:"fadeInLeft"});
+            function caca14(){
+                clearTimeout(timer18)
+                xianshi('#pao14');
+                $('#pao14').animo({animation:"fadeInLeft"});
+                function caca15(){
+                    clearTimeout(timer19)
+                    xianshi('#pao15');
+                    $('#pao15').animo({animation:"fadeInLeft"});
+                }
+                var timer19=setTimeout(caca15,500)
+            }
+            var timer18=setTimeout(caca14,500)
         }
-        function caca14(){
-            xianshi('#pao14');
-            $('#pao14').animo({animation:"fadeInLeft"});
-        }
-        function caca15(){
-            xianshi('#pao15');
-            $('#pao15').animo({animation:"fadeInLeft"});
-        }
-        setTimeout(caca13,500)
-
-        setTimeout(caca14,1000)
-        setTimeout(caca15,1500)
+        var timer17=setTimeout(caca13,500)
         visited[i]=1;
     }
     if((i==8)&&(visited[i]!=1)){
         $('#tou6').css('visibility','visible');
         $('#tou6').animo({animation:'fadeInRight'});
         function caca16(){
+            clearTimeout(timer20)
             xianshi('#pao16');
             $('#pao16').animo({animation:"fadeInLeft"});
+            function caca17(){
+                clearTimeout(timer21)
+                xianshi('#pao17');
+                $('#pao17').animo({animation:"fadeInLeft"});
+            }
+            var timer21=setTimeout(caca17,500)
+
         }
-        function caca17(){
-            xianshi('#pao17');
-            $('#pao17').animo({animation:"fadeInLeft"});
-        }
-
-        setTimeout(caca16,500)
-
-        setTimeout(caca17,1000)
-
+        var timer20=setTimeout(caca16,500)
         visited[i]=1;
     }
-//    if((i==9)&&(visited[i]!=1)){
-//        visited[i]=1;
-//        $('#p1').animo({animation:'pulse'})
-//        $('#cb1').animo({animation:'tada',duration:0.3},function(){
-//            $('#p2').animo({animation:'pulse'})
-//        })
-//        $('#cb2').animo({animation:'tada',duration:0.6},function(){
-//            $('#p3').animo({animation:'pulse'})
-//        })
-//        $('#cb3').animo({animation:'tada',duration:0.9},function(){
-//            $('#p4').animo({animation:'pulse'})
-//        })
-//        $('#cb4').animo({animation:'tada',duration:1.2},function(){
-//            $('#p5').animo({animation:'pulse'})
-//        })
-//    }
+
     if((i==9)&&(visited[i]!=1)){
         xianshi('#t9');
         $('#t9').animo({animation:'fadeInUp',duration:1},function(){
@@ -394,25 +388,31 @@ function anima(i){
                 xianshi('#x9');xianshi('#x4');
                 $('#x9').addClass('zi');
                 $('#x4').addClass('zi');
+                function x3(){
+                    xianshi('#x8');xianshi('#x2');
+                    $('#x8').addClass('zi');
+                    $('#x2').addClass('zi');
+                    function x4(){
+                        xianshi('#x7');xianshi('#x3');
+                        $('#x3').addClass('zi');
+                        $('#x7').addClass('zi');
+                        function x5(){
+                            xianshi('#x6');
+                            $('#x6').addClass('zi');
+                        }
+                        setTimeout(x5,700);
+                    }
+                    setTimeout(x4,700);
+                }
+                setTimeout(x3,700);
             }
-            function x3(){
-                xianshi('#x8');xianshi('#x2');
-                $('#x8').addClass('zi');
-                $('#x2').addClass('zi');
-            }
-            function x4(){
-                xianshi('#x7');xianshi('#x3');
-                $('#x3').addClass('zi');
-                $('#x7').addClass('zi');
-            }
-            function x5(){
-                xianshi('#x6');
-                $('#x6').addClass('zi');
-            }
+
+
+
             setTimeout(x2,700);
-            setTimeout(x3,1400);
-            setTimeout(x4,2100);
-            setTimeout(x5,2800);
+
+
+
 
         })
         visited[i]=1;
