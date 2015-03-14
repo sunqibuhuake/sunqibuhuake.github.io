@@ -428,25 +428,25 @@ function anima(i){
                 xianshi('#l9');xianshi('#l2');
                 $('#l2').addClass('zi');
                 $('#l9').addClass('zi');
-            }
-            function x3(){
-                xianshi('#l3');xianshi('#l7');
-                $('#l3').addClass('zi');
-                $('#l7').addClass('zi');
-            }
-            function x4(){
-                xianshi('#l4');xianshi('#l8');
-                $('#l4').addClass('zi');
-                $('#l8').addClass('zi');
-            }
-            function x5(){
-                xianshi('#l6');
-                $('#l6').addClass('zi');
+                function x3(){
+                    xianshi('#l3');xianshi('#l7');
+                    $('#l3').addClass('zi');
+                    $('#l7').addClass('zi');
+                    function x4(){
+                        xianshi('#l4');xianshi('#l8');
+                        $('#l4').addClass('zi');
+                        $('#l8').addClass('zi');
+                        function x5(){
+                            xianshi('#l6');
+                            $('#l6').addClass('zi');
+                        }
+                        setTimeout(x5,700);
+                    }
+                    setTimeout(x4,700);
+                }
+                setTimeout(x3,700);
             }
             setTimeout(x2,700);
-            setTimeout(x3,1400);
-            setTimeout(x4,2100);
-            setTimeout(x5,2800);
 
         })
         visited[i]=1;
