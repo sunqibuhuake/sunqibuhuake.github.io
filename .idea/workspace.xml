@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc8982ca-3073-43ed-b517-f2455869ffcc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v/css/custom.css" afterPath="$PROJECT_DIR$/v/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v/css/style-mobile.css" afterPath="$PROJECT_DIR$/v/css/style-mobile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/raw/.idea/workspace.xml" afterPath="$PROJECT_DIR$/raw/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="bc8982ca-3073-43ed-b517-f2455869ffcc" name="Default" comment="" />
     <ignored path="sunqibuhuake.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -175,7 +171,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/node/story" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
