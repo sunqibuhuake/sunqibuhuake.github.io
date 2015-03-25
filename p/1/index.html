@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="css.css" rel="stylesheet" type="text/css">
+    <title></title>
+</head>
+<body>
+
+<div id="game"  >
+  <div class="mid">
+      <div class="cover">
+          <img src="o.png" id="o"  >
+      </div>
+      <div class="cover">
+          <img src="i.png"  id="i" >
+      </div>
+
+      <div class="cover">
+          <img src="s.png" id="start"  >
+      </div>
+
+
+  </div>
+</div>
+<script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
+<script>
+    var b=true;
+    $(function(){
+        function suan(k){
+            var s1= k.split('(')[1];
+            var s2=s1.split(')')[0]
+            var s=s2.split(',');
+            console.log(s);
+            var k1=parseFloat(s[0].substr(0, 7));
+            var k2=parseFloat(s[1].substr(0, 7));
+            var d1=Math.asin(k2)*(180/Math.PI);
+            console.log(d1+'°');
+            if(k1>0){
+                d1=360+d1;
+            }
+
+            if(k1<0){
+                d1=180-d1;
+
+            }
+
+            console.log(d1+'°');
+        }
+        $('#start').tap(function(){
+            console.log(b);
+            if(b){
+                $("#o").removeClass('paused');
+                $("#i").removeClass('paused');
+                $("#o").addClass('xuanzhuan1');
+                $("#i").addClass('xuanzhuan2');
+                b=!b;
+            }else{
+                $("#o").addClass('paused');
+                $("#i").addClass('paused');
+                b=!b;
+                var d1=$('#o').css('transform');
+                suan(d1);
+
+            }
+        })
+    })
+</script>
+</body>
+</html>
