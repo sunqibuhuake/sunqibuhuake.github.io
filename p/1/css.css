@@ -40,6 +40,10 @@ body,html{
     line-height: 1.8;
     font-size: 25px;
     color: rgb(231, 76, 60);
+
+}
+.btn:before{
+    content: '开始';
 }
 
 .xuanzhuan1{
@@ -81,6 +85,13 @@ body,html{
 .running{
     animation-play-state:running;
     -webkit-animation-play-state:running; /* Safari 和 Chrome */
+}
+.active{
+    background-color:rgba(231, 76, 60,1) ;
+    color: white;
+}
+.active:before{
+    content: "暂停";
 }
 .btnActive{
     animation: btnActive 0.2s  ease-in   forwards ;
