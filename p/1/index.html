@@ -28,20 +28,20 @@
 </div>
 <script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
 <script>
-    ;(function(){
-        var isTouch = ('ontouchstart' in document.documentElement) ? 'touchstart' : 'click', _on = $.fn.on;
-        $.fn.on = function(){
-            arguments[0] = (arguments[0] === 'click') ? isTouch: arguments[0];
-            return _on.apply(this, arguments);
-        };
-    })();
+//    ;(function(){
+//        var isTouch = ('ontouchstart' in document.documentElement) ? 'touchstart' : 'click', _on = $.fn.on;
+//        $.fn.on = function(){
+//            arguments[0] = (arguments[0] === 'click') ? isTouch: arguments[0];
+//            return _on.apply(this, arguments);
+//        };
+//    })();
     var a1=['失足的','一见钟情的','出柜的','看破红尘的','心怀不轨的','暗恋你的'];
     var a2=['舍友','班主任','路人','店老板','前任','班长'];
     var b=true;
     $(function(){
-        $('#start').click(function(event){
-            event.preventDefault();
-        });
+//        $('#start').click(function(event){
+//            event.preventDefault();
+//        });
         function adjust(){
             var h=$('#o').height()+100;
             h=h+'px';
@@ -98,7 +98,7 @@
             return(d1)
         }
 
-        $('#start').click(function(){
+        $('#start').tap(function(){
             //console.log(b);
             if(b){
                 $('#start').addClass('active')
