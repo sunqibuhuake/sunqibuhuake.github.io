@@ -11,10 +11,10 @@
 <div id="game"  >
   <div class="mid">
       <div class="cover">
-          <img src="o.png" id="o"  >
+          <img src="o.png" id="o" class="xuanzhuan1 paused"  >
       </div>
       <div class="cover">
-          <img src="i.png"  id="i" >
+          <img src="i.png"  id="i" class="xuanzhuan2 paused" >
       </div>
 
       <div class="cover">
@@ -28,10 +28,20 @@
 </div>
 <script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
 <script>
+    ;(function(){
+        var isTouch = ('ontouchstart' in document.documentElement) ? 'touchstart' : 'click', _on = $.fn.on;
+        $.fn.on = function(){
+            arguments[0] = (arguments[0] === 'click') ? isTouch: arguments[0];
+            return _on.apply(this, arguments);
+        };
+    })();
     var a1=['失足的','一见钟情的','出柜的','看破红尘的','心怀不轨的','暗恋你的'];
     var a2=['舍友','班主任','路人','店老板','前任','班长'];
     var b=true;
     $(function(){
+        $('#start').click(function(event){
+            event.preventDefault();
+        });
         function adjust(){
             var h=$('#o').height()+100;
             h=h+'px';
@@ -92,22 +102,25 @@
             if(b){
                 $("#o").removeClass('paused');
                 $("#i").removeClass('paused');
-                $("#o").addClass('xuanzhuan1');
-                $("#i").addClass('xuanzhuan2');
-                //$('#start').addClass('btnActive')
+                $("#o").addClass('running');
+                $("#i").addClass('running');
+//                $('#start').addClass('btnActive')
                 b=!b;
+                console.log(b)
             }else{
                 $("#o").addClass('paused');
                 $("#i").addClass('paused');
+                $("#o").removeClass('running');
+                $("#i").removeClass('running');
+
                 b=!b;
+                console.log(b)
                 var d1=$('#o').css('transform');
                 var d2=$('#i').css('transform');
-
-                //console.log(suan(d1))
                 var n1=Math.floor(suan(d1)/60);
                 suan2(d2)
                 var n2=Math.floor(suan2(d2)/60);
-                //console.log(suan(d2))
+
                 console.log(a1[n1]+a2[n2]);
             }
         })
