@@ -7,14 +7,52 @@
     <title></title>
 </head>
 <body>
+<div  class="load8"  >
+    <div class="mid">
+        <div class="loader"></div>
+        <div class="loading">
+            正在努力加载
+        </div>
+    </div>
+</div>
+<div class="land">
+  <div class="mid">
+      <img  id="logo" src="logo.png">
+      <div class="landText">
+          今天去********<br>
+          会邂逅谁呢？
+      </div>
+      <div  id="getIn" class="landBtn">
+        去占卜罗盘
+      </div>
+  </div>
+</div>
+<div   class=" score">
+    <div class="mid">
+        <div id="result">
+            我将会在******邂逅<br>
+            <span id="who">某某某某某</span>
 
+        </div>
+        <div class="btnG">
+
+            <div id="share">
+                <img src="share.png">
+            </div>
+            <div id="replay">
+                <img src="replay.png">
+            </div>
+        </div>
+
+    </div>
+</div>
 <div id="game"  >
   <div class="mid">
       <div class="cover">
-          <img src="o.png" id="o" class="xuanzhuan1 paused"  >
+          <img src="o.png"  id="o" class="roll xuanzhuan1 paused"  >
       </div>
       <div class="cover">
-          <img src="i.png"  id="i" class="xuanzhuan2 paused" >
+          <img src="i.png"  id="i" class="roll xuanzhuan2 paused" >
       </div>
 
       <div class="cover">
@@ -26,39 +64,46 @@
 
   </div>
 </div>
+
 <script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
 <script>
-//    ;(function(){
-//        var isTouch = ('ontouchstart' in document.documentElement) ? 'touchstart' : 'click', _on = $.fn.on;
-//        $.fn.on = function(){
-//            arguments[0] = (arguments[0] === 'click') ? isTouch: arguments[0];
-//            return _on.apply(this, arguments);
-//        };
-//    })();
+    ;(function(){
+        var isTouch = ('ontouchstart' in document.documentElement) ? 'touchstart' : 'click', _on = $.fn.on;
+        $.fn.on = function(){
+            arguments[0] = (arguments[0] === 'click') ? isTouch: arguments[0];
+            return _on.apply(this, arguments);
+        };
+    })();
     var a1=['失足的','一见钟情的','出柜的','看破红尘的','心怀不轨的','暗恋你的'];
     var a2=['舍友','班主任','路人','店老板','前任','班长'];
     var b=true;
     $(function(){
-//        $('#start').click(function(event){
-//            event.preventDefault();
-//        });
+        $('#start').click(function(event){
+            event.preventDefault();
+        });
+        $('#replay').tap(function(){
+            $('.score').addClass('slideOut')
+            $('.score').removeClass('slideIn')
+
+        })
         function adjust(){
-            var h=$('#o').height()+100;
+            var h=$('#o').height()+75;
             h=h+'px';
             console.log(h);
             $('#start').css('margin-top',h);
 
         }
         adjust()
+        $('#getIn').tap(function(){
+            $('.land').addClass('slideOut');
+        })
         function suan(k){
             var s1= k.split('(')[1];
             var s2=s1.split(')')[0]
             var s=s2.split(',');
-            //console.log(s);
             var k1=parseFloat(s[0].substr(0, 7));
             var k2=parseFloat(s[1].substr(0, 7));
             var d1=Math.asin(k2)*(180/Math.PI);
-
             if(k1>0){
                 d1=360+d1;
             }
@@ -70,6 +115,7 @@
             if(d1>=360){
                 d1=d1-360;
             }
+            console.log(d1);
 
             return(d1);
         }
@@ -77,12 +123,9 @@
             var s1= k.split('(')[1];
             var s2=s1.split(')')[0]
             var s=s2.split(',');
-            console.log(s);
             var k1=parseFloat(s[0].substr(0, 7));
-
             var k2=parseFloat(s[1].substr(0, 7))*(-1);
             var d1=Math.asin(k2)*(180/Math.PI);
-
             if(k1>0){
                 d1=360+d1;
             }
@@ -94,43 +137,55 @@
             if(d1>=360){
                 d1=d1-360;
             }
-
+            console.log(d1);
             return(d1)
         }
 
-        $('#start').tap(function(){
+        $('#start').click(function(){
             //console.log(b);
             if(b){
+//                $("#o").addClass('running');
+//                $("#i").addClass('running');
+//                $("#o").removeClass('paused');
+//                $("#i").removeClass('paused');
+                $('.roll').css('-webkit-animation-play-state','running')
+
                 $('#start').addClass('active')
-                $("#o").removeClass('paused');
-                $("#i").removeClass('paused');
-                $("#o").addClass('running');
-                $("#i").addClass('running');
+
                 //$('#start').addClass('btnActive')
 
 
                 b=!b;
                 console.log(b)
             }else{
+//                $("#o").removeClass('running');
+//                $("#i").removeClass('running');
+                $('.roll').css('-webkit-animation-play-state','paused')
                 $('#start').removeClass('active')
-                $("#o").addClass('paused');
-                $("#i").addClass('paused');
-                $("#o").removeClass('running');
-                $("#i").removeClass('running');
-
-
                 b=!b;
                 console.log(b)
                 var d1=$('#o').css('transform');
+                console.log(d1)
                 var d2=$('#i').css('transform');
                 var n1=Math.floor(suan(d1)/60);
-                suan2(d2)
+                //suan2(d2)
                 var n2=Math.floor(suan2(d2)/60);
 
                 console.log(a1[n1]+a2[n2]);
+                $('#who').html(a1[n1]+a2[n2])
+
+//                $('.score').addClass('slideIn');
+//                $('.score').removeClass('slideOut');
+
             }
         })
     })
+window.onload=function(){
+    $(function(){
+        $('.load8').addClass('slideOut');
+        $('.score').addClass('slideOut');
+    })
+}
 </script>
 </body>
 </html>
