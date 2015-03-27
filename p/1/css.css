@@ -12,6 +12,7 @@ body,html{
 .cover img{
     width: 80%;
     margin: 0 auto;
+    max-width: 300px;
 }
 
 
@@ -32,6 +33,7 @@ body,html{
     line-height: 1.8;
     font-size: 25px;
     color: #ff7676;
+    margin-top:350px ;
 
 }
 .btn:before{
@@ -81,9 +83,35 @@ body,html{
 .active{
     background-color:#ff7676;
     color: white;
+    animation: active 0.1s  ease-in   forwards ;
+    -webkit-animation: active 0.1s ease-in    forwards;	/* Safari 和 Chrome */
+}
+@keyframes active
+{
+    0% {opacity: 1 }
+
+    100% { opacity: 0.9}
+}
+@-webkit-keyframes active /* Safari 和 Chrome */
+{
+    0% {opacity: 1 }
+
+    100% { opacity: 0.9}
 }
 .active:before{
     content: "暂停";
+}
+.done{
+    animation: done 0.5s ease-in-out infinite alternate;
+    -webkit-animation: done 0.5s ease-in-out infinite alternate;	/* Safari 和 Chrome */
+}
+@keyframes  done{
+    0% {transform:translateY(0)}
+    100% {transform:translateY(-10px)}
+}
+@-webkit-keyframes  done{
+    0% {-webkit-transform:translateY(0)}
+    100% {-webkit-transform:translateY(-10px)}
 }
 .btnActive{
     animation: btnActive 0.2s  ease-in   forwards ;
