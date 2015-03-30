@@ -26,7 +26,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="45" selection-start="3689" selection-end="3689" vertical-scroll-proportion="2.1111112" vertical-offset="933" max-vertical-offset="2490">
+            <state line="138" column="80" selection-start="3517" selection-end="3517" vertical-scroll-proportion="0.25925925" vertical-offset="1923" max-vertical-offset="2490">
               <folding />
             </state>
           </provider>
@@ -94,8 +94,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="47" />
-    <option name="y" value="22" />
+    <option name="x" value="168" />
+    <option name="y" value="247" />
     <option name="width" value="1260" />
     <option name="height" value="727" />
   </component>
@@ -203,7 +203,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="22" width="1260" height="727" extended-state="0" />
+    <frame x="168" y="247" width="1260" height="727" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -340,7 +340,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="45" selection-start="3689" selection-end="3689" vertical-scroll-proportion="2.1111112" vertical-offset="933" max-vertical-offset="2490">
+        <state line="138" column="80" selection-start="3517" selection-end="3517" vertical-scroll-proportion="0.25925925" vertical-offset="1923" max-vertical-offset="2490">
           <folding />
         </state>
       </provider>
