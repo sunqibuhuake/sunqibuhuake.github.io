@@ -50,10 +50,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="5.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="5.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="430" column="9" selection-start="22197" selection-end="22197" vertical-scroll-proportion="0.96875" vertical-offset="5923" max-vertical-offset="6540">
+            <state line="430" column="9" selection-start="22197" selection-end="22197" vertical-scroll-proportion="-21.958334" vertical-offset="5923" max-vertical-offset="6540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="9.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/9.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="8" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.94485295" vertical-offset="101" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
@@ -102,6 +111,7 @@
         <option value="$PROJECT_DIR$/omg.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/5.html" />
+        <option value="$PROJECT_DIR$/9.html" />
       </list>
     </option>
   </component>
@@ -254,11 +264,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/d.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="459" selection-start="1940" selection-end="1941" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="4440">
@@ -363,7 +368,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="430" column="9" selection-start="22197" selection-end="22197" vertical-scroll-proportion="0.96875" vertical-offset="5923" max-vertical-offset="6540">
+        <state line="430" column="9" selection-start="22197" selection-end="22197" vertical-scroll-proportion="-21.958334" vertical-offset="5923" max-vertical-offset="6540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="8" selection-start="1441" selection-end="1441" vertical-scroll-proportion="0.94485295" vertical-offset="101" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
