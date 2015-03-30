@@ -22,11 +22,11 @@
 <script>
     var b=true;
     var r=0;
-    var d1=10;
-    var d2=10;
+    var d=10;
+
     function draw(){
         $(function(){
-          r=r+d;
+          r=r-d;
           var k="rotate("+r+"deg)";
           //console.log(k)
           $('.react').css('-webkit-transform',k)
