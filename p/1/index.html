@@ -70,7 +70,7 @@
 
 <script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
 <script>
-    var tu='./1.jpg';
+    var tu='http://cdn4.hbimg.cn/store/wm/bigfiles/201337/D525A2FC85A29AD1E9F2888634.jpg';
     var desc='describe test'
     var title='title test'
     $(function(){
@@ -170,53 +170,7 @@ window.onload=function(){
         $('.score').addClass('slideOut');
     })
 }
-    //分享
-    var UA = function(){
-        var userAgent = navigator.userAgent.toLowerCase();
-        return {
-            ipad: /ipad/.test(userAgent),
-            iphone: /iphone/.test(userAgent),
-            android: /android/.test(userAgent),
-            qqnews: /qqnews/.test(userAgent),
-            weixin: /micromessenger/.test(userAgent)
-        };
-    };
-    /**
-     * mSahre 移动端分享功能 新闻客户端
-     */
-    var mShare = {
-        init: function(){
-            var d = {
-                title: title,
-                pic:tu,
-                des: describe,
-                url: document.location.href
-            };
-            var ua = UA();
-            switch(true){
-                case ua.qqnews:
-                    if(window.TencentNews && window.TencentNews.showShareMenu) {
-                        window.TencentNews.showShareMenu(d.url,d.title,d.des,d.pic,"news_news_wc");
-                    }else{
-                        window.TencentNews.shareFromWebView(d.title, d.des, d.pic);
-                    }
-                    break;
-                case ua.weixin:
-                    $(".weixin").show();
 
-
-                    break;
-                default:
-                    window.location = "http://share.v.t.qq.com/index.php?c=share&a=index&appkey=801378464&url="
-                            + document.location.href + "&title="+title+"&pic="
-                            + tu+"&des="
-                            + describe;
-
-                    break;
-            }
-        }
-
-    };
 
 
     document.addEventListener('WeixinJSBridgeReady',
@@ -239,9 +193,9 @@ window.onload=function(){
                                         "img_url": tu,
                                         "img_width": "640",
                                         "img_height": "640",
-                                        "link": document.location.href,
-                                        "desc": title,
-                                        "title":describe
+                                        "link": 'http://baidu.com',
+                                        "desc": desc,
+                                        "title":title
                                     },
                                     function(res) {
                                         document.location.href = window.shareData.timeLineLink;
