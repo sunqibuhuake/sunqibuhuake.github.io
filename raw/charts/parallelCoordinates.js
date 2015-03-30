@@ -23,9 +23,9 @@
     })
 
     var chart = raw.chart()
-        .title('Parallel Coordinates')
+        .title('平行坐标图（Parallel Coordinates）')
         .description(
-            "Parallel coordinates is a common way of visualizing high-dimensional geometry and analyzing multivariate data.To show a set of points in an n-dimensional space, a backdrop is drawn consisting of n parallel lines, typically vertical and equally spaced. A point in n-dimensional space is represented as a polyline with vertices on the parallel axes; the position of the vertex on the ith axis corresponds to the ith coordinate of the point. <br/>Based on <a href='http://bl.ocks.org/jasondavies/1341281'>http://bl.ocks.org/jasondavies/1341281</a>")
+            "平行坐标图是一种通常的可视化方法，用于对高维几何和多元数据的可视化。"+"<br>"+"为了克服传统的笛卡尔直角坐标系容易耗尽空间、难以表达三维以上数据的问题，平行坐标图将高维数据的各个变量用一系列相互平行的坐标轴表示，变量值对应轴上位置。为了反映变化趋势和各个变量间相互关系，往往将描述不同变量的各点连接成折线。"+"<br>"+"平行坐标图的一个显著优点是其具有良好的数学基础，其射影几何解释和对偶特性使它很适合用于可视化数据分析。")
         .thumbnail("imgs/parallelCoordinates.png")
         .category('Distributions')
         .model(model)

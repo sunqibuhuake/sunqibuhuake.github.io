@@ -3,9 +3,9 @@
 	var points = raw.models.points();
 
 	var chart = raw.chart()
-		.title('Scatter Plot')
+		.title('散点图（Scatter Plot）')
 		.description(
-            "A scatter plot, scatterplot, or scattergraph is a type of mathematical diagram using Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis. This kind of plot is also called a scatter chart, scattergram, scatter diagram, or scatter graph.")
+            "散点图将序列显示为一组点，值由点在图表中的位置表示，类别由图表中的不同标记表示。散点图通常用于比较跨类别的聚合数据，判断两变量之间是否存在某种关联或总结坐标点的分布模式。")
 		.thumbnail("imgs/scatterPlot.png")
 	    .category('Distributions')
 		.model(points)

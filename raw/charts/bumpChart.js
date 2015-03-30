@@ -53,10 +53,10 @@
     })
 
     var chart = raw.chart()
-        .title('Bump Chart')
+        .title('颠簸图（Bump Chart）')
         .thumbnail("imgs/bumpChart.png")
         .description(
-            "For continuous data such as time series, a bump chart can be used in place of stacked bars. Based on New York Times's <a href='http://www.nytimes.com/interactive/2014/08/13/upshot/where-people-in-each-state-were-born.html'>interactive visualization.</a>")
+            "对于像时间序列这样的连续数据，颠簸图能取代堆叠的柱状图来直观地进行展现。你可以参考纽约时报的<a href='http://www.nytimes.com/interactive/2014/08/13/upshot/where-people-in-each-state-were-born.html'>交互报道</a>。")
         .category('Time Series')
         .model(stream)
 

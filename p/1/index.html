@@ -49,10 +49,10 @@
 <div id="game"  >
   <div class="mid">
       <div class="cover">
-          <img src="o.png"  id="o" class="roll xuanzhuan1 paused"  >
+          <img src="o.png"  id="o"    >
       </div>
       <div class="cover">
-          <img src="i.png"  id="i" class="roll xuanzhuan2 paused" >
+          <img src="i.png"  id="i"   >
       </div>
       <div class="cover">
           <img src="c.png"   >
@@ -71,113 +71,84 @@
 <script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
 <script>
 
-    ;(function(){
-        var isTouch = ('ontouchstart' in document.documentElement) ? 'touchstart' : 'click', _on = $.fn.on;
-        $.fn.on = function(){
-            arguments[0] = (arguments[0] === 'click') ? isTouch: arguments[0];
-            return _on.apply(this, arguments);
-        };
-    })();
-    var a1=['失足的','一见钟情的','出柜的','看破红尘的','心怀不轨的','暗恋你的'];
-    var a2=['舍友','班主任','路人','店老板','前任','班长'];
-    var b=true;
-    $(function(){
-        function live(){
-            $('#start').removeClass('active')
-            if(b){
-                $('.roll').css('-webkit-animation-play-state','running')
-                $('#start').addClass('active')
-                b=!b;
-                console.log(b)
-            }else{
-                $('.roll').css('-webkit-animation-play-state','paused')
-                function showS(){
-                    $('.score').addClass('slideIn');
-                    $('.score').removeClass('slideOut');
-                }
-                function done(){
-                    $("#s").addClass('done')
-                }
-                setTimeout(done,100);
-                setTimeout(showS,2000);
 
-                b=!b;
-                console.log(b)
-                var d1=$('#o').css('transform');
-                console.log(d1)
-                var d2=$('#i').css('transform');
-                var n1=Math.floor(suan(d1)/60);
-                var n2=Math.floor(suan2(d2)/60);
-                console.log(a1[n1]+a2[n2]);
-                $('#who').html(a1[n1]+a2[n2])
-                $('#start').off('tap')
+
+
+    $(function(){
+        var a1=['失足的','一见钟情的','出柜的','看破红尘的','心怀不轨的','暗恋你的'];
+        var a2=['舍友','班主任','路人','店老板','前任','班长'];
+        var b=true;
+        var g=true;
+        var r1=0;
+        var r2=0;
+        var d1=10;
+        var d2=15;
+        var fps = 25;
+        var now;
+        var then = Date.now();
+        var interval = 1000/fps;
+        var delta;
+        function draw(){
+            $(function(){
+                r1=r1+d1;
+                r2=r2+d2;
+                var k1="rotate("+r1+"deg)";
+                var k2="rotate("+r2+"deg)";
+                console.log(k1)
+                $('#o').css('-webkit-transform',k1)
+                $('#i').css('-webkit-transform',k2)
+            })
+        }
+        function tick(){
+            requestAnimationFrame(tick);
+            now=Date.now();
+            delta=now-then;
+            if(delta>interval){
+                then=now-(delta%interval);
+                if(b){
+                    draw();
+                }
             }
         }
+        $('#start').tap(function(){
+            if(g){
+                b=true
+                tick();
+                g=false;
+                $('#start').addClass('active')
+            }else{
+                if(b){
+                    function showS(){
+                        $('.score').addClass('slideIn');
+                        $('.score').removeClass('slideOut');
+                    }
+                    function done(){
+                        $("#s").addClass('done')
+                    }
+                    setTimeout(done,100);
+                    setTimeout(showS,2000);
+                }
+                b=false;
+
+            }
+        })
         $('#replay').tap(function(){
+            r1=0;
+            r2=0;
+            $('#o').css('-webkit-transform','rotate(0)')
+            $('#i').css('-webkit-transform','rotate(0)')
             $('.score').addClass('slideOut')
             $('.score').removeClass('slideIn')
-            $('#start').tap(function(){
-                live();
-            })
             $('#s').removeClass('done')
+            $('#start').removeClass('active')
+            g=true;
+
+
         })
-        function adjust(){
-//            var h=$('#o').height()+75;
-//            h=h+'px';
-//            console.log(h);
-//            $('#start').css('margin-top',h);
-        }
-        adjust()
         $('#getIn').tap(function(){
             $('.land').addClass('slideOut');
         })
-        function suan(k){
-            var s1= k.split('(')[1];
-            var s2=s1.split(')')[0]
-            var s=s2.split(',');
-            var k1=parseFloat(s[0].substr(0, 7));
-            var k2=parseFloat(s[1].substr(0, 7));
-            var d1=Math.asin(k2)*(180/Math.PI);
-            if(k1>0){
-                d1=360+d1;
-            }
 
-            if(k1<0){
-                d1=180-d1;
-            }
-            d1=d1+2;
-            if(d1>=360){
-                d1=d1-360;
-            }
-            console.log(d1);
-
-            return(d1);
-        }
-        function suan2(k){
-            var s1= k.split('(')[1];
-            var s2=s1.split(')')[0]
-            var s=s2.split(',');
-            var k1=parseFloat(s[0].substr(0, 7));
-            var k2=parseFloat(s[1].substr(0, 7))*(-1);
-            var d1=Math.asin(k2)*(180/Math.PI);
-            if(k1>0){
-                d1=360+d1;
-            }
-
-            if(k1<0){
-                d1=180-d1;
-            }
-            d1=d1+26;
-            if(d1>=360){
-                d1=d1-360;
-            }
-            console.log(d1);
-            return(d1)
-        }
-
-        $('#start').tap(function(){
-            live();
-        })
     })
 window.onload=function(){
     $(function(){

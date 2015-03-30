@@ -54,10 +54,10 @@
     })
 
     var chart = raw.chart()
-        .title('Streamgraph')
+        .title('流量图（Stream Graph）')
         .thumbnail("imgs/streamgraph.png")
         .description(
-            "For continuous data such as time series, a streamgraph can be used in place of stacked bars. <br/>Based on <a href='http://bl.ocks.org/mbostock/4060954'>http://bl.ocks.org/mbostock/4060954</a>")
+            "对于像时间序列这样的连续数据，流量图能取代堆叠的柱状图来直观地进行展现。")
         .category('Time Series')
         .model(stream)
 

@@ -3,9 +3,9 @@
 	var graph = raw.models.graph();
 
 	var chart = raw.chart()
-		.title('Alluvial Diagram')
+		.title('冲击图（Alluvial Diagram）')
 		.description(
-            "Alluvial diagrams allow to represent flows and to see correlations between categorical dimensions, visually linking to the number of elements sharing the same categories. It is useful to see the evolution of cluster (such as the number of people belonging to a specific group). It can also be used to represent bipartite graphs, using each node group as dimensions.<br/>Mainly based on our previous work with Fineo, it is inspired by <a href='http://bost.ocks.org/mike/sankey/'>http://bost.ocks.org/mike/sankey/</a>")
+            "冲击图能够用“流”的方式呈现类别维度之间的相关性，视觉上连接起具有相同属性的数据。这对可视化集群演化非常有用。")
 		.thumbnail("imgs/alluvial.png")
 		.category("Correlations")
 		.model(graph)

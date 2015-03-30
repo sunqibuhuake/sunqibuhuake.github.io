@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <style>
+        .react{
+            width: 30px;
+            height: 30px;
+            margin: 50px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+
+<div class="react">
+
+</div>
+<script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
+<script>
+    var b=true;
+    var r=0;
+    var d1=10;
+    var d2=10;
+    function draw(){
+        $(function(){
+          r=r+d;
+          var k="rotate("+r+"deg)";
+          //console.log(k)
+          $('.react').css('-webkit-transform',k)
+        })
+    }
+    var fps = 25;
+    var now;
+    var then = Date.now();
+    var interval = 1000/fps;
+    var delta;
+
+    function tick(){
+        requestAnimationFrame(tick);
+
+        now=Date.now();
+        delta=now-then;
+        if(delta>interval){
+            then=now-(delta%interval);
+            if(b){
+                draw();
+            }
+        }
+    }
+   tick();
+
+</script>
+</body>
+</html>

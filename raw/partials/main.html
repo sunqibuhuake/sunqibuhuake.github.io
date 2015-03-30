@@ -33,8 +33,8 @@
 		<div raw-table class="data-table" data-ng-show="dataView == 'table'"></div>
 
 		<div>
-			<div data-ng-show="!loading && !data.length && !error" class="alert"><i class="fa fa-hand-o-right breath-right"></i> Not sure how it works? <a href="http://raw.densitydesign.org/how-it-works/">Take a look at this video</a> or <a href="https://github.com/densitydesign/raw/wiki/FAQs">visit our FAQs</a></div>
-			<div data-ng-show="!loading && !error && data.length" class="alert alert-success"><i class="fa fa-thumbs-up breath-right"></i><strong>{{data.length}}</strong> 数据解析成功</div>
+			<div data-ng-show="!loading && !data.length && !error" class="alert"><i class="fa fa-hand-o-right breath-right"></i> 想看视频教程？ <a href="http://raw.densitydesign.org/how-it-works/">那就看看这个视频吧</a> </div>
+			<div data-ng-show="!loading && !error && data.length" class="alert alert-success"><i class="fa fa-thumbs-up breath-right"></i><strong>{{data.length}}</strong>条数据解析成功</div>
 			<div data-ng-show="error" class="alert alert-warning"><i class="fa fa-thumbs-down breath-right"></i><strong>我的天！</strong> 请检查第 {{error+1}}行</div>
 			<div data-ng-show="loading" class="alert"><i class="fa breath-right fa-refresh fa-spin"></i>载入数据中，请稍等~</div>
 		</div>

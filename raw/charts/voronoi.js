@@ -6,9 +6,9 @@
 	points.dimensions().remove('label');
 
 	var chart = raw.chart()
-		.title('Voronoi Tessellation')
+		.title('沃罗诺伊图（Voronoi Tessellation）')
 		.description(
-            "It creates the minimum area around each point defined by two variables. When applied to a scatterplot, it is useful to show the distance between points. <br/>Based on <a href='http://bl.ocks.org/mbostock/4060366'>http://bl.ocks.org/mbostock/4060366</a>")
+            "它会在由两个变量定义的点周围创建一个最小面积的区域。当应用于散点图时，能够直观地展现出点与点之间的距离")
 		.thumbnail("imgs/voronoi.png")
 		.category('Distributions')
 		.model(points)

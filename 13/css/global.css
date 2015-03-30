@@ -537,3 +537,13 @@ and (max-height : 440px)
     margin-bottom: 20%;
 
 }
+.endbtn {
+    height: 30px;
+    width: 100px;
+    border-radius: 9px;
+    border: 2px solid #F75C5C;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #F75C5C;
+    margin: 0 auto;
+}

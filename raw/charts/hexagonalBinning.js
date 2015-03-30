@@ -7,9 +7,9 @@
 	points.dimensions().remove('color');
 
 	var chart = raw.chart()
-		.title('Hexagonal Binning')
+		.title('六边形面元（Hexagonal Binning）')
 		.description(
-			"Visually clusters the most populated areas on a scatterplot. Useful to make more readable a scatterplot when plotting hundreds of points.<br/>Based on <a href='http://bl.ocks.org/mbostock/4248145'>http://bl.ocks.org/mbostock/4248145</a>")
+			"将视觉集群最集中的地区放在一个散点图中，当有成百上千个点时，用六边形面元图表示更具有可读性。")
 		.thumbnail("imgs/binning.png")
 	    .category('Distributions')
 		.model(points)

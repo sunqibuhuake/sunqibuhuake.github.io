@@ -7,9 +7,9 @@
     tree.dimensions().remove('label');
 
     var chart = raw.chart()
-        .title('Circular Dendrogram')
+        .title('环形树状图（Circular Dendrogram）')
         .description(
-            "Dendrograms are tree-like diagrams used to represent the distribution of a hierarchical clustering. The different depth levels represented by each node are visualized on the horizontal axes and it is useful to visualize a non-weighted hierarchy.<br />Based on <br /><a href='http://bl.ocks.org/mbostock/4063570'>http://bl.ocks.org/mbostock/4063570</a>")
+            "这种图像用来表示层次聚类的分布，每个节点水平层次的不同代表了节点深度级别的不同。适用于对非加权序列的可视化。")
         .thumbnail("imgs/circularDendrogram.png")
         .category('Hierarchies')
         .model(tree)
