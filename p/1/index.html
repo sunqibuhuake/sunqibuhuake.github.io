@@ -70,10 +70,9 @@
 
 <script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
 <script>
-
-
-
-
+    var tu='./1.jpg';
+    var desc='describe test'
+    var title='title test'
     $(function(){
         function get(r1,r2){
             console.log(r1)
@@ -164,12 +163,42 @@
         })
 
     })
+
 window.onload=function(){
     $(function(){
         $('.load8').addClass('slideOut');
         $('.score').addClass('slideOut');
     })
 }
+    document.addEventListener('WeixinJSBridgeReady',
+            function onBridgeReady() {
+                WeixinJSBridge.on('menu:share:appmessage',
+                        function(argv) {
+                            WeixinJSBridge.invoke('sendAppMessage', {
+                                        "img_url": tu,
+                                        "link": document.location.href,
+                                        "desc": describe,
+                                        "title":title
+                                    },
+                                    function(res) {
+                                        document.location.href = window.shareData.timeLineLink;
+                                    })
+                        });
+                WeixinJSBridge.on('menu:share:timeline',
+                        function(argv) {
+                            WeixinJSBridge.invoke('shareTimeline', {
+                                        "img_url": tu,
+                                        "img_width": "640",
+                                        "img_height": "640",
+                                        "link": document.location.href,
+                                        "desc": title,
+                                        "title":describe
+                                    },
+                                    function(res) {
+                                        document.location.href = window.shareData.timeLineLink;
+                                    });
+                        });
+            }, false);
 </script>
 </body>
 </html>
