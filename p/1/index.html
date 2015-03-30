@@ -16,16 +16,16 @@
     </div>
 </div>
 <div class="land">
-  <div class="mid">
-      <img  id="logo" src="logo.png">
-      <div class="landText">
-          今天去x<br>
-          会邂逅谁呢？
-      </div>
-      <div  id="getIn" class="landBtn">
-        去占卜罗盘
-      </div>
-  </div>
+    <div class="mid">
+        <img  id="logo" src="logo.png">
+        <div class="landText">
+            今天去x<br>
+            会邂逅谁呢？
+        </div>
+        <div  id="getIn" class="landBtn">
+            去占卜罗盘
+        </div>
+    </div>
 </div>
 <div   class=" score">
     <div class="mid">
@@ -47,25 +47,25 @@
     </div>
 </div>
 <div id="game"  >
-  <div class="mid">
-      <div class="cover">
-          <img src="o.png"  id="o"    >
-      </div>
-      <div class="cover">
-          <img src="i.png"  id="i"   >
-      </div>
-      <div class="cover">
-          <img src="c.png"   >
-      </div>
-      <div id="s" class="cover">
-          <img src="s.png"   >
-      </div>
+    <div class="mid">
+        <div class="cover">
+            <img src="o.png"  id="o"    >
+        </div>
+        <div class="cover">
+            <img src="i.png"  id="i"   >
+        </div>
+        <div class="cover">
+            <img src="c.png"   >
+        </div>
+        <div id="s" class="cover">
+            <img src="s.png"   >
+        </div>
 
-      <div class="btn" id="start">
+        <div class="btn" id="start">
 
-      </div>
+        </div>
 
-  </div>
+    </div>
 </div>
 
 <script src="http://libs.baidu.com/zepto/0.8/zepto.min.js"></script>
@@ -103,13 +103,13 @@
         var interval = 1000/fps;
         var delta;
         function draw(){
-                r1=r1+d1;
-                r2=r2-d2;
-                var k1="rotate("+r1+"deg)";
-                var k2="rotate("+r2+"deg)";
-                console.log(k2)
-                $('#o').css({'-webkit-transform':k1,'transform':k1})
-                $('#i').css({'-webkit-transform':k2,'transform':k2})
+            r1=r1+d1;
+            r2=r2-d2;
+            var k1="rotate("+r1+"deg)";
+            var k2="rotate("+r2+"deg)";
+            console.log(k2)
+            $('#o').css({'-webkit-transform':k1,'transform':k1})
+            $('#i').css({'-webkit-transform':k2,'transform':k2})
         }
         function tick(){
             requestAnimationFrame(tick);
@@ -164,12 +164,12 @@
 
     })
 
-window.onload=function(){
-    $(function(){
-        $('.load8').addClass('slideOut');
-        $('.score').addClass('slideOut');
-    })
-}
+    window.onload=function(){
+        $(function(){
+            $('.load8').addClass('slideOut');
+            $('.score').addClass('slideOut');
+        })
+    }
 
 
     /*
