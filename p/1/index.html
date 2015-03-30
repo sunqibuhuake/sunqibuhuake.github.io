@@ -95,8 +95,8 @@
                 var k1="rotate("+r1+"deg)";
                 var k2="rotate("+r2+"deg)";
                 console.log(k1)
-                $('#o').css('-webkit-transform',k1)
-                $('#i').css('-webkit-transform',k2)
+                $('#o').css({'-webkit-transform':k1,'transform':k1})
+                $('#i').css({'-webkit-transform':k1,'transform':k1})
             })
         }
         function tick(){
@@ -135,8 +135,8 @@
         $('#replay').tap(function(){
             r1=0;
             r2=0;
-            $('#o').css('-webkit-transform','rotate(0)')
-            $('#i').css('-webkit-transform','rotate(0)')
+            $('#o').css({'-webkit-transform':rotate(0),'transform':rotate(0)})
+            $('#i').css({'-webkit-transform':rotate(0),'transform':rotate(0)})
             $('.score').addClass('slideOut')
             $('.score').removeClass('slideIn')
             $('#s').removeClass('done')
