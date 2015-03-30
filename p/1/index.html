@@ -19,7 +19,7 @@
   <div class="mid">
       <img  id="logo" src="logo.png">
       <div class="landText">
-          今天去********<br>
+          今天去xxxx<br>
           会邂逅谁呢？
       </div>
       <div  id="getIn" class="landBtn">
@@ -170,6 +170,55 @@ window.onload=function(){
         $('.score').addClass('slideOut');
     })
 }
+    //分享
+    var UA = function(){
+        var userAgent = navigator.userAgent.toLowerCase();
+        return {
+            ipad: /ipad/.test(userAgent),
+            iphone: /iphone/.test(userAgent),
+            android: /android/.test(userAgent),
+            qqnews: /qqnews/.test(userAgent),
+            weixin: /micromessenger/.test(userAgent)
+        };
+    };
+    /**
+     * mSahre 移动端分享功能 新闻客户端
+     */
+    var mShare = {
+        init: function(){
+            var d = {
+                title: title,
+                pic:tu,
+                des: describe,
+                url: document.location.href
+            };
+            var ua = UA();
+            switch(true){
+                case ua.qqnews:
+                    if(window.TencentNews && window.TencentNews.showShareMenu) {
+                        window.TencentNews.showShareMenu(d.url,d.title,d.des,d.pic,"news_news_wc");
+                    }else{
+                        window.TencentNews.shareFromWebView(d.title, d.des, d.pic);
+                    }
+                    break;
+                case ua.weixin:
+                    $(".weixin").show();
+
+
+                    break;
+                default:
+                    window.location = "http://share.v.t.qq.com/index.php?c=share&a=index&appkey=801378464&url="
+                            + document.location.href + "&title="+title+"&pic="
+                            + tu+"&des="
+                            + describe;
+
+                    break;
+            }
+        }
+
+    };
+
+
     document.addEventListener('WeixinJSBridgeReady',
             function onBridgeReady() {
                 WeixinJSBridge.on('menu:share:appmessage',
