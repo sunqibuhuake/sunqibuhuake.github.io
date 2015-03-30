@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="12" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.12698413" vertical-offset="708" max-vertical-offset="2535">
+            <state line="223" column="16" selection-start="6007" selection-end="6021" vertical-scroll-proportion="-8.625" vertical-offset="1803" max-vertical-offset="2535">
               <folding>
                 <element signature="e#1669#4254#0" expanded="false" />
               </folding>
@@ -45,6 +45,15 @@
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="286" column="22" selection-start="14109" selection-end="17169" vertical-scroll-proportion="-17.375" vertical-offset="3873" max-vertical-offset="4440">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/5.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="430" column="9" selection-start="22197" selection-end="22197" vertical-scroll-proportion="0.96875" vertical-offset="5923" max-vertical-offset="6540">
               <folding />
             </state>
           </provider>
@@ -92,6 +101,7 @@
         <option value="$PROJECT_DIR$/anima.js" />
         <option value="$PROJECT_DIR$/omg.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/5.html" />
       </list>
     </option>
   </component>
@@ -244,15 +254,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="37" selection-start="2369" selection-end="2369" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3165">
-          <folding>
-            <element signature="e#1669#4254#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/d.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -344,6 +345,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="223" column="16" selection-start="6007" selection-end="6021" vertical-scroll-proportion="-8.625" vertical-offset="1803" max-vertical-offset="2535">
+          <folding>
+            <element signature="e#1669#4254#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="286" column="22" selection-start="14109" selection-end="17169" vertical-scroll-proportion="-17.375" vertical-offset="3873" max-vertical-offset="4440">
@@ -351,12 +361,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="12" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.12698413" vertical-offset="708" max-vertical-offset="2535">
-          <folding>
-            <element signature="e#1669#4254#0" expanded="false" />
-          </folding>
+        <state line="430" column="9" selection-start="22197" selection-end="22197" vertical-scroll-proportion="0.96875" vertical-offset="5923" max-vertical-offset="6540">
+          <folding />
         </state>
       </provider>
     </entry>
