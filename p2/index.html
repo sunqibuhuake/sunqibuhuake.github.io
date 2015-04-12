@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>American Trust</title>
+	<!-- css样式 -->
+	 <link rel="stylesheet" href="css/index.css">             
+	 <link rel="stylesheet" href="css/china.css">             
+	 <link rel="stylesheet" href="css/sequences.css">
+	 <link rel="stylesheet" href="css/app.css">
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/styles.css" rel="stylesheet">
+	 <link href="css/style.css" rel="stylesheet">
+    
+   <!-- javascript -->
+	 <script type="text/javascript" src="d3/d3.js"></script>
+	 <script type="text/javascript" src="d3/d3.min.js"></script>
+	 <script type="text/javascript" src="d3/topojson.v1.min.js"></script>
+	 <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+     <!-- <script src="http://d3js.org/topojson.v1.min.js"></script> -->
+	 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+     <script type="text/javascript" src="js/jquery.SuperSlide2.js"></script>
+	 
+	 <script src="http://d3js.org/d3.v3.min.js"></script>
+     <script src="http://d3js.org/topojson.v1.min.js"></script>
+<style>
+    .row{margin-left:70px;margin-right:80px;} 
+	.row2{margin-left:60px;}
+	img.legend3{margin-left:100px;}
+	img.legend4{margin-left:100px;}
+	.text_map{margin-left:50px;}
+	img.circle{margin-top:30px;}
+	img.line{margin-top:70px;}
+	.video{margin-top:80px;}
+	img.cfps{float:left;}
+	img.gallup{float:left;}
+	img.pew{float:left;}
+	img.cujinhui{float:left;}
+	img.renminribao{float:left;}
+	img.qiushi{float:left;}
+	img.d3{float:left;}
+	img.javascript{float:left;}
+	img.ppt{float:left;}
+	img.ai{float:left;}	
+</style>
+	 
+</head>
+
+<body>
+
+  <div class="container1"> 
+      <section class="hero" id="hero">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-right navicon">             
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner">
+                  <h1 class="animated fadeInDown">大国互信</h1>
+                  <p class="animated fadeInUp delay-05s">——从民众互信视角看中美双边关系　</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <a href="#lable" class="learn-more-btn">Start with a video</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
+  </div>
+  
+  <!-- 视频部分 -->
+  <div class="container2" id="lable"> 
+     <center><video class="video" width="639.05" height="360" controls="controls"> 
+  <source src="video/trust.mp4" type="video/mp4" />
+  <source src="video/trust.ogg" type="video/ogg" />
+  <source src="video/trust.webm" type="video/webm" />
+  <object data="video/trust.mp4" width="639.05" height="360">
+    <embed src="video/trust.swf" width="639.05" height="360"/>
+  </object>
+      </video></center>     
+  </div>
+  
+  
+  <div class="container3">
+     <div class="row" id="header1">
+	    <h2 class="introduction">中--美 信任地图　"Do you trust American?"</h2>
+		<p class="context"></br>2013年8月5日，北京大学中国社会科学调查中心公布了2012年中国家庭追踪调查(CFPS)的结果，关于“你信任美国人吗”（0-10分）这一问题，共获取了30754份有效数据，下面是对有效受访者所属省份及出生年代进行统计分析的结果。</p>
+	 </div>
+  </div>  
+   <script src="js/china.js"></script>
+  
+
+
+<!-- 地图右边的文字 -->
+	<div class="container11">
+	 <div class="text_map">
+	   <p class="text1">（注：青海省、海南省、西藏自治区、新疆维吾尔族自治区、宁夏回族自治区、内蒙古自治区、香港特别行政区、澳门特别行政区、台湾地区数据缺失）</p>
+	 </div>
+	</div>
+   
+<!-- 图例  -->
+    <div class="container4">
+       <div class="photo3">
+	      <img src="img/legend1.png" class="photo3" width=140px height=140px/> 
+		  
+	   </div>	  
+    </div>
+
+<div class="container13" style="z-index:2">
+    <div class="row2">
+         <img class="legend2" src="img/legend2.png" width=540px height=50px/>
+		 <img class="legend3" src="img/legend3.png" width=170px height=50px/>
+		 <img class="legend4" src="img/legend4.png" width=170px height=50px/>
+	</div>
+  </div>	
+	
+<script src="js/app.js"></script>
+	
+ <div class="container6">
+     <div class="row" id="header1">
+	    <h2 class="introduction">美--中 好感指数　"What is your overall opinion of China?"</h2>
+		<p class="context"></br>1979年以来，美国舆论研究所推出的盖洛普民意调查测验中经常有这样一个问题：“您对中国的整体印象是非常有好感、相当有好感、相当反感、还是非常反感？” 下面是2014年公布的最新民调结果以及一些历史数据。</p>
+	 </div>
+  </div>
+  
+   
+ <div class="container7">
+   <div align="center"><img class="circle" src="img/circle.png" width=894px height=350px/></div>
+   <div align="center"><img class="line" src="img/line.png" width=1100px height=260px/></div>
+ </div>
+   
+  <div class="container5">
+       <div id="main" align="center">   
+            <div id="chart">
+                    <div id="explanation" style="visibility: hidden;">
+                          <span id="percentage"></span>
+                    </div>
+            </div>
+	  <div id="tag" class="text-success"></div>
+            <div id="tagExplain" class="text-info"></div>
+       </div>
+   </div>
+   
+    <script src="js/sequences.js"></script>
+   
+   <div class="container8"></div>
+  
+  <div class="container9">
+     <h3>中美百年 时间年轮</h3>
+	 <h2> Sino-U.S. relation of 100 years</h2>
+  </div>
+ 
+<div class="friend">
+    <div class="mr_frbox">
+        <img class="mr_frBtnL prev" src="img/mfrl.gif" />
+        <div class="mr_frUl">
+            <ul id="mr_fu">
+                <li><a href="http://www.17sucai.com/">
+                    <img src="img/balihehui.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1919</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>巴黎和会美国绥靖日本牺牲中国</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>巴黎和会美国绥靖日本牺牲中国</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+                <li><a href="http://www.17sucai.com/">
+                    <img src="img/erzhanmengjun.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1945</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>二战期间中美盟军并肩行走</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                           
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>二战期间中美盟军并肩行走</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+                <li><a href="http://www.17sucai.com/">
+                     <img src="img/chaoxianzhanzheng.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1951</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>朝鲜战争</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>朝鲜战争</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+                <li><a href="http://www.17sucai.com/">
+                    <img src="img/jixingefanghua.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1971</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>基辛格秘密访华</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>基辛格秘密访华</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/futefanghua.jpeg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1975</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国总统福特访华</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国总统福特访华</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/zhongmeijianjiaogongbao.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1979</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>中美签订建交公报</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>中美签订建交公报</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/dengxiaopingfangmei.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1979</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>邓小平访美</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>邓小平访美</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/ligenfanghua.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1984</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国总统里根访华</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国总统里根访华</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/lixiannianfangmei.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1985</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>李先念访美</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>李先念访美</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/laobushifanghua.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1989</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国总统老布什访华</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国总统老布什访华</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/duitaijunshou.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1992</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国对台湾军售</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国对台湾军售</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+								
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/kelindunfanghua.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1998</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国总统克林顿访华</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国总统克林顿访华</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/zhunanshiguanbeizha.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                1999</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>中国驻南斯拉夫大使馆被炸</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>中国驻南斯拉夫大使馆被炸</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/zhongguojiarushimao.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                2001</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>中国加入WTO</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>中国加入WTO</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/911.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                2001</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国发生911恐怖主义事件</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国发生911恐怖主义事件</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/jiangzeminfangmei.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                2002</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>江泽民访美</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>江泽民访美</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/xiaobushifanghua.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                2005</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国总统小布什访华</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国总统小布什访华</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/hujintaofangmei.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                2006</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>胡锦涛访美</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>胡锦涛访美</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/aobamafanghua.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                2009</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国总统奥巴马访华</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国总统奥巴马访华</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/nanhaizhengduan.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                2010</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国介入南海争端</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>美国介入南海争端</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/xijinpingfangmei.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                2012</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>习近平主席访美</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>习近平主席访美</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/sinuodeng.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                2013</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>斯诺登“棱镜门”事件</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>斯诺登“棱镜门”事件</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+								
+				<li><a href="http://www.17sucai.com/">
+                    <img src="img/yeyouzhongnanhai.jpg" width=300px; height=225px/>
+                </a>
+                    <div class="mr_zhe">
+                        <div class="mr_zhe_i">
+                            <h1>
+                                2014</h1>
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>习奥中南海散步会晤</span></h3>
+                            </div>
+                        </div>
+                        <div class="mr_zhe_hover">
+                            
+                            <div class="mr_zhe_p">
+                                <h3>
+                                    <span>习奥中南海散步会晤</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+				
+            </ul>
+        </div>
+        <img class="mr_frBtnR next" src="img/mfrr.gif" />
+    </div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function () {
+	
+	/* 图片滚动效果 */
+	$(".mr_frbox").slide({
+		titCell: "",
+		mainCell: ".mr_frUl ul",
+		autoPage: true,
+		effect: "leftLoop",
+		autoPlay: true,
+		vis: 4
+	});
+	
+	/* 鼠标悬停图片效果 */
+	$(".mr_zhe_hover").css("top", $('.mr_zhe').eq(0).height());
+	$("li").mouseout(function (e) {
+		if ((e.pageX < $(this).offset().left || e.pageX > ($(this).offset().left + $(this).width())) || (e.pageY < $(this).offset().top || e.pageY > ($(this).offset().top + $(this).height()))) {
+			$(this).find('.mr_zhe_i').show();
+			$(this).find('.mr_zhe_hover').hide().stop().animate({ top: '225px' }, { queue: false, duration: 190 });
+			return false;
+		}
+
+	});
+	$('.mr_zhe').mouseover(function (event) {
+		$(this).find('.mr_zhe_i').hide();
+		$(this).find('.mr_zhe_hover').show().stop().animate({ top: '225px' }, { queue: false, duration: 190 });
+		return false;
+	});
+	
+});
+</script>
+ 
+ <div class="container14">
+    <img class="time1" src="img/time1.png" width=250px height=300px;>
+  </div>
+  
+  <div class="container15">
+    <img class="time2" src="img/time2.png" width=226px height=300px;>
+  </div>
+ 
+ <div class="container10">
+     <div class="row" id="header1">
+	    <h2>国之交在于民相亲</h2><hr>		
+	 </div>
+  </div>
+  
+  <div class="container16">
+     <p><b>“据美国《纽约时报》报道，皮尤全球调查(Pew Global Survey)发布的调查结果显示，美国人对中国的看法明显地不如两年前那么好，中国人对美国的态度也在变差，这标志着在公共舆论层面，中美两国正日渐疏远。调查显示，自2011年以来，美国人对中国的赞同率下降了14个百分点，降至37%，这是中国在世界各地得到的最低赞同率。而中国人对美国的反感率增加了9个百分点，上升到53%。”</b></p>
+  </div>
+  
+  <div class="container12">
+  <p>中美建交三十多年来，两国利益交融格局持续深化。2013年中美双边贸易额已达5210亿美元，两国互为第二大贸易伙伴。中国是美国第一大进口来源地，并已连续10年成为美国增长最快的出口市场。两国对话沟通管道日趋完备。过去5年中，中美元首进行了15次会晤，其频繁程度在大国当中是少有的。两国还建立了战略与经济对话、人文交流高层磋商等90多个对话与合作机制。两国已建立起41对友好省州和201对友好城市关系。双方每年互派留学生达10万人。现在每天两国有超过1万人往返太平洋两岸……可以看到，民间交往为中美关系发展提供了不竭动力。  
+  </br>
+  <p>中美两国民众及精英的态度在中美双边关系中发挥着越来越大的影响力。为了解中美的民众及精英是如何看待对方的，中国战略文化促进会和美国卡内基和平基金会合力推出了“中美安全认知调查研究项目”，旨在通过双向基础调研与研讨会明晰双方态度，并通过纵向比较发现影响中美战略决策的长期、稳定的因素，以及战略决策和民意之间是如何互相影响的。
+  </br></br>
+  <p>调查报告形成了五点结论：
+  </br>
+  <p>第一，中美战略互信度较低，导致双边关系缺乏稳定性。
+
+  <p>第二，尽管缺乏互信，但中美两国精英和民众普遍视对方国家为竞争者，只有小部分受调者视对方为敌人：美国公众有15%视中国为敌人，中国公众则只有12%视美国为敌人。
+ 
+  <p>第三，多数美国精英认为美国维持主导性单极地位会使世界更加稳定；而中国精英认为两国权力均衡更有利于稳定。
+
+  <p>第四，中美精英均视加强双边关系为首要任务，重视促进经济合作。
+
+  <p>第五，中国受访者，特别是政府官员，认为美国对台军售是导致两国关系紧张的主因之一；美国精英，特别是退役军官和商界精英，则对所谓的来自中国的网络攻击和知识产权问题特别担忧。
+  </br>
+  <p>调查报告对中美决策者提出了六大建议：
+  </br>
+  <p>第一，重视合作甚于竞争。以两国民意的支持为基础，加强双边关系；维持高层领导人之间的交往以加强合作基础，为应对双边关系中潜在的危机奠定稳固的互信基础。
+  
+  <p>第二，正确看待极端观点。多数受访者对对方国家既不持强硬态度，也不持敌对态度。政策不应因多见诸于媒体的少数极端观点而偏离轨道。
+ 
+  <p>第三，建立互信。加强官方与非官方交流，参与有关战略与利益的更有意义的对话，恪守双方承诺，均有利于增进互信；双方还有必要说明各自政策意图，如美国的再平衡战略和中国的军力发展。
+ 
+  <p>第四，调和关于世界秩序的观点分歧。中美精英对待世界权利分配的不同观点可能导致两国关系紧张，为此，双方应开诚布公地探讨如何和平共处，照顾彼此利益。
+  
+  <p>第五，台湾问题不应成为双方开展广泛合作的阻碍。美国应充分认识中国对于美国对台军售一事的重视程度，中国应了解美国长期坚持一个中国政策的态度。双方应重视台湾问题的敏感性，不应在台湾问题上发出错误信号而影响中美关系大局。
+ 
+  <p>第六，共同制定网络安全规则。互相理解有助于消除双方疑虑，特别是对已成为中美关系中稳定力量的商界精英而言。
+  </br></br>
+  <p>对于促进中美关系发展而言，民间交流是一个外延极为广泛、潜力尤为巨大、前景十分广阔、意义非同寻常的重要领域。这一领域的行为主体类别众多，如游客、学者、留学生、商业人士、文艺人员等，交流方式灵活多样，如参观访问、高峰论坛、学术会议等等。正所谓，“国之交在于民相亲”。作为现代国家，中美两国都将本国公民的诉求视为制定国家政策的重要考察因素。
+  </br>
+  <p>我们相信，只要中美双方共同努力，相向而行，就一定能够把新型大国关系变为现实，造福两国和世界人民。21世纪的中美关系必须避免大国对抗与零和博弈的历史覆辙，切实走出一条繁荣共进的新路。</p>
+  </div>
+  
+  <div class="container17">
+    <div class="row" id="header1">
+	    <h2>数据来源</h2><hr>
+		<div class="source1"><img class="cfps" src="img/cfps.jpg" width=80px height=80px/><a href="http://www.isss.edu.cn/cfps/" target="_blank"><p>北京大学中国社会科学调查中心公布的2012年中国家庭追踪调查(CFPS)结果</p></a></div>
+		<div class="source2"><img class="gallup" src="img/gallup.jpg" width=80px height=80px/><a href="http://www.gallup.com/poll/1627/china.aspx" target="_blank"><p>美国舆论研究所公布的盖洛普民意测验结果及历史数据</p></a></div>
+		<div class="source3"><img class="pew" src="img/pew.jpg" width=80px height=80px/><a href="http://www.199it.com/archives/tag/pew-research-center" target="_blank"><p>皮尤研究中心发布的皮尤全球调查(Pew Global Survey)数据</p></a></div>
+		<div class="source4"><img class="cujinhui" src="img/cujinhui.jpg" width=80px height=80px/><a href="http://www.360doc.cn/article/6391637_339695107.html" target="_blank"><p>中国战略文化促进会和美国卡内基和平基金会合力推出的“中美安全认知调查研究项目”调查报告</p></a></div>
+		<div class="source5"><img class="renminribao" src="img/renminribao.png" width=80px height=80px/><a href="http://paper.people.com.cn/rmrbhwb/html/2013-12/19/content_1364215.htm" target="_blank"><p>《人民日报海外版》（2013年12月19日 第 05 版）罗援（中国战略文化促进会常务副会长兼秘书长）《让数据给中美关系定位》</p></a></div>
+		<div class="source6"><img class="qiushi" src="img/qiushi.jpg" width=80px height=80px/><a href="http://www.qstheory.cn/zxdk/2014/201410/201405/t20140513_348194.htm" target="_blank"><p>《求是》（2014年10月刊）崔天凯《推动构建中美新型大国关系》</p></a></div>
+		<div class="source7"><a href="http://opinion.m4.cn/2013-04/1204626.shtml" target="_blank"><p>陈积敏《中美关系之辩——互相信任还是相互理解？》</p></a></div>
+		<div class="source8"><p>视频背景音乐《我们是朋友》</p></div>
+	 </div>
+  </div>
+  
+  <div class="container18">
+   <div class="row" id="header1">
+	    <h2>可视化工具</h2><hr>
+		<div class="tool1"><img class="d3" src="img/d3.jpg" width=80px height=80px/><a href="http://d3js.org/" target="_blank"><p>交互式图表（第一部分地图、堆积条棍图，第三部分时间圆环图）由D3.js制作</p></a></div>
+		<div class="tool2"><img class="javascript" src="img/javascript.png" width=80px height=80px/><p>第三部分历史图片滚动效果由javascript制作</p></div>
+		<div class="tool3"><img class="ppt" src="img/ppt.jpg" width=80px height=80px/><p>视频由Microsoft PowerPoint录制生成</p></div>
+		<div class="tool4"><img class="ai" src="img/ai.jpg" width=80px height=80px/><p>静态图表及图例由Adobe Illustrator制作</p></div>
+  </div></div>
+  
+  <div class="container19">
+  <div class="footer" align="center"><p>©2015 　杨金月|蒋馨尔|刘一然 　中国传媒大学|新闻学院|新闻学（数据新闻报道方向）</p></div>
+  </div>
+</body>
+</html>

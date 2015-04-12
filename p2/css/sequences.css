@@ -1,0 +1,39 @@
+svg { 
+  width: 100%;
+}
+
+#main {
+  /* margin-left:350px; */
+  width:100%;
+}
+
+#sequence {
+  width: 600px;
+  height: 70px;
+}
+
+#sequence text, #legend text {
+  font-weight: 600;
+  fill: #fff;
+}
+
+#chart {
+  position: relative;
+}
+
+#chart path {
+  stroke: #fff;
+}
+
+#tagExplain{
+  color:#000;
+  font-family:"微软雅黑";
+  font-size: 22px;
+  position: relative;
+  top: -380px;
+  left: 0px;
+  width: 200px;
+  text-align: center;
+  z-index: -1;
+}
+

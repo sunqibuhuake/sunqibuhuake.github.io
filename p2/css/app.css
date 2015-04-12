@@ -1,0 +1,67 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.map3{width:100%;
+	  position:absolute;
+      top:2030px;
+	  left:0px;
+	  background-color:#e9edef;
+	  }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #e9edef;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  font-family:Microsoft YaHei UI;
+  fill: #000;
+  font-size: 15px;
+}
+
+.area {
+  stroke-width: 1;
+}
+
+.area.inner,
+.legend .inner {
+  fill: #c3c3c3;
+  stroke: none;
+}
+
+.legend .legend-bg {
+  fill: rgba(0, 0, 0, 0.5);
+  stroke: rgba(0, 0, 0, 0.5);
+}
+
+.marker.good .marker-bg,
+.marker.good path {
+  
+  fill: rgba(219,105,104,0.8);
+  stroke: rgba(219,105,104,0.8);
+  stroke-width: 2;
+}
+
+.marker.bad .marker-bg,
+.marker.bad path {
+  fill: rgba(48, 80, 103, 0.8);
+  stroke: rgba(48, 80, 103, 0.8);
+  stroke-width: 2;
+}
+
+.marker path {
+  fill: none;
+}
+
+.legend text,
+.marker text {
+  
+  fill: #fff;
+  font-weight: bold;
+}
+
+.marker text {
+  text-anchor: middle;
+}
+

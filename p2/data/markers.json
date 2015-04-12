@@ -1,0 +1,58 @@
+﻿[
+  {
+    "date": "1941",
+    "type": "good",
+    "version":"二战中美合作"
+   
+  },
+  {
+    "date": "1949",
+    "type": "bad",
+	 "version":"对苏一边倒方针"
+  },
+  {
+    "date": "1951",
+    "type": "bad",
+	 "version":"朝鲜战争"
+  },
+  {
+    "date": "1971",
+    "type": "good",
+	 "version":"基辛格访华"
+  },
+{
+    "date": "1972",
+    "type": "good",
+	 "version":"尼克松访华"
+  },
+{
+    "date": "1979",
+    "type": "good",
+	 "version":"中美正式建交"
+  },
+  {
+    "date": "1979",
+    "type": "good",
+	 "version":"邓小平访美"
+  },
+{
+    "date": "1989",
+    "type": "good",
+	"version":"老布什访华"
+  },
+{
+    "date": "1992",
+    "type": "bad",
+	"version":"美对台军售"
+  },
+{
+    "date": "1997",
+    "type": "good",
+	"version":"江泽民访美"
+  },
+  {
+    "date": "1998",
+    "type": "good",
+	"version":"克林顿访华"
+  }
+]

@@ -1,0 +1,283 @@
+body {
+  background-color: #e9edef;
+  margin:0px;padding:0px;
+  width:100%;
+}
+
+.container2 {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 500px;
+  background-color: #e9edef;
+}
+
+.container3 {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 200px;
+  background-color: #e9edef;
+  
+}
+
+.container3 p{color:#2c3e50; font-size:17px;}
+.container3 h2{
+  color:#2c3e50;
+  font-size:30px;
+}
+
+
+.container13 {
+  position:relative;
+  z-index:5;
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 120px; 
+}
+
+.container13 p{font-size:17px;}
+
+/* 地图右边的文字 */
+.container11{
+  position: relative;
+  top:-150px;
+  left:715px;
+  width:500px;
+  height:0px;
+}
+
+/* 图例 */
+.container4 {
+  position: relative;
+  top:-190px;
+  left:90px;
+  clear: both;
+  width: 50px;
+  height: 0px;
+}
+
+.container6 {
+  position:absolute;
+  top:2430px;
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 200px;
+  background-color: #2c3e50;
+}
+
+.container6 p{color:#fff; font-size:17px;}
+.container6 h2{
+  color:#fff;
+  font-size:30px;
+}
+
+.container7 {
+ /*  background:url("../img/bg.jpg");
+  background-repeat:repeat; */
+  position:absolute;
+  top:2630px;
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 800px;
+  background-color:#2c3e50;
+}
+
+.container8{background-image:url("../img/history1.jpg");
+            position:absolute;
+			top:3430px;
+			float: left;
+            clear: both;
+            width: 100%;
+            height: 418px;}
+			
+.container9{position: absolute;
+  top:3702px;
+  right:0px;
+  width:700px;
+  height:150px;
+  background-color:rgba(0,0,0,0.4);
+  border-radius: 30px;}
+  
+.container9 h3{font-size:60px;
+              font-family:"宋体";
+              margin-left:90px;
+			  margin-top:30px;
+			  color:#fff;}
+  
+.container9 h2{font-size:30px;
+              margin-left:80px;
+			  margin-top:6px;
+			  color:#fff;}
+			  
+.friend{
+background-color:#fff;
+position:absolute;
+top:3848px;}
+			
+.container5{position:absolute;
+            top:4073px;
+			left:350px;
+			width:600px;
+			}
+			
+.container14{position:absolute;
+              top:4250px;
+			  left:1000px;
+			 }
+
+.container15{position:absolute;
+              top:4250px;
+			  left:70px;
+			 }
+			 
+.container10 {
+  position:absolute;
+  top:4750px;
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 80px;
+  background-color: #fafbec;
+}
+
+.container10 h2{
+  color:#000;
+  font-size:40px;
+  font-family:"宋体";
+}
+
+.container16{position:absolute;
+             left:0px;
+			 top:4830px;
+			 width:100%;
+			 height:100px;
+			 background-color:#fafbec;}
+.container16 p{margin-left:70px;margin-right:70px;
+               text-indent:2em;
+			   font-size:18px;
+			   font-family:"宋体";}
+
+.container12 {
+  position:absolute;
+  left:0px;
+  top:4930px;
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 1150px;
+  background-color: #fafbec;
+}
+
+.container12 p{
+text-indent:2em;
+font-family:"宋体";
+margin-left:70px;margin-right:70px;
+color:#000; font-size:17px;}
+
+.container17{position:absolute;
+ left:0px;
+ top:6080px;
+ width:100%;
+ height:600px;}
+ 
+.container17 h2{
+  color:#000;}
+  
+.container17 p{font-size:17px;
+               margin-left:100px;			 
+			   margin-top:25px;}
+.source1{
+float:left;
+width:500px;
+height:80px;}
+
+.source2{float:left;
+        margin-left:100px;
+         width:500px;
+		 height:80px;}
+		 
+.source3{
+float:left;
+margin-top:50px;
+width:500px;
+height:80px;}
+
+.source4{
+float:left;
+margin-top:50px;
+margin-left:100px;
+width:500px;
+height:80px;}
+
+.source5{
+float:left;
+margin-top:50px;
+width:500px;
+height:80px;}
+
+.source6{
+float:left;
+margin-top:50px;
+margin-left:100px;
+width:500px;
+height:80px;}
+
+.source7{
+float:left;
+margin-top:50px;
+width:500px;
+height:80px;}
+
+.source8{
+float:left;
+margin-top:50px;
+margin-left:100px;
+width:500px;
+height:80px;}
+
+.container18{position:absolute;
+ left:0px;
+ top:6680px;
+ width:100%;
+ height:330px;}
+ 
+.container18 h2{
+  color:#000;}
+  
+.container18 p{font-size:17px;
+               margin-left:100px;			 
+			   margin-top:25px;}
+			   
+.tool1{
+float:left;
+width:500px;
+height:80px;}
+
+.tool2{float:left;
+        margin-left:100px;
+         width:500px;
+		 height:80px;}
+		 
+.tool3{
+float:left;
+margin-top:50px;
+width:500px;
+height:80px;}
+
+.tool4{
+float:left;
+margin-top:50px;
+margin-left:100px;
+width:500px;
+height:80px;}
+
+.container19{position:absolute;
+ left:0px;
+ top:7000px;
+ width:100%;
+ height:20px;
+ }

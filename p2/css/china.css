@@ -1,0 +1,39 @@
+  .map1{background-color:#e9edef;}  
+  
+  .china:hover{
+		fill-opacity:0.5;
+	}
+  .china.gansu{ fill:#b36767; }
+  .china.qinghai { fill: #ddc; }
+  .china.guangxi { fill:#b1605f; }
+  .china.guizhou { fill:#ad3d3c; }
+  .china.chongqing { fill:#a83a3b; }
+  .china.beijing { fill:#a8322e; }
+  .china.fujian { fill:#b98383; }
+  .china.anhui { fill:#b77a79; }
+  .china.guangdong { fill:#b66e6f; }
+  .china.xizang { fill:#ddc; }
+  .china.xinjiang { fill:#ddc; }
+  .china.hainan { fill:#ddc; }
+  .china.ningxia { fill:#ddc; }
+  .china.shanxi3 { fill:#be9495; }
+  .china.shanxi1 { fill:#c6b6b6; }
+  .china.hubei { fill:#b97f7e; }
+  .china.hunan { fill:#ab504f; }
+  .china.sichuan { fill:#b26464; }
+  .china.yunnan { fill:#ab4948; }
+  .china.hebei { fill:#c6bcbb; }
+  .china.henan { fill:#c0a2a2; }
+  .china.liaoning { fill:#bfa09e; }
+  .china.shandong { fill:#c8c7c5; }
+  .china.tianjin { fill:#c59d9e; }
+  .china.jiangxi { fill:#bb8988; }
+  .china.jiangsu { fill:#a9504c; }
+  .china.shanghai { fill:#99181d; }
+  .china.zhejiang { fill:#a43232; }
+  .china.jilin { fill:#d2d2d0; }
+  .china.neimenggu { fill:#ddc; }
+  .china.heilongjiang { fill:#cececc; }
+  .china.xianggang { fill:#a43232; }
+  .china.aomen { fill:#a43232; }
+  .china.taiwan { fill:#ddc;}
