@@ -11,11 +11,20 @@
     <script src="./libs/tween.js"></script>
 
     <style>
-        body {
+        html,body {
             /* set margin to 0 and overflow to hidden,适用于全屏 */
             margin: 0;
             overflow: hidden;
-            background-color: black;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,244,244);
+
+        }
+        .bgi{
+            background-image:url('./assets/bgi/1.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         img:hover{
             border:5px solid rgba(255,255,255,1)
@@ -89,19 +98,14 @@
 
             100% {-webkit-transform:translateY(0)}
         }
+        img{
+            border-radius: 50%;
+        }
     </style>
 </head>
-<div class="f slideOut">
-    <div class="container">
-        <div class="chart" id="chart">
 
-        </div>
-    </div>
-</div>
 
 <script src="./js/jquery.js"></script>
-<script src="http://echarts.baidu.com/build/dist/echarts-all.js"></script>
-<script src="./js/theme.js"></script>
 <script src="./js/charts3.js"></script>
 <script>
 
@@ -113,7 +117,7 @@
 
 
 </script>
-<body>
+<body class=" ">
 
 </body>
 
