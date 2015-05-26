@@ -23,6 +23,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD:p/2/.idea/workspace.xml
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,11 +58,20 @@
             <state line="1" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+=======
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="154" column="18" selection-start="5006" selection-end="5006" vertical-scroll-proportion="-46.2" vertical-offset="0" max-vertical-offset="3975">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#6;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD:p/2/.idea/workspace.xml
       <file leaf-file-name="test2.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test2.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,6 +94,41 @@
         <entry file="file://$PROJECT_DIR$/js/myAnimate.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="71" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1830">
+=======
+      <file leaf-file-name="end1文字2.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/end/end1文字2.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="最后的end图片.jpg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/end/最后的end图片.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="414" column="21" selection-start="6272" selection-end="6272" vertical-scroll-proportion="-18.192308" vertical-offset="5737" max-vertical-offset="6315">
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD:p/2/.idea/workspace.xml
+      <file leaf-file-name="worldMap.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/worldMap.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="893" column="39" selection-start="33403" selection-end="33403" vertical-scroll-proportion="-1.6153846" vertical-offset="13353" max-vertical-offset="15015">
+=======
+      <file leaf-file-name="myAnimate.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/myAnimate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.22350994" vertical-offset="0" max-vertical-offset="2025">
               <folding />
             </state>
           </provider>
@@ -92,7 +137,8 @@
       <file leaf-file-name="worldMap.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/worldMap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="893" column="39" selection-start="33403" selection-end="33403" vertical-scroll-proportion="-1.6153846" vertical-offset="13353" max-vertical-offset="15015">
+            <state line="275" column="70" selection-start="7985" selection-end="7985" vertical-scroll-proportion="0.0" vertical-offset="3840" max-vertical-offset="14490">
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
               <folding />
             </state>
           </provider>
@@ -117,6 +163,7 @@
         <option value="$PROJECT_DIR$/2.html" />
         <option value="$PROJECT_DIR$/js/charts3.js" />
         <option value="$PROJECT_DIR$/js/theme.js" />
+<<<<<<< HEAD:p/2/.idea/workspace.xml
         <option value="$PROJECT_DIR$/test" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/test2.html" />
@@ -124,12 +171,26 @@
         <option value="$PROJECT_DIR$/js/worldMap.js" />
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/index.html" />
+=======
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/test2.html" />
+        <option value="$PROJECT_DIR$/test" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/custom.css" />
+        <option value="$PROJECT_DIR$/js/worldMap.js" />
+        <option value="$PROJECT_DIR$/js/myAnimate.js" />
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD:p/2/.idea/workspace.xml
     <option name="x" value="-127" />
     <option name="y" value="56" />
+=======
+    <option name="x" value="25" />
+    <option name="y" value="115" />
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
     <option name="width" value="1264" />
     <option name="height" value="727" />
   </component>
@@ -245,6 +306,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="end" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -258,18 +387,27 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD:p/2/.idea/workspace.xml
       <recent name="$PROJECT_DIR$/assets/end" />
+=======
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
       <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/single" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD:p/2/.idea/workspace.xml
       <recent name="$PROJECT_DIR$/assets/page3" />
       <recent name="$PROJECT_DIR$/assets/img" />
       <recent name="$PROJECT_DIR$/assets/end" />
+=======
+      <recent name="$PROJECT_DIR$/assets/end" />
+      <recent name="$PROJECT_DIR$/assets/img" />
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/assets/page3" />
     </key>
   </component>
   <component name="RunManager">
@@ -321,14 +459,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD:p/2/.idea/workspace.xml
     <frame x="-127" y="56" width="1264" height="727" extended-state="0" />
     <editor active="true" />
+=======
+    <frame x="25" y="115" width="1264" height="727" extended-state="0" />
+    <editor active="false" />
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD:p/2/.idea/workspace.xml
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25632912" sideWeight="0.0" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13765822" sideWeight="0.0" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -376,11 +523,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD:p/2/.idea/workspace.xml
+=======
+    <entry file="file://$PROJECT_DIR$/assets/end/最后的end图片.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
     <entry file="file://$PROJECT_DIR$/css/animate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2723" column="0" selection-start="56192" selection-end="56635" vertical-scroll-proportion="0.0" vertical-offset="38949" max-vertical-offset="41250">
           <folding />
         </state>
+<<<<<<< HEAD:p/2/.idea/workspace.xml
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test">
@@ -389,10 +545,36 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/img/fzbottom.png">
+=======
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="0" selection-end="2567" vertical-scroll-proportion="-3.6111112" vertical-offset="0" max-vertical-offset="1800" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/end/end1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/end/结尾1长这样，png导不出来.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/end/end2文字3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/end/end2文字2.png">
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+<<<<<<< HEAD:p/2/.idea/workspace.xml
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="105">
@@ -417,27 +599,62 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/page3/jiang0.png">
+=======
+    <entry file="file://$PROJECT_DIR$/assets/end/end2文字1.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/end/end2图片.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/end/end1文字1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/end/end1文字2.png">
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+<<<<<<< HEAD:p/2/.idea/workspace.xml
     <entry file="file://$PROJECT_DIR$/assets/page3/jiang1.png">
+=======
+    <entry file="file://$PROJECT_DIR$/assets/end/最后的end图片.jpg">
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+<<<<<<< HEAD:p/2/.idea/workspace.xml
     <entry file="file://$PROJECT_DIR$/assets/page3/jiang-r.png">
       <provider selected="true" editor-type-id="images">
         <state />
+=======
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="414" column="21" selection-start="6272" selection-end="6272" vertical-scroll-proportion="-18.192308" vertical-offset="5737" max-vertical-offset="6315">
+          <folding />
+        </state>
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/worldMap.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD:p/2/.idea/workspace.xml
         <state line="893" column="39" selection-start="33403" selection-end="33403" vertical-scroll-proportion="-1.6153846" vertical-offset="13353" max-vertical-offset="15015">
+=======
+        <state line="275" column="70" selection-start="7985" selection-end="7985" vertical-scroll-proportion="0.0" vertical-offset="3840" max-vertical-offset="14490">
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD:p/2/.idea/workspace.xml
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="425" column="29" selection-start="6484" selection-end="6484" vertical-scroll-proportion="-15.884615" vertical-offset="5962" max-vertical-offset="6540">
@@ -454,6 +671,21 @@
             <element signature="tag#div#4;tag#div#2;tag#div#3;tag#body#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="154" column="18" selection-start="5006" selection-end="5006" vertical-scroll-proportion="-46.2" vertical-offset="0" max-vertical-offset="3975">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#6;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/myAnimate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="91" selection-end="91" vertical-scroll-proportion="0.22350994" vertical-offset="0" max-vertical-offset="2025">
+          <folding />
+>>>>>>> origin/master:p/demo/.idea/workspace.xml
         </state>
       </provider>
     </entry>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/animate+animo.css">
+
+
+    <!-- Demo styles -->
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 700px;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -150px;
+            margin-top: -240px;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+        #slide0{
+            background-image: url("./img/3.jpg");
+        }
+        #slide1{
+            background-image: url("./img/3.jpg");
+        }
+        #slide2{
+            background-image: url("./img/1.jpg");
+        }
+        #slide3{
+            background-image: url("./img/1.jpg");
+        }
+        .container{
+            width: 100%;
+            margin: 10px auto;
+        }
+        .chart{
+            height: 450px;
+            width: 650px;
+            margin: 0 auto;
+        }
+        #slide2{
+            background-color: rgb(27, 27, 27);;
+        }
+        .desc{
+            position: absolute;
+            left: 5%;
+            top:30%;
+            width:200px
+        }
+        .hide{
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+<body>
+<div class="desc hide" id="d0">
+    <h1>简单柱状图</h1>
+    剪一段时光，落于你的窗棂<br>
+    谱一首心曲，珍惜心中的际遇<br>携一抹微笑，明媚失落的过往。
+</div>
+<div class="desc hide" id="d1">
+    <h1>简单饼图</h1>
+    剪一段时光，落于你的窗棂<br>
+    谱一首心曲，珍惜心中的际遇<br>携一抹微笑，明媚失落的过往。
+</div>
+<div class="desc hide" id="d2">
+    <h1>迁徙图①</h1>
+    剪一段时光，落于你的窗棂<br>
+    谱一首心曲，珍惜心中的际遇<br>携一抹微笑，明媚失落的过往。
+</div>
+<div class="desc hide" id="d3">
+    <h1>迁徙图②</h1>
+    剪一段时光，落于你的窗棂<br>
+    谱一首心曲，珍惜心中的际遇<br>携一抹微笑，明媚失落的过往。
+</div>
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide " id="slide0">
+            <div class="container">
+                <div class="chart" id="barChart" ></div>
+            </div>
+        </div>
+        <div class="swiper-slide" id="slide1">
+            <div class="container">
+                <div class="chart" id="pieChart" ></div>
+            </div>
+        </div>
+        <div class="swiper-slide" id="slide2">
+            <div class="container">
+                <div class="chart" id="mapChart" ></div>
+            </div>
+        </div>
+        <div class="swiper-slide" id="slide3">
+            <div class="container">
+                <div class="chart" id="map2Chart" ></div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/animo.js"></script>
+<script src="./js/swiper.jquery.min.js"></script>
+<script src="./ec/dist/echarts.js"></script>
+<script src="./ecx/dist/echarts-x.js"></script>
+<script src="./js/theme.js"></script>
+<script src="./js/charts2.js"></script>
+</body>
+</html>
